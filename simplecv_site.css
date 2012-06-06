@@ -1,11 +1,10 @@
-html,body,div,h1,h2,h3,h4,h5,h6,p,img,ol,ul,li {
-  margin: 0;
-  padding: 0;
-  border: 0;
+html,body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }
 
 html, body {
-  overflow: hidden;
   background-color: #fff;
 }
 
@@ -282,8 +281,19 @@ div.indent {
         margin:0 0 1em 0;
 }
 
-#doc-content {
+#search_submit {
+	color: transparent; 
+	width: 20px;
+	height: 20px; 
+	cursor: pointer;
+	font-size: 0px;
+	vertical-align: top;
+	background: url(images/search.gif) no-repeat center;
+}
+
+#content_body {
 	overflow: auto;
+	position: relative;
 }
 
 
@@ -292,16 +302,16 @@ div.indent {
 #footer {
 	float: left;
 	width: 100%;
-	height: 30%;
+	height: 100%;
 	margin: 0px;
-	padding: 20px 20px;
+	padding: 20px 50px;
 	color: #000;
 	font-size: 11px;
 	background-color: #cfe3f5;
 }
 
 #footer a {
-	color: #aaa;
+	color: #000;
 	font-size: 11px;
 }
 
@@ -312,12 +322,61 @@ div.indent {
 
 #footerlinks {
 	margin-top:2px;
+	position: relative;
+	width: 850px;
 }
+
+#footerlinks h3 {
+	font-size: 11px;
+}
+
+#footerlinks ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 5px;
+}
+
+#footerlinks_column1 {
+	float: left;
+	width: 400px;
+}
+
+#footerlinks_column1a {
+	float: left;
+	width: 190px;
+}
+
+#footerlinks_column1b {
+	float: right;
+	width: 190px;
+}
+
+#footerlinks_column2 {
+	float: right;
+	width: 450px;
+}
+
+#footerlinks_column2a {
+	float: left;
+	width: 190px;
+}
+
+#footerlinks_column2b {
+	float: right;
+	width: 240px;
+}
+
 
 #footerlinks a, #footerlinks a:visited {
 	color:#006699;
 }
 
-
+#copyright {
+	clear: both;
+	float: left;
+	width: 100%;
+	padding: 10px 0px;
+	font-size: 10px;
+}
 
 
