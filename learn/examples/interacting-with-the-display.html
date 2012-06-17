@@ -1,0 +1,179 @@
+<!doctype html>
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <title>SimpleCV: Example Code</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Example code to help use SimpleCV to write computer vision applications.">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script src="../../js/libs/modernizr-2.5.0.min.js"></script>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+    <!-- BEGIN Header -->
+    <div id="HeaderWrapper">
+        <div id="Header">
+            <div id="HeaderTop">
+                <div id="Logo">
+                    <a href="/index.html"><img src="../../images/logo.gif" width="243" height="63" alt="SimpleCV"></a>
+                </div>
+                <ul id="Social">
+                    <li>
+                        <a href="https://github.com/ingenuitas/simplecv"><img src="../../images/github_grey.gif" height="28" width="28" alt="GitHub"></a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/#!/Simple_CV"><img src="../../images/twitter_blue.gif" height="28" width="28" alt="Twitter"></a>
+                    </li>
+                    <li>
+                        <a href="http://www.facebook.com/pages/SimpleCV/150136128401869"><img src="../../images/facebook_blue.gif" height="28" width="28" alt="Facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/115199279159361214026/posts"><img src="../../images/google_red.gif" height="28" width="28" alt="Google+"></a>
+                    </li>
+                </ul>
+            </div>
+            <ul id="Menu1" role="navigation" itemprop="breadcrumb">
+                <li class="homeButton">
+                    <a href="/index.html"></a>
+                </li>
+                <li>
+                    <a class="current" href="/learn/">LEARN</a>
+                </li>
+                <li>
+                    <a href="/docs/">DOCUMENTATION</a>
+                </li>
+                <li>
+                    <a href="/contribute/">CONTRIBUTE</a>
+                </li>
+                <li>
+                    <a href="/news/">NEWS &amp; EVENTS</a>
+                </li>
+                <li>
+                    <a href="/download/">DOWNLOAD</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END Header -->
+
+    <!-- BEGIN Content -->
+    <div id="Content" role="Main" itemprop="mainContentOfPage">
+        <div id="LeftColumn">
+            <ul id="Menu2">
+                    	<li><a href="/learn/examples.html">Example List</a></li>
+                        <li><a href="/learn/examples/helloworld.html">Hello World</a></li>
+                        <li><a class="current" href="/learn/examples/interacting-with-the-display.html">Interacting with the Display</a></li>
+                        <li><a href="/learn/examples/directory-of-images.html">Loading a Directory of Images</a></li>
+                        <li><a href="/learn/examples/macros.html">Macro&#8217;s</a></li>
+                        <li><a href="/learn/examples/kinect.html">Kinect</a></li>
+                        <li><a href="/learn/examples/timing.html">Timing</a></li>
+                        <li><a href="/learn/examples/parking.html"> Detecting a Car</a></li>
+                        <li><a href="/learn/examples/segment.html">Segmenting the Image and Morphology</a></li>
+                        <li><a href="/learn/examples/image-math.html">Image Arithmetic</a>
+                                <ul>
+                                        <li><a href="/learn/examples/image-math.html#exceptions-in-image-math">Exceptions in Image Math</a></li>
+                                        <li><a href="/learn/examples/image-math.html#histograms">Histograms</a></li>
+                                        <li><a href="/learn/examples/image-math.html#color-space">Color Space</a>
+                                        <li><a href="/learn/examples/image-math.html#using-hue-peaks">Using Hue Peaks</a></li>
+                                        <li><a href="/learn/examples/image-math.html#creating-a-motion-blur-effect">Creating a Motion Blur Effect</a></li>
+                                        <li><a href="/learn/examples/image-math.html#simulating-long-exposure">Simulating Long Exposure</a></li>
+                                        <li><a href="/learn/examples/image-math.html#chroma-key-green-screen">Chroma Key (Green Screen)</a></li>
+                                </ul>
+                        </li>
+                        <li><a href="/learn/examples/display.html">Drawing on Images in SimpleCV</a>
+                                <ul>
+                                        <li><a href="/learn/examples/display.html#layers">Layers</a></li>
+                                        <li><a href="/learn/examples/display.html#marking-up-the-image">Marking up the Image</a></li>
+                                        <li><a href="/learn/examples/display.html#text-and-fonts">Text and Fonts</a></li>
+                                        <li><a href="/learn/examples/display.html#making-a-custom-display-object">Making a Custom Display Object</a></li>
+                                </ul>
+                        </li>
+                </ul>
+            </ul>
+        </div>
+        <div id="RightColumnWide">
+            <div id="PageBody">
+                <h1>
+                    Interacting with the Display
+                </h1>
+
+<p>This isn't going to take much more work than the <a href="/learn/examples/helloworld.html">Hello World</a> example.  We are only introducing one new concept: the Display object.</p>
+
+<p><strong>Note:</strong> You can type '<strong>help Display</strong>' in the SimpleCV shell for help with the Display object.</p>
+
+<p class="single">In the Hello World example, we used the show() function to display the image.  The show() function is a short hand way of displaying an image, but it doesn't give you the control you can have if you use the Display object instead.  For example, let's say we want our program to end when the left mouse button is clicked.  The code would look like:</p>
+
+<pre>
+from SimpleCV import Camera, Display
+cam = Camera()
+disp = Display()
+
+while(disp.isNotDone()):
+        img = cam.getImage()
+        if disp.mouseLeft:
+                break
+        img.save(disp)
+</pre>
+
+<p class="single">The following line creates the display object (called disp in this example):</p>
+<pre>
+disp = Display()
+</pre>
+
+<p class="single">After we create the display object, we call the function isNotDone() on it as part of the while statement. The isNotDone() checks to see if the display window is still open.   If it is open, it loops through the while block to grab an image from the camera, and then display the new image.  In the while block, there is the line:</p>
+
+<pre>
+if disp.mouseLeft:
+</pre>
+
+<p>If the left mouse button has been clicked, the mouseLeft() function returns true.  If it's true, then the break statement is executed, and the program breaks out of the while loop.  If the left mouse button hasn't been clicked, then the following line is executed instead:</p>
+
+<pre>
+        img.save(disp)
+</pre>
+
+<p>This line takes the image that was taken with the getImage() function, and saves it to the display object - or, in other words, shows it on the screen.  This is the equivalent to the img.show() line in the Hello World exmaple.  Using the actual display object, though, lets you check whether or not any events happened with the display, which gives you greater control.</p>
+
+<p>The code for this example is in the file named display.py in the <a href="">example zip file</a>.</p>
+
+            </div>
+        </div>
+    </div>
+    <!-- END Content -->
+
+    <!-- BEGIN Footer -->
+    <div id="FooterWrapper">
+        <div id="Footer">
+            <ul id="FooterLeft">
+                <li>&copy; <a href="http://www.sightmachine.com">Sight Machine</a> 2012</li>
+            </ul>
+            <ul id="FooterRight">
+            </ul>
+        </div>
+    </div>
+    <!-- END Footer -->
+    
+    <!-- BEGIN Scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+    <script src="../../js/libs/jquery-ui-1.8.21.custom.min.js"></script>
+    <script src="../../js/plugins.js"></script>
+    <script src="../../js/script.js"></script>
+    <script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-23517471-3']);
+	  _gaq.push(['_setDomainName', 'simplecv.org']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+    </script>
+    <!-- END Scripts -->
+</body>
+</html>

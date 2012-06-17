@@ -1,0 +1,236 @@
+<!doctype html>
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <title>SimpleCV: Chapter One</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Chapter one from our new O'Reilly book: Practical Computer Vision with SimpleCV">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/libs/modernizr-2.5.0.min.js"></script>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
+    <!-- BEGIN Header -->
+    <div id="HeaderWrapper">
+        <div id="Header">
+            <div id="HeaderTop">
+                <div id="Logo">
+                    <a href="/index.html"><img src="../images/logo.gif" width="243" height="63" alt="SimpleCV"></a>
+                </div>
+                <ul id="Social">
+                    <li>
+                        <a href="https://github.com/ingenuitas/simplecv"><img src="../images/github_grey.gif" height="28" width="28" alt="GitHub"></a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/#!/Simple_CV"><img src="../images/twitter_blue.gif" height="28" width="28" alt="Twitter"></a>
+                    </li>
+                    <li>
+                        <a href="http://www.facebook.com/pages/SimpleCV/150136128401869"><img src="../images/facebook_blue.gif" height="28" width="28" alt="Facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/115199279159361214026/posts"><img src="../images/google_red.gif" height="28" width="28" alt="Google+"></a>
+                    </li>
+                </ul>
+            </div>
+            <ul id="Menu1" role="navigation" itemprop="breadcrumb">
+                <li class="homeButton">
+                    <a href="/index.html"></a>
+                </li>
+                <li>
+                    <a class="current" href="/learn/">LEARN</a>
+                </li>
+                <li>
+                    <a href="/docs/">DOCUMENTATION</a>
+                </li>
+                <li>
+                    <a href="/contribute/">CONTRIBUTE</a>
+                </li>
+                <li>
+                    <a href="/news/">NEWS &amp; EVENTS</a>
+                </li>
+                <li>
+                    <a href="/download/">DOWNLOAD</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END Header -->
+
+    <!-- BEGIN Content -->
+    <div id="Content" role="Main" itemprop="mainContentOfPage">
+        <div id="LeftColumnWide">
+            <div id="PageBody">
+
+		<h2>Preview of Our New O'Reilly Book: <br /><a href="http://shop.oreilly.com/product/0636920024057.do">Practical Computer Vision with SimpleCV</a></h2>
+		<br />
+<h2>Chapter One</h2>
+
+<p>This chapter provides an introduction to computer vision in general, and the SimpleCV framework in particular.  The primary goal is to understand the possibilities and considerations to keep in mind when creating a vision system.  As part of the process, this chapter will cover:</p>
+
+<ul>
+<li>The importance of computer vision</li>
+<li>An introduction to the SimpleCV framework</li>
+<li>Hard problems to solve with computer vision</li>
+<li>Problems that are relatively easy for computer vision</li>
+<li>An introduction to vision systems</li>
+<li>The typical components of a vision system</li>
+</ul>
+
+<h2>Why Learn Computer Vision</h2>
+
+<p>As cameras are becoming standard PC hardware and a required feature of mobile devices, computer vision is moving from a niche tool to an increasingly common tool for a diverse range of applications.  Some of these applications probably spring readily to mind, such as facial recognition programs or gaming interfaces like the Kinect.  Computer vision is also being used in things like automotive safety systems, where a car detects when when the driver starts to drift from the lane, or when is getting drowsy.  It is used in point-and-shoot cameras to help detect faces or other central objects to focus on.  The tools are used for high tech special effects or basic effects, such as the virtual yellow first-and-ten line in football games, or the motion blurs on a hockey puck.  It has applications in industrial automation, biometrics, medicine, and even planetary exploration.  It's also used in some more surprising fields, such as with food and agriculture, where it is used to inspect and grade fruits and vegetables. It's a diverse field, with more and more interesting applications popping up every day.</p>
+
+<p>At its core, computer vision is built upon the fields of mathematics, physics, biology, engineering, and of course, computer science. There are many fields related to computer vision, such as machine learning, signal processing, robotics, and artificial intelligence.  Yet even though it is a field built on advanced concepts, more and more tools are making it accessible to everyone from hobbyists to vision engineers to academic researchers.</p>
+
+<p>It is an exciting time in this field, and there are an endless number of possibilities for applications.  One of the things that makes it exciting is that these days, the hardware requirements are inexpensive enough to allow more casual developers entry into the field, opening the door to many new applications and innovations.</p>
+
+
+<h2>What is the SimpleCV framework?</h2>
+
+<p>SimpleCV, which stands for Simple Computer Vision, is an easy-to-use Python framework that bundles together open source computer vision libraries and algorithms for solving problems.  Its goal is to make it easier for programmers to develop computer vision systems, streamlining and simplifying many of the most common tasks.  You do not have to have a background in computer vision to use the SimpleCV framework, or a computer science degree from a top-name engineering school.  Even if you don't know Python, it is a pretty easy language to learn.  Most of the code in this book will be relatively easy to pick up, regardless of programming background.  What you do need is an interest in computer vision, or helping to make computers "see".  In case you don't know much about computer vision, we'll give you some background on the subject in this chapter.  Then in the next chapter, we'll jump into creating vision systems with the SimpleCV framework.</p>
+
+
+<h2>What is Computer Vision?</h2>
+
+<p>Vision is a classic example of a problem that humans handle well, but with which machines struggle.  The human eye takes in a huge amount of visual information, and then the brain processes it all without any conscious thought.  Computer vision is the science of creating a similar capability in computers and, if possible, to improve upon it.  The more technical definition, though, would be that computer vision is the science of having computers acquire, process and analyze digital images.  The term machine vision is often used in conjunction with computer vision.  Machine vision is frequently defined as the application of computer vision to industrial tasks.</p>
+
+<p>One of the challenges for computers is that humans have a surprising amount of ``hardware'' for collecting and deciphering visual data.  Most people probably haven't spent much time thinking about the challenges involved in sight.  For instance, consider what is involved in reading a book.  While the eye is capturing the visual input, the brain needs to understand what data represents the book, and what is just background data to be ignored.  One of the ways to do this is through depth perception, and the body has several reinforcing systems to help with this:</p>
+
+<ul>
+<li>Eye muscles that can determine distance based on how much effort is exerted to bend the eye's lens.</li>
+<li>Stereo vision that detects slightly different pictures of the same scene, as seen by each eye.  Similar pictures mean the object is far away, while different pictures mean the object is close.</li>
+<li>The slight motion of the body and head, which creates the parallax effect. This is the effect where the position of an object appears to move when viewed from different positions.  Since this difference is greater when the object is nearby, and smaller when the object is further away, the parallax effect helps estimate the distance to an object.</li>
+</ul>
+
+<p>Once the brain has focused on the book, the next step is to process the marks on the page into something useful.  The brain's advanced pattern recognition system has been taught which of the black marks on this page represent letters, and how the letters group together to form words.  While certain elements of reading are the product of education and training, such as learning the alphabet, the brain's pattern matching is also able to map words written in +several+ _different_ *fonts* back to that original alphabet (Wingding fonts not withstanding).</p>
+
+<p>Take the above challenges of reading, and then multiply them with the constant stream of information through time, with each moment possibly including various changes in the data.  Hold the book at a slightly different angle (or tip the e-reader a little bit).  Hold it closer or further away.  Turn a page.  Is it still the same book?  These are all challenges that are unconsciously solved by the brain.  In fact, one of the first tests given to babies is whether their eyes can track objects.  A newborn baby already has a basic ability to track an object, but computers struggle with the same task.</p>
+
+<p>That said, there are quite a few things that computers can do better than humans:</p>
+<ul>
+<li>Computers can look at the same thing for hours and hours.  They don't get tired and they can't get bored.</li>
+<li>Computers can quantify image data in a way that humans cannot.  For example, computers can measure dimensions of objects very precisely, and look for angles and distances between features in an image.</li>
+<li>Computers can see places in a picture where the pixels next to each other have very different colors.  These places are called "edges", and computers can tell exactly where edges are, and quantitatively measure how strong they are.</li>
+<li>Computers can see places where adjacent pixels share a similar color, and give provide measurements on shapes and sizes.  These are often called "connected components", or more colloquially, "blobs".</li>
+<li>Computers can compare two images and see very precisely the difference between those two images.  Even if something is moving imperceptibly over hours--a computer can use image differences to measure how much it changes.</li>
+</ul>
+
+<p>Part of the practice of computer vision is finding places where the computer's eye can be used in a way that would be difficult or impractical for humans.  One of the goals of this book is show how computers can be used in these cases.</p>
+
+
+<h2>Easy vs. Hard Problems</h2>
+
+<p>In many ways, computer vision problems mirror the challenges of using computers in general: computers are good at computation, but weak at reasoning.  Computer vision will be effective with tasks such as measuring objects, identifying differences between objects, finding high contrast regions, etc.  These tasks all work best under conditions of stable lighting.  Computers struggle when working with irregular objects, classifying and reasoning about an object, tracking objects in motion, etc.  All of these problems are also compounded by poor lighting conditions or moving elements.</p>
+
+<p>For example, consider the image shown in <<fig_bolt>>.  What is it a picture of?  A human can easily identify it as a bolt.  For a computer to make that determination, it will require a large database with pictures of bolts, pictures of objects that are not bolts, and computation time to train the algorithm.  Even with that information, the computer may regularly fail, especially when dealing with similar objects, such as distinguishing between bolts and screws.</p>
+
+<img src="../images/book/ch01-bolt.png" alt="Hard: What is this?  Easy: How many threads per inch are there?" width="556" height="283" />
+<p style="font-style: italic; font-size: smaller; text-indent: 0; margin: 5px 0px 10px 0px;" >Hard: What is this?  Easy: How many threads per inch are there?</p>
+
+<p>However, a computer does very well at tasks such as counting the number of threads per inch.  Humans can count the threads as well, of course, but it will be a slow and error prone, not to mention headache inducing, process.  In contrast, it is relatively easy to write an algorithm that detects each thread.  Then it is a simple matter of computing the number of those threads in an inch.  This is an excellent example of a problem prone to error when performed by a human, but easily handled by a computer.</p>
+
+<p>Some other classic examples of easy vs. hard problems include:</p>
+
+<table width="650" border="1" cellpadding="5">
+	<tr>
+		<td><b>Easy</b></td><td><b>Hard</b></td>
+	</tr>
+	<tr>
+		<td>How wide is this plate?  Is it dirty?</td><td>Look at a picture of a random kitchen, and find all the dirty plates.</td>
+	</tr>
+	<tr>
+		<td>Did something change between these two images?</td><td>Track an object or person moving through a crowded room of other people</td>
+	</tr>
+	<tr>
+		<td>Measure the diameter of a wheel.  Check if it is bent.</td><td>Identify arbitrary parts on pictures of bicycles.</td>
+	</tr>
+	<tr>
+		<td>What color is this leaf?</td><td>What kind of leaf is this?</td>
+	</tr>
+</table>
+<p style="font-style: italic; font-size: smaller; text-indent: 0; margin: 5px 0px 10px 0px;" >Easy and hard problems for computer vision</p>
+
+<p>Furthermore, all of the challenges of computer vision are amplified in certain environments.  One of the biggest challenges is the lighting.  Low light often results in a lot of noise in an image, requiring various tricks to try to clean up the image.  In addition, some types of objects are difficult to analyze, such as shiny objects that may be reflecting other objects in their surroundings.</p>
+
+<p>Note that hard problems do not mean impossible problems.  The later chapters of this book look at some of the more advanced features of computer vision systems.  These chapters will discuss techniques such as finding, identifying, and tracking objects.</p>
+
+
+<h2>What is a Vision System?</h2>
+
+<p>A vision system is something that evaluates data from an image source (typically a camera), extracts data about those images, and does something with the results.  For example, consider a parking space monitor.  This system watches a parking space, and detects parking violations in which unauthorized cars attempt to park in the spot.  If the owner's car is in the space or if the space is empty, then there is no violation.  If someone else is parked in the space, then there is a problem.  <<fig_parking>> outlines the overall logic flow for such a system.</p>
+
+<img src="..//images/book/ch01-system.png" alt="Diagram of parking spot vision system" width="480" height="340" />
+<p style="font-style: italic; font-size: smaller; text-indent: 0; margin: 5px 0px 10px 0px;">Diagram of parking spot vision system</p>
+
+<p>Although conceptually simple, the problem presents many complexities.  Lighting conditions affect color detection and the ability to distinguish the car from the background.  The car may be parked in a slightly different place each time, hindering the detection of the car versus an empty spot.  The car might be dirty, making it hard to distinguish between the owner's car and a violator's.  The parking spot could be covered in snow, making it difficult to tell whether the parking spot is empty or not.</p> 
+
+<p>To help address the above complexities, a typical vision system has two general steps.  The first step is to filter the input to narrow the range of information to be processed.  The second step is to extract and process the key features of the image(s).</p>
+
+<h3>Filtering Input</h3>
+
+<p>The first step in the machine vision system is to filter the information available.  In the parking space example, the camera's viewing area most likely overlaps with other parking spaces.  A car in an adjacent parking space or a car in a space across the street is fine.  Yet if they appear in the image, the car detection algorithm could inadvertently pick up these cars, creating a false positive.  The obvious approach would be to crop the image to cover only the relevant parking space, though this book will also cover other approaches to filtering.</p>
+
+<p>In addition to the challenge of having too much information, images must also be filtered because they have too little information.  Humans work with a rich set of information, potentially detecting a car using multiple sensors of input to collect data and compare it against some sort of predefined car pattern.  Machine vision systems have limited input, typically from a 2D camera, and therefore must use inexact and potentially error-prone proxies.  This amplifies the potential for error.  To minimize errors, only the necessary information should be used.  For example, A brown spot in the parking space could represent a car, but it could also represent a paper bag blowing through the parking lot.  Filtering out small objects could resolve this, improving the performance of the system.</p>
+
+<p>Filtering plays another important role.  As camera quality improves and image sizes grow, machine vision systems become more computationally taxing.  If a system needs to operate in real time or near real time, the computing requirements of examining a large image may require unacceptable processing time.  However, filtering the information controls the amount of data involved, and decreases how much processing must be done.</p>
+
+<h3>Extracting Features and Information</h3>
+
+<p>Once the image is filtered by removing some of the noise and narrowing the field to just the region of interest, the next step is to extract the relevant features.  It is up to the programmer to translate those features into more applicable information.  In the car example, it is not possible to tell the system to look for a car.  Instead, the algorithm looks for car-like features, such as a rectangular license plate, or rough parameters on size, shape, color, etc.  Then the program assumes that something matching those features must be a car.</p> 
+
+<p>Some commonly used features covered in this book include:</p>
+
+<ul>
+<li>Color information: looking for changes in color to detect objects.</li>
+<li>Blob extraction: detecting adjacent, similarly colored pixels.</li>
+<li>Edges and corners: examining changes in brightness to identify the borders of objects.</li>
+<li>Pattern recognition and template matching: adding basic intelligence by matching features with the features of known objects.</li>
+</ul>
+
+<p>In certain domains, a vision system can go a step further.  For example, if it is known that the image contains a barcode or text, such as a license plate, the image could be passed to the appropriate barcode reader or Optical Character Recognition (OCR) algorithm.  A robust solution might be to read the car's license plate number, and then that number could be compared against a database of authorized cars. </p>
+
+            </div>
+        </div>
+        <div id="RightColumn">
+		<a href="http://shop.oreilly.com/product/0636920024057.do"><img src="../images/book/book_cover_med.jpg" width="280" height="368" border="0" alt="O'Reilly Book Cover" /></a>
+        </div>
+    </div>
+    <!-- END Content -->
+
+    <!-- BEGIN Footer -->
+    <div id="FooterWrapper">
+        <div id="Footer">
+            <ul id="FooterLeft">
+                <li>&copy; <a href="http://www.sightmachine.com">Sight Machine</a> 2012</li>
+            </ul>
+            <ul id="FooterRight">
+            </ul>
+        </div>
+    </div>
+    <!-- END Footer -->
+    
+    <!-- BEGIN Scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+    <script src="js/libs/jquery-ui-1.8.21.custom.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23517471-3']);
+  _gaq.push(['_setDomainName', 'simplecv.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- END Scripts -->
+</body>
+</html>
