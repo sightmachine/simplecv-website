@@ -11,6 +11,12 @@ FINISHED PAGES:
 /learn/examples/interacting-with-the-display.html
 /learn/examples/directory-of-images.html
 
+/docs/simplecv_package.html
+/docs/features_package.html
+/docs/machinelearnings_package.html
+/docs/segmentation_package.html
+
+
 IN PROGRESS:
 /contribute/faq.html
 
@@ -25,11 +31,7 @@ TBD:
 /learn/examples/image-math.html
 /learn/examples/display.html
 
-/docs/simplecv_package.html
-/docs/features_package.html
-/docs/machinelearnings_package.html
-/docs/segmentation_package.html
-
+/learn/tutorials/github_tickets.html
 
 USEFUL LINKS:
 http://www.youtube.com/user/SightMachine
