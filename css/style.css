@@ -167,6 +167,12 @@ p.single {
     padding-bottom:0;
 }
 
+p.faq {
+    font-size:14px;
+    padding-bottom:4px;
+}
+
+
 hr {
     height:1px;
     border:0;
@@ -390,6 +396,17 @@ hr {
     overflow:hidden;
     margin-right:20px;
     padding:10px 0 5px 10px;
+}
+
+#indent {
+    padding-left: 25px;
+}
+
+a.headerlink {
+    color: #616D7E;
+    font-size: 0.8em;
+    padding: 0 4px 0 4px;
+    text-decoration: none;
 }
 
 /* Accordion */
