@@ -205,9 +205,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'scv',
-      'username' => 'scv',
-      'password' => 'scv',
+      'database' => 'simplecv',
+      'username' => 'simplecv',
+      'password' => 'vcelpmis',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
