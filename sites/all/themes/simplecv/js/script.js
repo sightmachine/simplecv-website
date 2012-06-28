@@ -1,19 +1,21 @@
-/**
- * @file
- * A JavaScript file for the theme.
- *
- * In order for this JavaScript to be loaded on pages, see the instructions in
- * the README.txt next to this file.
- */
-
-// JavaScript should be made compatible with libraries other than jQuery by
-// wrapping it with an "anonymous closure". See:
-// - http://drupal.org/node/1446420
-// - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
-(function ($, Drupal, window, document, undefined) {
+(function($) {
+// BEGIN Before Page Ready
 
 
-// Place your code here.
 
+// END Before Page Ready
+// BEGIN After Page Ready
+$(document).ready(function() {
 
-})(jQuery, Drupal, this, this.document);
+    /* Init accordions */
+    $('#Accordion').accordion({
+        'collapsible':true
+    });
+
+    /* Fix right column borders */
+    $('.callout').first().css({'margin-top':0});
+    $('.callout').last().css({'margin-bottom':0, 'padding-bottom':0, 'border-bottom':0});
+
+});
+// END After Page Ready
+})(jQuery);

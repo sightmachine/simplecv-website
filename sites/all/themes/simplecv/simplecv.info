@@ -78,6 +78,9 @@ stylesheets[all][] = css/print.css
 ; Optionally add some JavaScripts to your theme.
 
 ;scripts[] = js/script.js
+scripts[] = js/libs/jquery-ui-1.8.21.custom.min.js
+scripts[] = js/plugins.js
+scripts[] = js/script.js
 
 
 
