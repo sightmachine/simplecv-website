@@ -101,20 +101,20 @@
         <div id="Header">
             <div id="HeaderTop">
                 <div id="Logo">
-                    <a href="/index.html"><img src="images/logo.gif" width="243" height="63" alt="SimpleCV"></a>
+                    <a href="/index.html"><img src="<?php print path_to_theme(); ?>/images/logo.gif" width="243" height="63" alt="SimpleCV"></a>
                 </div>
                 <ul id="Social">
                     <li>
-                        <a href="https://github.com/ingenuitas/simplecv"><img src="images/github_grey.gif" height="28" width="28" alt="GitHub"></a>
+                        <a href="https://github.com/ingenuitas/simplecv"><img src="<?php print path_to_theme(); ?>/images/github_grey.gif" height="28" width="28" alt="GitHub"></a>
                     </li>
                     <li>
-                        <a href="http://twitter.com/#!/Simple_CV"><img src="images/twitter_blue.gif" height="28" width="28" alt="Twitter"></a>
+                        <a href="http://twitter.com/#!/Simple_CV"><img src="<?php print path_to_theme(); ?>/images/twitter_blue.gif" height="28" width="28" alt="Twitter"></a>
                     </li>
                     <li>
-                        <a href="http://www.facebook.com/pages/SimpleCV/150136128401869"><img src="images/facebook_blue.gif" height="28" width="28" alt="Facebook"></a>
+                        <a href="http://www.facebook.com/pages/SimpleCV/150136128401869"><img src="<?php print path_to_theme(); ?>/images/facebook_blue.gif" height="28" width="28" alt="Facebook"></a>
                     </li>
                     <li>
-                        <a href="https://plus.google.com/115199279159361214026/posts"><img src="images/google_red.gif" height="28" width="28" alt="Google+"></a>
+                        <a href="https://plus.google.com/115199279159361214026/posts"><img src="<?php print path_to_theme(); ?>/images/google_red.gif" height="28" width="28" alt="Google+"></a>
                     </li>
                 </ul>
             </div>
@@ -161,7 +161,7 @@
 					</p>
 				</div>
 				<div class="accordion-content-right">
-					<a href="download/index.html"><img src="images/download-button.png" width="103" height="103" alt="download"></a>
+					<a href="download/index.html"><img src="<?php print path_to_theme(); ?>/images/download-button.png" width="103" height="103" alt="download"></a>
 					<h2><a href="download/index.html">Download</a></h2>
 					<p>Version 1.3</p>
 				</div>
@@ -193,7 +193,7 @@
             <ul id="CalloutList">
                 <li class="callout">
                     <div class="calloutLeft">
-                        <a href="/learn/"><img src="images/book.png" width="53" height="53" alt="Information"></a>
+                        <a href="/learn/"><img src="<?php print path_to_theme(); ?>/images/book.png" width="53" height="53" alt="Information"></a>
                         <p>Information</p>
                     </div>
                     <div class="calloutRight">
@@ -207,7 +207,7 @@
                 </li>
                 <li class="callout">
                     <div class="calloutLeft">
-                        <a href="/download/"><img src="images/download-small.png" width="53" height="53" alt="Download"></a>
+                        <a href="/download/"><img src="<?php print path_to_theme(); ?>/images/download-small.png" width="53" height="53" alt="Download"></a>
                     <p>Download</p>
                     </div>
                     <div class="calloutRight">
@@ -221,7 +221,7 @@
                 </li>
                 <li class="callout">
                     <div class="calloutLeft">
-                        <a href="/contribute/"><img src="images/people.png" width="53" height="53" alt="Contribute"></a>
+                        <a href="/contribute/"><img src="<?php print path_to_theme(); ?>/images/people.png" width="53" height="53" alt="Contribute"></a>
                     <p>Learn More</p>
                     </div>
                     <div class="calloutRight">
@@ -251,9 +251,6 @@
     <!-- BEGIN Scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-    <script src="js/libs/jquery-ui-1.8.21.custom.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
     <script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-23517471-3']);
@@ -268,9 +265,7 @@
     </script>
     <!-- END Scripts -->
 
-  <?php print $page_top; ?>
+
   <?php print $page; ?>
-  <?php print $page_bottom; ?>
-  test
 </body>
 </html>
