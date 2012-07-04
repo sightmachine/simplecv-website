@@ -224,3 +224,4 @@ function simplecv_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+

@@ -93,8 +93,6 @@
   <meta name="viewport" content="width=device-width">
   <meta name="robots" content="index, follow">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/libs/modernizr-2.5.0.min.js"></script>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
     <!-- BEGIN Header -->

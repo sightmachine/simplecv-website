@@ -82,6 +82,7 @@ stylesheets[all][] = css/style.css
 scripts[] = js/libs/jquery-ui-1.8.21.custom.min.js
 scripts[] = js/plugins.js
 scripts[] = js/script.js
+scripts[] = js/libs/modernizr-2.5.0.min.js
 
 
 
