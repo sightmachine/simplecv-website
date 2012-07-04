@@ -100,26 +100,27 @@
         <div id="Header">
             <div id="HeaderTop">
                 <div id="Logo">
-                    <a href="/index.html"><img src="<?php print path_to_theme(); ?>/images/logo.gif" width="243" height="63" alt="SimpleCV"></a>
+                    <a href="/index.html"><img src="<?php print base_path().drupal_get_path('theme', 'simplecv') . '/images/logo.gif'; ?>" width="243" height="63" alt="SimpleCV"></a>
                 </div>
                 <ul id="Social">
-                    <li>
-                        <a href="https://github.com/ingenuitas/simplecv"><img src="<?php print path_to_theme(); ?>/images/github_grey.gif" height="28" width="28" alt="GitHub"></a>
+									  <li>
+												
+                        <a href="https://github.com/ingenuitas/simplecv"><img src="<?php print base_path().drupal_get_path('theme', 'simplecv') . '/images/github_grey.gif'; ?>" height="28" width="28" alt="GitHub"></a>
                     </li>
                     <li>
-                        <a href="http://twitter.com/#!/Simple_CV"><img src="<?php print path_to_theme(); ?>/images/twitter_blue.gif" height="28" width="28" alt="Twitter"></a>
+                        <a href="http://twitter.com/#!/Simple_CV"><img src="<?php print base_path().drupal_get_path('theme', 'simplecv') . '/images/twitter_blue.gif'; ?>" height="28" width="28" alt="Twitter"></a>
                     </li>
                     <li>
-                        <a href="http://www.facebook.com/pages/SimpleCV/150136128401869"><img src="<?php print path_to_theme(); ?>/images/facebook_blue.gif" height="28" width="28" alt="Facebook"></a>
+                        <a href="http://www.facebook.com/pages/SimpleCV/150136128401869"><img src="<?php print base_path().drupal_get_path('theme', 'simplecv') . '/images/facebook_blue.gif'; ?>" height="28" width="28" alt="Facebook"></a>
                     </li>
                     <li>
-                        <a href="https://plus.google.com/115199279159361214026/posts"><img src="<?php print path_to_theme(); ?>/images/google_red.gif" height="28" width="28" alt="Google+"></a>
+                        <a href="https://plus.google.com/115199279159361214026/posts"><img src="<?php print base_path().drupal_get_path('theme', 'simplecv') . '/images/google_red.gif'; ?>" height="28" width="28" alt="Google+"></a>
                     </li>
                 </ul>
             </div>
             <ul id="Menu1" role="navigation" itemprop="breadcrumb">
                 <li class="homeButton">
-                    <a class="current" href="/index.html"></a>
+                    <a class="current" href="/"></a>
                 </li>
                 <li>
                     <a href="/learn/">LEARN</a>

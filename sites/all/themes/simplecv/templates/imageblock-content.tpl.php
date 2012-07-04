@@ -18,11 +18,10 @@
   <li class="callout">
     <div class="calloutLeft">
       <?php print $image; ?>
+      <?php print $title; ?>
     </div>
     <div class="calloutRight">
-      <p>
       <?php print $content; ?>
-      </p>
     </div>
   </li>
 </ul>

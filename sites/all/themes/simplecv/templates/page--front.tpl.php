@@ -17,7 +17,7 @@
 							</p>
 						</div>
 						<div class="accordion-content-right">
-							<a href="download/index.html"><img src="<?php print path_to_theme(); ?>/images/download-button.png" width="103" height="103" alt="download"></a>
+							<a href="download"><img src="<?php print path_to_theme(); ?>/images/download-button.png" width="103" height="103" alt="download"></a>
 							<h2><a href="download/index.html">Download</a></h2>
 							<p>Version 1.3</p>
 						</div>

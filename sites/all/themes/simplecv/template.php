@@ -225,3 +225,33 @@ function simplecv_preprocess_block(&$variables, $hook) {
 }
 // */
 
+function simplecv_preprocess_imageblock_content(&$variables) {
+  $variables['image'] = '';
+  $block = $variables['block'];
+  $data = !empty($block->data) ? unserialize($block->data) : array();
+  if (!empty($block->fid)) {
+    $file = file_load($block->fid);
+    if (!empty($file->fid)) {
+      $attributes = array('class' => array('imageblock-image'));
+      $variables['path'] = $file->uri;
+      $variables['attributes'] = $attributes;
+      if (module_exists('image') && !empty($data['imageblock_imagecache']) && $preset = image_style_load($data['imageblock_imagecache'])) {
+        $variables['image'] = theme('image_style', $variables + array('style_name' => $preset['name']));
+      }
+      else {
+        $variables['image'] = theme('image', $variables);
+      }
+      if (!empty($data['imageblock_link'])) {
+        $attributes = array('class' => array('imageblock-link'));
+        if (!empty($data['imageblock_link_target'])) {
+          $attributes['target'] = $data['imageblock_link_target'];
+        }
+        $variables['image'] = l($variables['image'], $data['imageblock_link'], array('html' => TRUE, 'attributes' => $attributes));
+      }
+    }
+  }
+  $block_num = $variables['id'];
+  $blocker = block_load('imageblock', $block_num);
+  $variables['title'] = $blocker->title;
+  $variables['content'] = check_markup($block->body, $block->format, '', TRUE);
+}
