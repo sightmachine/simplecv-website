@@ -118,24 +118,44 @@
                     </li>
                 </ul>
             </div>
+		<?php
+			$home_nav_class = NULL;
+			$learn_nav_class = NULL;
+			$docs_nav_class = NULL;
+			$contribute_nav_class = NULL;
+			$news_nav_class = NULL;
+			$download_nav_class = NULL;
+
+			$url_array = parse_url($_SERVER['REQUEST_URI']);
+			$url_path = $url_array['path'];
+
+			if(preg_match("/^\/learn\//",$url_path)) { $learn_nav_class = 'class="current" '; }		
+			elseif(preg_match("/^\/docs\//",$url_path)) { $docs_nav_class = 'class="current" '; }		
+			elseif(preg_match("/^\/contribute\//",$url_path)) { $contribute_nav_class = 'class="current" '; }		
+			elseif(preg_match("/^\/news\//",$url_path)) { $news_nav_class = 'class="current" '; }		
+			elseif(preg_match("/^\/download\//",$url_path)) { $download_nav_class = 'class="current" '; }		
+			elseif(preg_match("/^\/$/",$url_path)) { $home_nav_class = 'class="current" '; }
+
+		?>
             <ul id="Menu1" role="navigation" itemprop="breadcrumb">
+
                 <li class="homeButton">
-                    <a class="current" href="/"></a>
+                    <a <?php print $home_nav_class; ?>href="/"></a>
                 </li>
                 <li>
-                    <a href="/learn/">LEARN</a>
+                    <a <?php print $learn_nav_class; ?>href="/learn/">LEARN</a>
                 </li>
                 <li>
-                    <a href="/docs/">DOCUMENTATION</a>
+                    <a <?php print $docs_nav_class; ?>href="/docs/">DOCUMENTATION</a>
                 </li>
                 <li>
-                    <a href="/contribute/">CONTRIBUTE</a>
+                    <a <?php print $contribute_nav_class; ?>href="/contribute/">CONTRIBUTE</a>
                 </li>
                 <li>
-                    <a href="/news/">NEWS &amp; EVENTS</a>
+                    <a <?php print $news_nav_class; ?>href="/news/">NEWS &amp; EVENTS</a>
                 </li>
                 <li>
-                    <a href="/download/">DOWNLOAD</a>
+                    <a <?php print $download_nav_class; ?>href="/download/">DOWNLOAD</a>
                 </li>
             </ul>
         </div>

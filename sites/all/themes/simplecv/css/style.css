@@ -631,18 +631,67 @@ h2.videoHeading {
   width: 1000px;
 }
 
+.subsection-wrapper {
+    float: left;
+    width: 1000px;
+}
+
+#callOutHeader {
+    background-color: #d5d5d5;
+    width: 300px;
+    height: 30px;
+    padding: 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+}
+
+#callOutHeader h2 {
+    font-size: 18px;
+    font-weight:bold;
+}
+
+#callOutContent {
+    background-color: #f9f9f9;
+    width: 300px;
+    height: 250px;
+    padding: 15px 10px;
+    font-size: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+}
+
+#callOutContent p {
+    font-size: 12px;
+}
+
 #book-block {
-  width: 300px;
-  float: left;
+    float: left;
+    width: 300px;
+    padding: 10px 0;
+    margin: 20px 12px 20px 0;
+    display: inline;
+}
+
+img.bookCover {
+    float: left;
+    clear: left;
+    margin: 0 20px;
 }
 
 #tweet-block {
-  width: 300px;
-  float: left;
+    float: left;
+    width: 300px;
+    padding: 10px 0;
+    margin: 20px 0px 20px 25px;
+    display: inline;
 }
 
 #development-block {
-  width: 300px;
-  float: left;
+    float: right;
+    width: 320px;
+    padding: 10px 0;
+    margin: 20px 5px 20px 0;
+    display: inline;
 }
-

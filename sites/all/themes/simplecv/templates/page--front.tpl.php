@@ -92,30 +92,48 @@ There are a lot of different ways that you can get involved!
 					</li>
 			</ul>
 	</div>
-</div>
-<!-- END Content -->
 <div class="subsection-wrapper">
 	<div class="subsection-front">
 
 		<div id="book-block">
-			<h2>Our New Book</h2>
-			<img src="<?php print path_to_theme(); ?>/images/book.gif">
+			<div id="callOutHeader">
+				<h2>Our New Book!</h2>
+			</div>
+			<div id="callOutContent">	
+				<a href="http://shop.oreilly.com/product/0636920024057.do"><img src="<?php print path_to_theme(); ?>/images/book.gif" width="94" height="122" class="bookCover"></a>
+
+				<p><a href="http://shop.oreilly.com/product/0636920024057.do">Practical Computer Vision with SimpleCV</a></p>
+
+				<p>We wrote a book to help programmers learn how to build computer vision applications using SimpleCV.  The book introduces you to computer vision concepts, and includes example code for a variety of applications.  We walk through the code step-by-step, so you can understand exactly what's going on and why. If you're interested in learning SimpleCV, this is a great place to start!
+                                </p>
+                                <p><a href="http://shop.oreilly.com/product/0636920024057.do">Pre-Order Now ></a></p>
+			</div>
 		</div>
 		
 		<div id="tweet-block">
 			<?php	$block = block_load('views','tweets-block');?>
 			<?php	$block = module_invoke('views', 'block_view', 'tweets-block');?>
-			<h2><?php	print $block['subject'];?></h2>
-			<?php	print $block['content']['#markup'];?>
+                        <div id="callOutHeader">
+				<h2><?php	print $block['subject'];?></h2>
+			</div>
+                        <div id="callOutContent">
+				<?php	print $block['content']['#markup'];?>
+			</div>
 		</div>
 
 		<div id="development-block">
 			<?php $block = module_invoke('aggregator', 'block_view', 'feed-1'); ?>
-			<h2><?php print $block['subject']; ?></h2>
-			<?php print $block['content']; ?>
+			 <div id="callOutHeader">
+				<h2><?php print $block['subject']; ?></h2>
+			</div>
+			<div id="callOutContent">
+				<?php print $block['content']; ?>
+			</div>
 		</div>
 
 	</div>
 </div>
 
+</div>
+<!-- END Content -->
     
