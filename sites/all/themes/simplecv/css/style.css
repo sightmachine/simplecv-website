@@ -626,3 +626,23 @@ h2.videoHeading {
 }
 /* ============================== END FOOTER */
 
+
+.subsection-front {
+  width: 1000px;
+}
+
+#book-block {
+  width: 300px;
+  float: left;
+}
+
+#tweet-block {
+  width: 300px;
+  float: left;
+}
+
+#development-block {
+  width: 300px;
+  float: left;
+}
+

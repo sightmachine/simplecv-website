@@ -94,5 +94,28 @@ There are a lot of different ways that you can get involved!
 	</div>
 </div>
 <!-- END Content -->
+<div class="subsection-wrapper">
+	<div class="subsection-front">
+
+		<div id="book-block">
+			<h2>Our New Book</h2>
+			<img src="<?php print path_to_theme(); ?>/images/book.gif">
+		</div>
+		
+		<div id="tweet-block">
+			<?php	$block = block_load('views','tweets-block');?>
+			<?php	$block = module_invoke('views', 'block_view', 'tweets-block');?>
+			<h2><?php	print $block['subject'];?></h2>
+			<?php	print $block['content']['#markup'];?>
+		</div>
+
+		<div id="development-block">
+			<?php $block = module_invoke('aggregator', 'block_view', 'feed-1'); ?>
+			<h2><?php print $block['subject']; ?></h2>
+			<?php print $block['content']; ?>
+		</div>
+
+	</div>
+</div>
 
     

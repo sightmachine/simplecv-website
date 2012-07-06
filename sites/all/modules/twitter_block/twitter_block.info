@@ -1,0 +1,15 @@
+name = Twitter Block
+description = "Provides configurable blocks for a Twitter feed."
+core = 7.x
+
+files[] = twitter_block.class.php
+files[] = tests/twitter_block.test
+
+stylesheets[all][] = twitter_block.css
+
+; Information added by drupal.org packaging script on 2012-06-16
+version = "7.x-1.0+5-dev"
+core = "7.x"
+project = "twitter_block"
+datestamp = "1339807442"
+

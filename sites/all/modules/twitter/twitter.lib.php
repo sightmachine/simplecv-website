@@ -74,24 +74,6 @@ class Twitter {
   }
 
   /**
-   * Fetch the public timeline
-   *
-   * @see http://apiwiki.twitter.com/Twitter-REST-API-Method%3A-statuses-public_timeline
-   */
-  public function public_timeline() {
-    return $this->get_statuses('statuses/public_timeline');
-  }
-
-  /**
-   * Fetch the authenticated user's friends timeline
-   *
-   * @see http://apiwiki.twitter.com/Twitter-REST-API-Method%3A-statuses-friends_timeline
-   */
-  public function friends_timeline($params = array()) {
-    return $this->get_statuses('statuses/friends_timeline', $params, TRUE);
-  }
-
-  /**
    * Fetch a user's timeline
    *
    * @see http://apiwiki.twitter.com/Twitter-REST-API-Method%3A-statuses-user_timeline
@@ -103,7 +85,6 @@ class Twitter {
     else {
       $params['screen_name'] = $id;
     }
-
     return $this->get_statuses('statuses/user_timeline', $params, $use_auth);
   }
 
@@ -252,7 +233,7 @@ class Twitter {
     if (is_null($format)) {
       $format = $this->format;
     }
-    $url =  'http://'. variable_get('twitter_api', TWITTER_API) .'/'. $path;
+    $url =  variable_get('twitter_api', TWITTER_API) .'/1/'. $path;
     if (!empty($format)) {
       $url .= '.'. $this->format;
     }
@@ -277,6 +258,27 @@ class TwitterOAuth extends Twitter {
     if (!empty($oauth_token) && !empty($oauth_token_secret)) {
       $this->token = new OAuthConsumer($oauth_token, $oauth_token_secret);
     }
+  }
+
+  /**
+   * Builds a full URL to perform an OAuth operation
+   *
+   * @param $path
+   *   string the path of the operation
+   * @param $format
+   *   string a valid format
+   * @return
+   *   string full URL
+   */
+  protected function create_url($path, $format = NULL) {
+    if (is_null($format)) {
+      $format = $this->format;
+    }
+    $url =  variable_get('twitter_api', TWITTER_API) .'/'. $path;
+    if (!empty($format)) {
+      $url .= '.'. $this->format;
+    }
+    return $url;
   }
 
   public function get_request_token() {
