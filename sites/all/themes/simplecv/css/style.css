@@ -167,12 +167,6 @@ p.single {
     padding-bottom:0;
 }
 
-p.faq {
-    font-size:14px;
-    padding-bottom:4px;
-}
-
-
 hr {
     height:1px;
     border:0;
@@ -535,6 +529,25 @@ div.ui-accordion-content a {
     padding:0;
     margin:0 0 25px 0;
 }
+#PageBodySingleColumn {
+    width:1000px;
+    padding:0;
+    margin:0 0 25px 0;
+}
+
+#PageBodySingleColumn ol li {
+    padding:0 0 20px 0;
+    font-size: 14px;
+}
+
+#PageBodySingleColumn ul li {
+    font-size: 14px;
+}
+#PageBodySingleColumn h4 {
+    padding: 15px 0 0 0;
+    font-size: 1em;
+    font-weight: bold;
+}
 
 #PageBody ul {
     margin:0 0 10px 20px;
@@ -694,4 +707,52 @@ img.bookCover {
     padding: 10px 0;
     margin: 20px 5px 20px 0;
     display: inline;
+}
+
+.view h2 {
+  display: block;
+  font-size: 1.5em;
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #D5D5D5;
+  width: 662px;
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #CCC;
+  
+}
+
+.view h2 a {
+  font-color: #000000;
+  text-decoration: none;
+  color: #000000;
+  padding-left: 10px;
+}
+
+p.faq {
+    font-size:14px;
+    font-weight:bold;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+img.top_icon {
+    padding-left:3px;
+    width:14px;
+    height:14px;
+    display: inline;
+    vertical-align: top;
+}
+
 }

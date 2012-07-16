@@ -27,7 +27,8 @@
  */
 ?>
 <?php if ($content): ?>
-  <section class="<?php print $classes; ?>">
+<ul id="CalloutList">
     <?php print $content; ?>
-  </section><!-- region__sidebar -->
+</ul>
+  <!-- region__sidebar -->
 <?php endif; ?>

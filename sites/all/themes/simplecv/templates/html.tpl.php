@@ -100,9 +100,12 @@
         <div id="Header">
             <div id="HeaderTop">
                 <div id="Logo">
-                    <a href="/index.html"><img src="<?php print base_path().drupal_get_path('theme', 'simplecv') . '/images/logo.gif'; ?>" width="243" height="63" alt="SimpleCV"></a>
+                    <a href="/"><img src="<?php print base_path().drupal_get_path('theme', 'simplecv') . '/images/logo.png'; ?>" width="243" height="63" alt="SimpleCV"></a>
                 </div>
                 <ul id="Social">
+		<li>
+		<a href="http://help.simplecv.org"><img src="<?php print base_path().drupal_get_path('theme','simplecv') . '/images/question.png';?>"</a>
+		</li>
 									  <li>
 												
                         <a href="https://github.com/ingenuitas/simplecv"><img src="<?php print base_path().drupal_get_path('theme', 'simplecv') . '/images/github_grey.gif'; ?>" height="28" width="28" alt="GitHub"></a>

@@ -17,9 +17,9 @@
 							</p>
 						</div>
 						<div class="accordion-content-right">
-							<a href="download"><img src="<?php print path_to_theme(); ?>/images/download-button.png" width="103" height="103" alt="download"></a>
-							<h2><a href="download/index.html">Download</a></h2>
-							<p>Version 1.3</p>
+							<a href="/download/"><img src="<?php print path_to_theme(); ?>/images/download-button.png" width="103" height="103" alt="download"></a>
+							<h2><a href="/download/">Download</a></h2>
+							<p>Version 1.2</p>
 						</div>
 					</div>
 					<h3><a href="#">More Information</a></h3>
@@ -58,7 +58,7 @@
 											<a href="/learn/">Getting Started</a>
 									</h3>
 									<p>
-Learn how to <a href="/learn/install_guide.html">install SimpleCV</a>, watch our <a href="/learn/videos.html">demos</a>, or browse through our <a href="/docs/">documentation</a>.  
+Learn how to <a href="https://github.com/ingenuitas/SimpleCV#installation">install SimpleCV</a>, watch our <a href="/learn/videos.html">demos</a>, or browse through our <a href="/docs/">documentation</a>.  
 									</p>
 							</div>
 					</li>
@@ -69,7 +69,7 @@ Learn how to <a href="/learn/install_guide.html">install SimpleCV</a>, watch our
 							</div>
 							<div class="calloutRight">
 									<h3 class="calloutTitle">
-	<a href="/download/">Download Version 1.3</a>
+	<a href="/download/">Download Version 1.2</a>
 									</h3>
 									<p>
 Download the <a href="/download/">latest release</a> – or you can get the code from our <a href="https://github.com/ingenuitas/simplecv">GitHub repository</a>.

@@ -1,0 +1,7 @@
+SimpleCV Package
+================
+
+.. toctree::
+   :maxdepth: 8
+
+   SimpleCV

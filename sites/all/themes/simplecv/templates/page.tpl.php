@@ -104,10 +104,9 @@
         ?>
 
         <?php if ($sidebar_first || $sidebar_second): ?>
-          <aside class="sidebars">
             <?php print $sidebar_first; ?>
             <?php print $sidebar_second; ?>
-          </aside><!-- /.sidebars -->
+          <!-- /.sidebars -->
         <?php endif; ?>
       </div>
     </div>

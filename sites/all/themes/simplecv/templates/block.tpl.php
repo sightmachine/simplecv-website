@@ -47,11 +47,8 @@
  * @see zen_process_block()
  */
 ?>
-<div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if($classes_array[1] != "block-imageblock"): ?>
-    <div class="block-header">
       <?php print $title;?>
-    </div>
   <?php endif; ?>
   <?php print $content; ?>
-</div><!-- /.block -->
+<!-- /.block -->

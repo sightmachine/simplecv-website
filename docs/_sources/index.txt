@@ -1,0 +1,46 @@
+SimpleCV's Online Documentation
+===============================
+
+This is the online documentation for all of the SimpleCV functions. If you are looking for help on how to install SimpleCV, there is an `installation guide`_ which can help. If you are just starting to program with SimpleCV, you can find `example code`_ and tutorials_ in the `Learn section`_ of this site.
+
+--------
+
+System Requirements:
+````````````````````
+
+The SimpleCV framework has compiled installers for Windows, Mac, and Ubuntu Linux, but it can also be used on any system that Python and OpenCV can be built on. When you install SimpleCV using one of the compiled installers, any missing dependencies will also be downloaded and installed. These dependencies include:
+
+- `Python 2.7`_
+- Python Setup Tools
+- Easy_install
+- `NumPy`_
+- `SciPy`_
+- `OpenCV`_
+
+--------
+
+License:
+````````
+
+SimpleCV is licensed under the BSD license. This means that you are free to modify, copy, and redistribute the software, as long as the copyright, conditions and disclaimer are present.
+
+--------
+
+Additional Resources:
+`````````````````````
+- `Installation Guide`_
+- `Example Code`_
+- Tutorials_
+- `The SimpleCV Wiki`_
+- `The SightMachine Blog`_
+
+.. _The SimpleCV Wiki: https://github.com/ingenuitas/SimpleCV/wiki/_pages
+.. _The SightMachine Blog: http://sightmachine.com
+.. _Python 2.7: http://www.python.org/
+.. _NumPy: http://numpy.scipy.org/
+.. _SciPy: http://www.scipy.org/
+.. _OpenCV: http://www.opencv.org/
+.. _installation guide: https://github.com/ingenuitas/SimpleCV#installation
+.. _example code: http://simplecv.org/learn/examples.html
+.. _tutorials: http://simplecv.org/learn/tutorials.html
+.. _Learn section: http://simplecv.org/learn/

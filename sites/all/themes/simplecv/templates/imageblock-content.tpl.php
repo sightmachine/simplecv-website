@@ -13,16 +13,12 @@
  * @see template_preprocess_imageblock_content()
  */
 ?>
-
-<ul id="CalloutList">
-  <li class="callout">
-    <div class="calloutLeft">
-      <?php print $image; ?>
-      <?php print $title; ?>
-    </div>
-    <div class="calloutRight">
-      <?php print $content; ?>
-    </div>
-  </li>
-</ul>
-
+	<li class="callout">
+		<div class="calloutLeft">
+			<?php print $image; ?>
+			<p><?php print $title; ?></p>
+		</div>
+		<div class="calloutRight">
+			<?php print $content; ?>
+		</div>
+	</li>
