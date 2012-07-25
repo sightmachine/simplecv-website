@@ -74,6 +74,7 @@
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+  <meta name="google-site-verification" content="-UMGrSm2BVIwUEQ_vZMmqhdAx8evItMMyNds-kXjotE" />
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts; ?>
@@ -111,7 +112,7 @@
                         <a href="https://github.com/ingenuitas/simplecv"><img src="<?php print base_path().drupal_get_path('theme', 'simplecv') . '/images/github_grey.gif'; ?>" height="28" width="28" alt="GitHub"></a>
                     </li>
                     <li>
-                        <a href="http://twitter.com/#!/Simple_CV"><img src="<?php print base_path().drupal_get_path('theme', 'simplecv') . '/images/twitter_blue.gif'; ?>" height="28" width="28" alt="Twitter"></a>
+                        <a href="http://twitter.com/Simple_CV"><img src="<?php print base_path().drupal_get_path('theme', 'simplecv') . '/images/twitter_blue.gif'; ?>" height="28" width="28" alt="Twitter"></a>
                     </li>
                     <li>
                         <a href="http://www.facebook.com/pages/SimpleCV/150136128401869"><img src="<?php print base_path().drupal_get_path('theme', 'simplecv') . '/images/facebook_blue.gif'; ?>" height="28" width="28" alt="Facebook"></a>
