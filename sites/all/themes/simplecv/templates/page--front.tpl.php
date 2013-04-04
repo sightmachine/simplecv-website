@@ -18,8 +18,8 @@
 						</div>
 						<div class="accordion-content-right">
 							<a href="/download/"><img src="<?php print path_to_theme(); ?>/images/download-button.png" width="103" height="103" alt="download"></a>
-							<h2><a href="/download/">Download</a></h2>
-							<p>Version 1.2</p>
+							<h2><a href="http://sourceforge.net/projects/simplecv/files/latest/download?source=files">Download</a></h2>
+							<p>Version 1.3</p>
 						</div>
 					</div>
 					<h3><a href="#">More Information</a></h3>
@@ -64,29 +64,29 @@ Learn how to <a href="https://github.com/ingenuitas/SimpleCV#installation">insta
 					</li>
 					<li class="callout">
 							<div class="calloutLeft">
-									<a href="/download/"><img src="<?php print path_to_theme(); ?>/images/download-small.png" width="53" height="53" alt="Download"></a>
+									<a href="http://sourceforge.net/projects/simplecv/files/latest/download?source=files"><img src="<?php print path_to_theme(); ?>/images/download-small.png" width="53" height="53" alt="Download"></a>
 							<p>Download</p>
 							</div>
 							<div class="calloutRight">
 									<h3 class="calloutTitle">
-	<a href="/download/">Download Version 1.2</a>
+	<a href="http://sourceforge.net/projects/simplecv/files/latest/download?source=files">Download Version 1.3</a>
 									</h3>
 									<p>
-Download the <a href="/download/">latest release</a> – or you can get the code from our <a href="https://github.com/ingenuitas/simplecv">GitHub repository</a>.
+Learn more on our <a href="/download/">download page</a> – or get the latest code from our <a href="https://github.com/ingenuitas/simplecv">GitHub repository</a>.
 									</p>
 							</div>
 					</li>
 					<li class="callout">
 							<div class="calloutLeft">
-									<a href="/contribute/"><img src="<?php print path_to_theme(); ?>/images/people.png" width="53" height="53" alt="Contribute"></a>
-							<p>Learn More</p>
+									<a href="/learn/supplemental_files.html"><img src="<?php print path_to_theme(); ?>/images/images_icon.png" width="53" height="53" alt="Sample Images"></a>
+							<p>Images</p>
 							</div>
 							<div class="calloutRight">
 									<h3 class="calloutTitle">
-											<a href="/contribute/">Contribute</a>
+											<a href="/learn/supplemental_files.html">Sample Images</a>
 									</h3>
 									<p>
-There are a lot of different ways that you can get involved!
+Looking for the sample images used in <a href="http://shop.oreilly.com/product/0636920024057.do">the book</a>? You can <a href="/learn/supplemental_files.html">download them here</a>!
 									</p>
 							</div>
 					</li>
@@ -106,7 +106,7 @@ There are a lot of different ways that you can get involved!
 
 				<p>We wrote a book to help programmers learn how to build computer vision applications using SimpleCV.  The book introduces you to computer vision concepts, and includes example code for a variety of applications.  We walk through the code step-by-step, so you can understand exactly what's going on and why. If you're interested in learning SimpleCV, this is a great place to start!
                                 </p>
-                                <p><a href="http://shop.oreilly.com/product/0636920024057.do">Pre-Order Now ></a></p>
+                                <p><a href="http://shop.oreilly.com/product/0636920024057.do">Order Now ></a></p>
 			</div>
 		</div>
 		
