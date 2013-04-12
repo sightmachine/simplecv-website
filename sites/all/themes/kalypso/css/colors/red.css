@@ -1,0 +1,75 @@
+/* Body and Content */
+a {
+  color: #cc000f;
+}
+
+a:hover {
+  color: #ff0415;
+  text-decoration: none;
+}
+#main_title {
+  background: #cc000f; 
+}
+
+.standout_text {
+  background-color: #cc000f; 
+}
+
+thead {
+  background-color: #cc000f; 
+}
+
+.view-popular-tags a:hover {
+  background-color: #cc000f; 
+}
+
+/* Panel */
+.panel_icon {
+  background: #cc000f; 	
+}
+
+/*Menu*/
+.menu ul {
+  border-top: 2px solid #cc000f !important;
+}
+
+#main-menu li a.active {
+	color: #cc000f;
+}
+
+.menu ul ul {
+	border-top: 2px solid #cc000f;
+}
+
+#main-menu li a:hover, #main-menu .menu ul li a:hover  {
+	color: #cc000f;
+}
+
+/*Portfolio*/
+.portfolio-item-first .mask {
+  background-color: rgba(204, 0, 15, 0.7);
+}
+
+/* Pricing Table */
+.pricehover:hover .price {
+  background:#cc000f; 
+}
+
+.pricehover:hover .price {
+  border-color: #cc000f;
+}
+
+/* Widgets */
+.popular_tags a:hover, .ad_block a:hover, .tabs a.active {
+  background: #cc000f;
+}
+
+/*Highlight*/
+#highlight {
+  background: #cc000f; 
+}
+
+/*Elastic Slider*/
+.ei-slider-thumbs li a {
+  background: #cc000f ;
+}

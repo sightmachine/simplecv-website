@@ -1,0 +1,36 @@
+.form-item  {margin-top: 8px !important; margin-left: 10px !important;}
+
+.form-type-textfield input {width: 40% !important;}
+
+.fieldset-legend, .options_header {width: 100%;}
+
+#edit-background-select {
+	color: transparent;
+	font-size: 30px;
+}
+
+label[for=edit-background-select-gplaypattern] {
+	background-image: url('../images/backgrounds/gplaypattern.png');
+}
+
+label[for=edit-background-select-cream-dust] {
+	background-image: url('../images/backgrounds/cream_dust.png');
+}
+
+label[for=edit-background-select-grey] {
+	background-image: url('../images/backgrounds/grey.png');
+}
+
+label[for=edit-background-select-noisy-grid] {
+	background-image: url('../images/backgrounds/noisy_grid.png');
+}
+
+
+
+.form-wrapper {min-height: 20px;}
+
+.fieldset-legend {cursor: pointer;}
+
+.plus {background-image: url('../images/plus.png');  background-repeat: no-repeat; height: 25px; float: right; width: 25px; margin-top: 8px; margin-right: 25px;}
+.minus {background-image: url('../images/minus.png');  background-repeat: no-repeat; height: 25px; float: right; width: 25px; margin-top: 8px; margin-right: 25px;}
+

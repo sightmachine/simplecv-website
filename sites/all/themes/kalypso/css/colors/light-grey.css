@@ -1,0 +1,76 @@
+/* Body and Content */
+a {
+  color: #a0a0a0;
+}
+
+a:hover {
+  color: #c4c4c4;
+  text-decoration: none;
+}
+
+#main_title {
+  background: #a0a0a0; 
+}
+
+.standout_text {
+  background-color: #a0a0a0; 
+}
+
+thead {
+  background-color: #a0a0a0; 
+}
+
+.view-popular-tags a:hover {
+  background-color: #a0a0a0; 
+}
+
+/* Panel */
+.panel_icon {
+  background: #a0a0a0; 	
+}
+
+/*Menu*/
+.menu ul {
+  border-top: 2px solid #a0a0a0 !important;
+}
+
+#main-menu li a.active {
+	color: #a0a0a0;
+}
+
+.menu ul ul {
+	border-top: 2px solid #a0a0a0;
+}
+
+#main-menu li a:hover, #main-menu .menu ul li a:hover  {
+	color: #a0a0a0;
+}
+
+/*Portfolio*/
+.portfolio-item-first .mask {
+  background-color: rgba(196, 196, 196, 0.7);
+}
+
+/* Pricing Table */
+.pricehover:hover .price {
+  background:#c4c4c4; 
+}
+
+.pricehover:hover .price {
+  border-color: #c4c4c4;
+}
+
+/* Widgets */
+.popular_tags a:hover, .ad_block a:hover, .tabs a.active {
+  background: #c4c4c4;
+}
+
+/*Highlight*/
+#highlight {
+  background: #c4c4c4; 
+}
+
+/*Elastic Slider*/
+.ei-slider-thumbs li a {
+  background: #c4c4c4 ;
+}

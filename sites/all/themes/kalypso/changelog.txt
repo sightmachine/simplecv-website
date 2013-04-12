@@ -1,0 +1,33 @@
+===Kalypso Changelog===
+
+1.1 (02/27/13)
+  *Added full Drupal install with sample data to download files, updated docs.
+  *Updated to Bootstrap 2.3.
+  *Added example sub-theme (Odysseus) and sub-theme documentation.
+  *Added rel=author attribute to submitted by $username meta tag for better SEO.
+  *Updated Ad Block widget and documentation.
+  *Added Kalypso Custom Content module to download files.
+  *Other general fixes/improvements.
+
+1.0.4 (01/24/13)
+  *Updated to Bootstrap 2.2.2
+  *Fixed unidentified index bug in several templates related to $field_tag variable.
+  *Fixed RSS validation bug caused by whitespace in template files.
+
+1.0.3 (11/26/12)
+  *Fixed some bugs with iPad portrait layout.
+
+1.0.2 (11/16/12)
+	*Updated to Bootstrap 2.2.1
+	*Added admin links to page template.
+	*Added a new full-width block region below the slider.
+
+1.0.1 (11/09/12)
+  *Added CSS3 fade effects on link hovers.
+  *Fixed bug with color scheme option.
+  *Changed menu dropdown indicator arrow and tweaked markup.
+  *Adjusted Drupal forum styling.
+  *General fixes.
+
+1.0 (11/08/12)
+  *Initial release.
