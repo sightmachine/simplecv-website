@@ -67,18 +67,22 @@ while( disp.isNotDone() ):          <span style="color: #aaa;"># While we don't 
                   <div class="content left">
                     <img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/juniperbinary.png" />
                     <p>This image shows the SimpleCV threshold function. The threshold method sets each pixel in an image to black or white depending on its brightness.
+                    <a href="https://gist.github.com/kscottz/5372815" title="Binary Example" target="_blank">Example</a></p>
                   </div>
                 </div>
                 <div class="one_third">
                   <div class="content middle">
                     <img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/juniperedges.png" />
-                    <p>In this image we applied the SimpleCV edges method. This method sets edge pixels in the image to white.</p>
+                    <p>In this image we applied the SimpleCV edges method. This method sets edge pixels in the image to white.
+                    <a href="https://gist.github.com/kscottz/5372843" title="Edges Example" target="_blank">Example</a></p>
                   </div>
                 </div>
                 <div class="one_third right">
                   <div class="content right">
                     <img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/juniperfeats.png" />
-                    <p>Keypoints are visually unique areas of an image that are used for a variety of 3D reconstruction and image matching tasks. Finding keypoints in SimpleCV is super easy, just call the Image.findKeypoints method.</p>
+                    <p>Keypoints are visually unique areas of an image that are used for a variety of 3D reconstruction and image matching tasks. Finding keypoints in SimpleCV is super easy, just call the Image.findKeypoints method. 
+                    <a href="https://gist.github.com/kscottz/5372863" title="Features Example" target="_blank">Example</a></p>
+
                   </div>
                 </div>
               </div>

@@ -2,12 +2,10 @@
         <div class="span10">
         
           <div class="row">
-            <div class="span10">
               <div id="page_heading">
-              <h2 class="page_heading_text"><?php print $title; ?></h2>
-              <div id="breadcrumbs"><h3><?php if (theme_get_setting('breadcrumbs') == '1') {print $breadcrumb . $title; } ?></h3></div>
+              	<h2 class="page_heading_text"><?php print $title; ?></h2>
+              	<div id="breadcrumbs"><h3><?php if (theme_get_setting('breadcrumbs') == '1') {print $breadcrumb . $title; } ?></h3></div>
               </div>
-            </div>
           </div> 
 
           <hr />
@@ -52,8 +50,9 @@
 		        </div>
 		        <?php endif; ?>
 		      </div>
-        </div>    
+		      <hr />  
+        </div>  
       </div>
-    </div>  
+    </div>
   
 <?php kalypso_footer($page);?>

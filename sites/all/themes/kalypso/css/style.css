@@ -50,7 +50,7 @@ h3 {
 }
 
 .row .span10 {
-  margin-top: 22px;
+  margin-top: 42px;
 }
 
 .section.juniper div.one_third {
@@ -106,6 +106,10 @@ h3 {
 #main_content {
   margin-bottom: 40px;	
   min-height: 600px;
+}
+
+#main_content_wrap {
+  margin-top: 25px;
 }
 
 .author_page {
@@ -175,6 +179,13 @@ h3 {
 .standout_text {
   padding: 0px 5px; 
   color: #fff; 	
+}
+
+
+#page_heading {
+  padding: 0px;
+  margin: 25px 25px 0px;
+  text-align: left;
 }
 
 #page_heading {
