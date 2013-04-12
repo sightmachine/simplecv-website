@@ -490,7 +490,8 @@
     width: 662px;
   }
   .span10 {
-    width: 600px;
+    width: 580px;
+    padding-left: 20px;
   }
   .span9 {
     width: 538px;

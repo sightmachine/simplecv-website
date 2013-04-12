@@ -5,15 +5,13 @@
         
         <?php if (theme_get_setting('enable_highlight') == '1') { ?>
         <div class="row">
-          <div class="span10">
-            <div id="page_heading">
+          <div id="page_heading">
             <h2 class="page_heading_text"><?php echo theme_get_setting('highlight_text'); ?></h2>
-            </div>
           </div>
         </div> 
         <?php } ?>
 
-      <div class="separator"></div>
+      <hr />
 
       <div class="row">
           <div id="panels"> 
@@ -36,22 +34,21 @@
                 </div>
               </div>
 
-              <div class="separator"></div>
+              <hr />
 
               <div class="section">
                 <h3>Getting Started</h3>
                 <div class="two_thirds">
                   <div class="content left">
-<pre><code>from SimpleCV import *
-
-cam = Camera()
-disp = Display()
-
-while disp.isNotDone():
-  img = cam.getImage()
-  if disp.mouseLeft:
-    break
-  img.save(disp)</code></pre>
+<pre><code>from SimpleCV import Image, Display, Color, Camera
+cam = Camera(<span style="color: green;">0</span>)                     <span style="color: #aaa;"># Get the first camera</span>
+disp = Display((<span style="color: green;">640</span>,<span style="color: green;">480</span>))           <span style="color: #aaa;"># Create a 640x480 display</span>
+while( disp.isNotDone() ):          <span style="color: #aaa;"># While we don't exit the display</span>
+    img = cam.getImage().binarize() <span style="color: #aaa;"># Get an image and make it black and white</span>
+    <span style="color: #aaa;"># Draw the text "Hello World" at (40,40) in red.</span>
+    img.drawText(<span style="color: red;">"Hello World!"</span>,<span style="color: green;">40</span>,<span style="color: green;">40</span>,
+                 fontsize=<span style="color: green;">60</span>,color=Color.RED ) 
+    img.save(disp)                  <span style="color: #aaa;"># Save it to the screen</span></code></pre>
 
                   </div>
                 </div>
@@ -62,26 +59,26 @@ while disp.isNotDone():
                 </div>
               </div>
 
-              <div class="separator"></div>
+              <hr />
 
               <div class="section juniper">
-                <h3>Juniper the Example Goddess</h3>
-                <div class="one_third">
+                <h3>Examples</h3>
+                <div class="one_third left">
                   <div class="content left">
-                    <img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/juniloobinarize.png" />
-                    <p>This image shows the SimpleCV threshold function. The threshold method sets each pixel in an image to black or white depending on its brightness.</p>
+                    <img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/juniperbinary.png" />
+                    <p>This image shows the SimpleCV threshold function. The threshold method sets each pixel in an image to black or white depending on its brightness.
                   </div>
                 </div>
                 <div class="one_third">
-                  <div class="content">
-                    <img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/junilooedges.png" />
+                  <div class="content middle">
+                    <img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/juniperedges.png" />
                     <p>In this image we applied the SimpleCV edges method. This method sets edge pixels in the image to white.</p>
                   </div>
                 </div>
-                <div class="one_third">
+                <div class="one_third right">
                   <div class="content right">
-                    <img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/juniloopixelize.png" />
-                    <p>In this image we applied a pixelization operation. Pixelization can sometimes be helpful for looking for regions of a certain color. </p>
+                    <img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/juniperfeats.png" />
+                    <p>Keypoints are visually unique areas of an image that are used for a variety of 3D reconstruction and image matching tasks. Finding keypoints in SimpleCV is super easy, just call the Image.findKeypoints method.</p>
                   </div>
                 </div>
               </div>
@@ -90,7 +87,7 @@ while disp.isNotDone():
           </div>
       </div>
 
-      <div class="separator"></div>
+      <hr />
       
   
       </div>

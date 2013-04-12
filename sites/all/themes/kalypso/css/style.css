@@ -57,10 +57,32 @@ h3 {
   text-align: center;
 }
 
+.section.juniper div.one_third img {
+
+}
+
 .section.juniper div.one_third div.content p {
   margin: 3px auto;
-  width: 256px;
+  width: auto;
   text-align: left;
+}
+
+.section.juniper div.one_third.left { 
+  text-align: left;
+}
+.section.juniper div.one_third.right {
+  text-align: right;
+}
+
+.section.juniper div.one_third div.content.middle {
+  margin: 0 10px;
+}
+
+.section.juniper div.one_third div.content.left p {
+  margin: 3px 0px;
+}
+.section.juniper div.one_third div.content.right p {
+  float: right;
 }
 
 .separator {
@@ -157,7 +179,7 @@ h3 {
 
 #page_heading {
   padding: 0px;
-  margin: 25px 0px 0px;
+  margin: 25px 25px 0px;
   text-align: left;
 }
 
@@ -475,6 +497,11 @@ article hr {
   padding: 30px 0px;
   z-index: 999999;
   position: relative;
+}
+
+#footer .container .content {
+  margin-left: 200px;
+  text-align: center;
 }
 
 #footer h4 {
@@ -1441,10 +1468,14 @@ ul.menu {
 }			
 /*Responsive Styles*/
 
+@media screen and (max-width: 2500px) {
+
+}
+
 @media screen and (max-width: 1199px) { 
 
   #panels {
-    padding: 10px 40px;
+    padding: 10px 20px;
   }
   
   #portfolio {
@@ -1586,9 +1617,17 @@ ul.menu {
   #footer .span2, #footer .span3, #footer .span5 {
     margin-bottom: 15px;
   }
+
+  #footer .container .content {
+    margin-left: 0px !important;
+  }
 }
 @media screen and (max-width: 480px) { 
   .page_heading_text {
     font-size: 24px;
+  }
+
+  #footer .container .content {
+    margin-left: 0px !important;
   }
 }

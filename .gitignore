@@ -1,1 +1,4 @@
 sites/default/files/css/*
+private/backup_migrate/*
+sites/default/backups/*
+sites/simplecv.localhost
