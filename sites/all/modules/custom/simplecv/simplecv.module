@@ -39,9 +39,9 @@ function simplecv_menu() {
 function simplecv_display_banner ($path_alias) {
   $simplecv_banner_fields = variable_get('simplecv_banner_fields', array());
   if($simplecv_banner_fields) {
-    $banner_arguments = explode('\n', $simplecv_banner_fields['banner_arguments']);
+    $banner_arguments = preg_split('/$\R?^/m', $simplecv_banner_fields['banner_arguments']);
     foreach($banner_arguments as $argument) {
-      if($path_alias == $argument) {
+      if($path_alias == trim($argument)) {
         return '<div class="banner visible"><div class="container">' 
           . '<span class="text">' . $simplecv_banner_fields['banner_text'] . '</span>'
           . '<a href="' . $simplecv_banner_fields['banner_anchor_href'] . '" target="_blank">' 
