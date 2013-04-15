@@ -2,7 +2,11 @@
 function kalypso_header($page, $banner_html){
   global $root; 
 ?>
-	<?php print $banner_html; ?>
+	<?php 
+	if($banner_html) {
+		print $banner_html; 
+	}
+	?>
     <div class="container">
       <div class="row">  
         <div class="span2"> 
