@@ -1,8 +1,8 @@
 <?php 
-function kalypso_header($page){
+function kalypso_header($page, $banner_html){
   global $root; 
 ?>
-
+	<?php print $banner_html; ?>
     <div class="container">
       <div class="row">  
         <div class="span2"> 

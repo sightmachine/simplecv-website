@@ -1,0 +1,126 @@
+<?php
+/**
+ * @file
+ * Custom functionality for SimpleCV.org
+ */
+
+/**
+ * Implements hook_init().
+ */
+function simplecv_init() {
+  global $path;
+  global $path_alias;
+
+  $path = current_path();
+  $path_alias = drupal_lookup_path('alias',$path);
+}
+
+function simplecv_preprocess_page(&$variables) {
+  global $path_alias;
+  $html = simplecv_display_banner($path_alias);
+  $variables['banner_html'] = $html;
+}
+
+/**
+ * Implements hook_menu().
+ */
+function simplecv_menu() {
+  $items['admin/banner'] = array(
+    'title' => 'Site Banner',
+    'description' => 'Configure the site banner',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('simplecv_banner_configuration_form'),
+    'access arguments' => array('administer site configuration'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+function simplecv_display_banner ($path_alias) {
+  $simplecv_banner_fields = variable_get('simplecv_banner_fields', array());
+  if($simplecv_banner_fields) {
+    $banner_arguments = explode('\n', $simplecv_banner_fields['banner_arguments']);
+    foreach($banner_arguments as $argument) {
+      if($path_alias == $argument) {
+        return '<div class="banner visible"><div class="container">' 
+          . '<span class="text">' . $simplecv_banner_fields['banner_text'] . '</span>'
+          . '<a href="' . $simplecv_banner_fields['banner_anchor_href'] . '" target="_blank">' 
+            . $simplecv_banner_fields['banner_anchor_title'] . '</a>'
+          . '</div></div>';
+      }
+    }
+  }
+  return '<div class="banner invisible"></div>';
+}
+
+function simplecv_banner_configuration_form ($form, &$form_state) {
+  $form = array();
+  $form['#tree'] = TRUE;  // Prevent flattening the form values
+  $form['banner_fields'] = array(
+    '#title' => t('Banner'),
+    '#type'  => 'fieldset',
+    '#collapsible' => FALSE,
+  );
+  $banner_fields = variable_get('simplecv_banner_fields', array());
+
+  $form['banner_fields']['banner_text'] = array(
+    '#title'  => t('Text'),
+    '#type'  => 'textfield',
+    '#default_value' => (!empty($banner_fields['banner_text'])) 
+      ? $banner_fields['banner_text'] 
+      : '',
+  );
+  
+  $form['banner_fields']['banner_anchor_title'] = array(
+    '#title'  => t('Anchor Title'),
+    '#type' => 'textfield',
+    '#default_value' => (!empty($banner_fields['banner_anchor_title']))
+      ? $banner_fields['banner_anchor_title']
+      : '', 
+  );
+
+  $form['banner_fields']['banner_anchor_href'] = array(
+    '#title'  => t('Anchor HREF'),
+    '#type' => 'textfield',
+    '#default_value' => (!empty($banner_fields['banner_anchor_href']))
+      ? $banner_fields['banner_anchor_href']
+      : '', 
+  );
+
+  $form['banner_fields']['banner_arguments'] = array(
+    '#title'  => t('Arguments'),
+    '#description' => t('Use \'&lt;front&gt;\' for front page, or \'abc\', \'abc/def\', etc'),
+    '#type' => 'textarea',
+    '#default_value' => (!empty($banner_fields['banner_arguments']))
+      ? $banner_fields['banner_arguments']
+      : '', 
+  );
+
+  $form['banner_fields']['banner_submit'] = array(
+    '#title' => t('Submit'),
+    '#type' => 'submit',
+    '#value' => t('Save'),
+  );
+  return $form;
+}
+
+function simplecv_banner_configuration_form_submit($form, &$form_state) {
+  $banner_fields = variable_get('simplecv_banner_fields', array());
+  $banner_text = $form_state['values']['banner_fields']['banner_text'];
+  $banner_anchor_title = $form_state['values']['banner_fields']['banner_anchor_title'];
+  $banner_anchor_href = $form_state['values']['banner_fields']['banner_anchor_href'];
+  $banner_arguments = $form_state['values']['banner_fields']['banner_arguments'];
+  if($banner_text) {
+    $banner_fields['banner_text'] = $banner_text;
+  }
+  if($banner_anchor_title) {
+    $banner_fields['banner_anchor_title'] = $banner_anchor_title;
+  }
+  if($banner_anchor_href) {
+    $banner_fields['banner_anchor_href'] = $banner_anchor_href;
+  }
+  if($banner_arguments) {
+    $banner_fields['banner_arguments'] = $banner_arguments;
+  }
+  variable_set('simplecv_banner_fields', $banner_fields);
+}

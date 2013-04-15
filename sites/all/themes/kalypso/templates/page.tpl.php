@@ -1,4 +1,5 @@
-<?php kalypso_header($page);?>
+<?php 
+kalypso_header($page, $banner_html);?>
         <div class="span10">
         
           <div class="row">

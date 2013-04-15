@@ -1642,3 +1642,23 @@ ul.menu {
     margin-left: 0px !important;
   }
 }
+
+/** Banner CSS **/
+.banner {
+  width: 100%;
+  padding: 5px 0px 20px;
+  font-size: 24px;
+  background-color: #f2f2f2;
+}
+
+.banner .container {
+  padding: 15px 0px 0px;
+  text-align: center;
+}
+.banner .container a {
+  background-color: #0064A4;
+  color: #FFF;
+  width: auto;
+  padding: 5px 10px;
+  margin-left: 18px;
+}
