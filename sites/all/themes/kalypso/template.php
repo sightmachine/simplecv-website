@@ -237,11 +237,11 @@ function kalypso_preprocess_html(&$vars){
     '#weight' => 12,
   );
   
-  $background = array(
+  /*$background = array(
     '#type' => 'markup',
     '#markup' => "<style type='text/css'>body {background-image:url(".$root."/images/backgrounds/".theme_get_setting('background_select').".png);}</style> ",
     '#weight' => 13,
-  );
+  );*/
 
     
   if (theme_get_setting('seo_title') != "") {
