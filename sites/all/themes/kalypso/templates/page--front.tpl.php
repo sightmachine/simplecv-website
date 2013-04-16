@@ -1,4 +1,4 @@
-<?php kalypso_header($page); global $root; ?>
+<?php kalypso_header($page, $banner_html); global $root; ?>
 
       <!-- main span10 -->
       <div class="span10">

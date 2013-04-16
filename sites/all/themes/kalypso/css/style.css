@@ -1639,7 +1639,22 @@ ul.menu {
   }
 
   #footer .container .content {
-    margin-left: 0px !important;
+    margin-left: 0px;
+  }
+
+  .one_third, .two_thirds, .one_third .content, .two_thirds .content {
+    width: 100%;
+    float: left;
+    margin: 0px 0px;
+    padding: 0px;
+  }
+
+  .juniper .one_third {
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    margin-bottom: 0px;
   }
 }
 

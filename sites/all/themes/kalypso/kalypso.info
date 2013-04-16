@@ -59,7 +59,7 @@ settings[flickr_url] = 'http://flickr.com'
 settings[youtube_url] = 'http://youtube.com'
 
 settings[enable_highlight] = '1'
-settings[highlight_text] = 'SimpleCV - <span class="standout_text">Simple</span> Computer Vision using Python.'
+settings[highlight_text] = 'Computer Vision platform using Python.'
 
 settings[enable_slider] = '0'
 settings[slider_type] = 'default'
