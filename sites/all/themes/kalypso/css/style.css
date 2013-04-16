@@ -1653,8 +1653,16 @@ ul.menu {
     margin-bottom: 20px;
   }
 
+  .section.juniper div.one_third div.content.middle {
+    margin: 0px 0px;
+  }
+
   .main-content {
     margin-bottom: 0px;
+  }
+
+  .row .span10 {
+    margin-top: 0px;
   }
 }
 
