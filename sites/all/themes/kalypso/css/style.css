@@ -520,6 +520,26 @@ article hr {
   color: #F8F8F8;
 }
 
+#footer .content div {
+  margin: 0 auto 10px;
+  text-align: center;
+  width: 100%;
+  float: left;
+}
+
+#footer .links ul {
+  width: 290px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+#footer .links ul li {
+  float: left;
+  list-style: none;
+  margin: 0px 0px 0px 15px;
+}
+
 .footer_icons { 
   margin-top: -2px; 
   margin-left: -5px;  
@@ -1689,3 +1709,4 @@ ul.menu {
 .banner.invisible {
   display: none;
 }
+
