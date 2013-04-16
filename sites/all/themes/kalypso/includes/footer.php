@@ -30,7 +30,7 @@ function kalypso_footer($page){
               Copyright <a href="http://sightmachine.com">Sight Machine</a>, Inc, SimpleCV is a trademark of Sight Machine, Inc.
             </div>
             <div class="footer-logo">
-              <a href="href="http://sightmachine.com"><img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/smlogo.png"/></a>
+              <a href="http://sightmachine.com"><img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/smlogo.png"/></a>
             </div>
           </div>
         
