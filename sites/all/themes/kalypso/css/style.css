@@ -1697,6 +1697,7 @@ ul.menu {
 .banner .container {
   padding: 15px 0px 0px;
   text-align: center;
+  line-height: 150%;
 }
 .banner .container a {
   background-color: #0064A4;
