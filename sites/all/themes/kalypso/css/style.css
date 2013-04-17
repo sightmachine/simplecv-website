@@ -53,6 +53,10 @@ h3 {
   margin-top: 42px;
 }
 
+span.top {
+  float: right;
+}
+
 .section.juniper div.one_third {
   text-align: center;
 }
@@ -1710,4 +1714,3 @@ ul.menu {
 .banner.invisible {
   display: none;
 }
-
