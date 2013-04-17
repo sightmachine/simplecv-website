@@ -91,6 +91,14 @@ while <span style="color: maroon;">True</span>:
                 </div>
               </div>
 
+              <hr/>
+
+              <div class="section">
+                <div class="content left">
+                  <p>These are just a small number of things you can do with SimpleCV.  If you would like to learn more please refer to our <a href="http://examples.simplecv.org">tutorial</a>.  There are also many examples included in the SimpleCV directory under the examples folder which can also be downloaded from <a href="https://github.com/sightmachine/SimpleCV/tree/develop/SimpleCV/examples">here</a>.</p>
+                </div>
+              </dov>
+
             </div>
           </div>
       </div>
