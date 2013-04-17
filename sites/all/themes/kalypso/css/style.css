@@ -185,13 +185,6 @@ span.top {
   color: #fff; 	
 }
 
-
-#page_heading {
-  padding: 0px;
-  margin: 32px 25px 0px;
-  text-align: left;
-}
-
 #page_heading {
   padding: 0px;
   margin: 25px 25px 0px;
@@ -1409,7 +1402,9 @@ html.overlay-open #vert_nav  {
 	list-style: none; 
 }
 
-
+#main-menu-links .last.leaf a {
+  background: #DDD;
+}
 
 #main-menu li a:hover, #main-menu .menu ul li a:hover  {
 	background: transparent;
