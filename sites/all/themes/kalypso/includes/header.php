@@ -1,10 +1,16 @@
 <?php 
 function kalypso_header($page, $banner_html){
-  global $root; 
+  global $root, $path_alias; 
 ?>
 	<?php 
 	if($banner_html) {
 		print $banner_html; 
+	}
+	$p = explode("/", $path_alias);
+	if($p[0] == "learn" || $p[0] == "download") {
+	?>
+		<a href="https://github.com/sightmachine/SimpleCV"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+	<?php
 	}
 	?>
     <div class="container">
