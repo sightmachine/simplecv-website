@@ -28,8 +28,8 @@
                 <div class="one_third">
                   <div class="content right">
                     <h3>The Book</h3>
-                    <a href="http://shop.oreilly.com/product/0636920024057.do"><img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/thebook.png" /></a>
-                    <p>Need more help? Check out our book, <a href="http://shop.oreilly.com/product/0636920024057.do">"Practical Computer Vision with SimpleCV."</a></p>
+                    <a href="/book"><img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/thebook.png" /></a>
+                    <p>Need more help? Check out our book, <a href="/book">"Practical Computer Vision with SimpleCV."</a></p>
                   </div>
                 </div>
               </div>
@@ -58,7 +58,7 @@ while <span style="color: maroon;">True</span>:
                 </div>
                 <div class="one_third">
                   <div class="content right">
-                    <p>This example shows a "Hello World" program that uses SimpleCV. In this example we first connect to a USB web camera. We then capture images from the web cam, apply a binary threshold that turns our image black and white, and then draws some text. The program then prints the results to a display</p>
+                    <p>This example shows a "Hello World" program that uses SimpleCV. In this example we first connect to a USB web camera. We then capture images from the web cam, apply a binary threshold that turns our image black and white, and then draws some text. The program then prints the results to a display.</p>
                   </div>
                 </div>
               </div>
