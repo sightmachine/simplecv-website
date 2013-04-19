@@ -503,7 +503,7 @@ article hr {
 #footer {
   color: #797979; font-size: 12px; 
   padding: 30px 0px;
-  z-index: 999999;
+  z-index: 0;
   position: relative;
 }
 
@@ -1371,7 +1371,7 @@ span.accordion-head-image {
 
 #vert_nav {
   position: fixed; 
-  z-index: 2000; 
+  z-index: 99999; 
   margin-left: -20px;
 }
 
