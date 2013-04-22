@@ -97,7 +97,15 @@ while <span style="color: maroon;">True</span>:
                 <div class="content left">
                   <p>These are just a small number of things you can do with SimpleCV.  If you would like to learn more please refer to our <a href="http://tutorial.simplecv.org">tutorial</a>.  There are also many examples included in the SimpleCV directory under the examples folder which can also be downloaded from <a href="https://github.com/sightmachine/SimpleCV/tree/develop/SimpleCV/examples">here</a>.</p>
                 </div>
-              </dov>
+              </div>
+
+              <hr/>
+
+              <div class="section">
+                <div class="content left">
+                  <p>SimpleCV-JS is the port of SimpleCV to Javascript. Although early it it’s development it is still usable in it’s existing form and can be found at: <a href="http://demo.simplecv.org">http://demo.simplecv.org</a>, the code can be found: <a href="http://github.com/sightmachine/simplecv-js">http://github.com/sightmachine/simplecv-js</a></p>
+                </div>
+              </div>
 
             </div>
           </div>
