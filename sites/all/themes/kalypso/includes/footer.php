@@ -19,7 +19,7 @@ function kalypso_footer($page){
                   <a href="http://twitter.com/Simple_CV" target="_blank">Twitter</a>
                 </li>
                 <li>
-                  <a href="https://github.com/ingenuitas/simplecv" target="_blank">Github</a>
+                  <a href="https://github.com/sightmachine/simplecv" target="_blank">Github</a>
                 </li>
                 <li>
                   <a href="http://help.simplecv.org/" target="_blank">Help</a>

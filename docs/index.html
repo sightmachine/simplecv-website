@@ -5,164 +5,302 @@
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <title>SimpleCV: SimpleCV’s Online Documentation &mdash; SimpleCV 1.2 documentation</title>
+  <title>SimpleCV: Welcome to SimpleCV’s documentation! &mdash; SimpleCV 1.3 documentation</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="description" content="SimpleCV is an open source framework for building computer vision applications.">
   <meta name="viewport" content="width=device-width">
   <meta name="robots" content="index, follow">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/libs/modernizr-2.5.0.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="http://simplecv.org/sites/all/themes/kalypso/css/style.css" />
+  <script src="http://simplecv.org/sites/all/themes/simplecv/js/libs/modernizr-2.5.0.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="http://simplecv.org/sites/all/themes/kalypso/images/favicon.ico" type="image/vnd.microsoft.icon" />
+  <link rel="alternate" type="application/rss+xml" title="SimpleCV RSS" href="http://simplecv.org/rss.xml" />
+  <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" />
+  <link href="http://simplecv.org/sites/all/themes/kalypso/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="http://simplecv.org/sites/all/themes/kalypso/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="http://simplecv.org/sites/all/themes/kalypso/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="http://simplecv.org/sites/all/themes/kalypso/css/colors/light-blue.css" rel="stylesheet" type="text/css" media="screen" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <style type='text/css'>body {font-family:Arial, Helvetica, sans-serif !important;}</style> <style type='text/css'>h1 {font-size:36px;} h2 {font-size:30px;} h3 {font-size:24px;} h4 {font-size:18px;} h5 {font-size:14px;} h6 {font-size:12px;}</style> <title>SimpleCV</title>
+  <style type="text/css" media="all">@import url("http://simplecv.org/modules/system/system.base.css?mld338");
+  @import url("http://simplecv.org/modules/system/system.menus.css?mld338");
+  @import url("http://simplecv.org/modules/system/system.messages.css?mld338");
+  @import url("http://simplecv.org/modules/system/system.theme.css?mld338");</style>
+  <style type="text/css" media="all">@import url("http://simplecv.org/modules/comment/comment.css?mld338");
+  @import url("http://simplecv.org/modules/field/theme/field.css?mld338");
+  @import url("http://simplecv.org/modules/node/node.css?mld338");
+  @import url("http://simplecv.org/modules/search/search.css?mld338");
+  @import url("http://simplecv.org/modules/user/user.css?mld338");
+  @import url("http://simplecv.org/sites/all/modules/views/css/views.css?mld338");</style>
+  <style type="text/css" media="all">@import url("http://simplecv.org/sites/all/modules/ctools/css/ctools.css?mld338");</style>
+  <style type="text/css" media="all">@import url("http://simplecv.org/sites/all/themes/kalypso//css/sliders/elastic-image.css?mld338");
+  @import url("http://simplecv.org/sites/all/themes/kalypso//css/sliders/nivo.css?mld338");
+  @import url("http://simplecv.org/sites/all/themes/kalypso/css/ie.css?mld338");</style>
+  <script type="text/javascript" src="http://simplecv.org/misc/jquery.js?v=1.4.4"></script>
+  <script type="text/javascript" src="http://simplecv.org/misc/jquery.once.js?v=1.2"></script>
+  <script type="text/javascript" src="http://simplecv.org/misc/drupal.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/jquery.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/bootstrap/js/bootstrap.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/superfish.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/hoverIntent.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/jquery.eislideshow.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/jquery.nivo.slider.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/jquery.quote_rotator.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/jquery.tweet.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/mobile-map.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/mobile-menu.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/dynamik.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/jquery.ui.totop.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/easing.js?mld338"></script>
+  <style>
+  #subnav {
+  width: 100%;
+  background: #444;
+  border-radius: 3px;
+  padding: 5px 8px;
+  font-size: 13px;
+  color: #ddd;
+  box-sizing: border-box;
+  border: 1px solid #333;
+}
+
+#subnav ul li a, #subnav a {
+  color: white;
+}
+
+#subnav ul li {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+
+#subnav ul {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}</style>
+  <script type="text/javascript">
+  <!--//--><![CDATA[//><!--
+  jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"kalypso","theme_token":"7xm3dmkijFgQtC_Yd3H_BSYItYf7FpuQnhlXkEoRaac","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/themes\/kalypso\/js\/jquery.js":1,"sites\/all\/themes\/kalypso\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/themes\/kalypso\/js\/superfish.js":1,"sites\/all\/themes\/kalypso\/js\/hoverIntent.js":1,"sites\/all\/themes\/kalypso\/js\/jquery.eislideshow.js":1,"sites\/all\/themes\/kalypso\/js\/jquery.nivo.slider.js":1,"sites\/all\/themes\/kalypso\/js\/jquery.quote_rotator.js":1,"sites\/all\/themes\/kalypso\/js\/jquery.tweet.js":1,"sites\/all\/themes\/kalypso\/js\/mobile-map.js":1,"sites\/all\/themes\/kalypso\/js\/mobile-menu.js":1,"sites\/all\/themes\/kalypso\/js\/dynamik.js":1,"sites\/all\/themes\/kalypso\/js\/jquery.ui.totop.js":1,"sites\/all\/themes\/kalypso\/js\/easing.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/kalypso\/\/css\/sliders\/elastic-image.css":1,"sites\/all\/themes\/kalypso\/\/css\/sliders\/nivo.css":1,"sites\/all\/themes\/kalypso\/css\/ie.css":1}}});
+  //--><!]]>
+  </script>
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 </head>
-<body itemscope itemtype="http://schema.org/WebPage">
-    <!-- BEGIN Header -->
-    <div id="HeaderWrapper">
-        <div id="Header">
-            <div id="HeaderTop">
-                <div id="Logo">
-                    <a href="/"><img src="images/logo.gif" width="243" height="63" alt="SimpleCV"></a>
-                </div>
-                <ul id="Social">
-                    <li>
-                        <a href="https://github.com/ingenuitas/simplecv"><img src="images/github_grey.gif" height="28" width="28" alt="GitHub"></a>
-                    </li>
-                    <li>
-                        <a href="http://twitter.com/#!/Simple_CV"><img src="images/twitter_blue.gif" height="28" width="28" alt="Twitter"></a>
-                    </li>
-                    <li>
-                        <a href="http://www.facebook.com/pages/SimpleCV/150136128401869"><img src="images/facebook_blue.gif" height="28" width="28" alt="Facebook"></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/115199279159361214026/posts"><img src="images/google_red.gif" height="28" width="28" alt="Google+"></a>
-                    </li>
-                </ul>
-            </div>
-            <ul id="Menu1" role="navigation" itemprop="breadcrumb">
-                <li class="homeButton">
-                    <a href="/"></a>
-                </li>
-                <li>
-                    <a href="/learn/">LEARN</a>
-                </li>
-                <li>
-                    <a class="current" href="/docs/">DOCUMENTATION</a>
-                </li>
-                <li>
-                    <a href="/contribute/">CONTRIBUTE</a>
-                </li>
-                <li>
-                    <a href="/news/">NEWS &amp; EVENTS</a>
-                </li>
-                <li>
-                    <a href="/download/">DOWNLOAD</a>
-                </li>
-            </ul>
-        </div>
+<body itemscope itemtype="http://schema.org/WebPage" class="html front not-logged-in one-sidebar sidebar-first page-node">
+  <!-- BEGIN Header -->
+<div class="container">
+  <div class="row">
+    <div class="span2">
+      <div id="vert_nav">
+          <header>
+              <div id="main_title">
+                <a href="http://simplecv.org/"><img src="http://simplecv.org/sites/all/themes/kalypso/images/SM_logo_color.png" /></a>
+              </div>
+              <!-- begin menu -->
+                <div id="menu" class="row">
+                    <div id="main-menu" class="navigation">
+                        <div id="menu_wrap">
+                              <div id="main-menu-links">
+                                <ul class="menu">
+                                    <li class="first leaf"><a href="http://simplecv.org/download" title="">Install</a></li>
+                                    <li class="leaf"><a href="http://simplecv.org/learn" title="">Learn</a></li>
+                                    <li class="leaf"><a href="http://simplecv.org/contribute" title="">Contribute</a></li>
+                                    <li class="leaf"><a href="http://simplecv.org/docs" title="">API Docs</a></li>
+                                    <li class="leaf"><a href="http://help.simplecv.org/questions/" title="">Help Forum</a></li>
+                                    <li class="leaf"><a href="http://simplecv.org/news" title="">Blog</a></li>
+                                    <li class="last leaf"><a href="http://simplecv.org/book">The Book</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                <!-- end menu -->
+
+        </header>
+      </div>
     </div>
-    <!-- END Header -->
+    <!-- end main span2 -->
+
+      <!-- main span10 -->
+      <div class="span10">
+
+                <div class="row">
+        </div>
+
+      <div class="row">
+          <div id="panels">
+            <div class="main-content">
 
     <!-- BEGIN Content -->
-    <div id="Content" role="Main" itemprop="mainContentOfPage">	
-      <div id="stuff">
-	    <div id="subnav">
-			<a href="/docs/">Home</a> | 
-			Packages: 
-			<ul>
-				<li><a href="SimpleCV.html">SimpleCV</a></li> /
-				<li><a href="SimpleCV.Features.html">Features</a></li> /
-				<li><a href="SimpleCV.MachineLearning.html">MachineLearning</a></li> /
-				<li><a href="SimpleCV.Segmentation.html">Segmentation</a></li>
-			</ul>
-	    </div>
-        <div id="" class="document">
-            <div class="documentwrapper">
-              <div class="bodywrapper">
-				<div id="doc_body"></div>
-                <div class="body" style="display: none">
-                  
-  <div class="section" id="simplecv-s-online-documentation">
-<h1>SimpleCV&#8217;s Online Documentation<a class="headerlink" href="#simplecv-s-online-documentation" title="Permalink to this headline">¶</a></h1>
-<p>This is the online documentation for all of the SimpleCV functions. If you are looking for help on how to install SimpleCV, there is an <a class="reference external" href="https://github.com/ingenuitas/SimpleCV#installation">installation guide</a> which can help. If you are just starting to program with SimpleCV, you can find <a class="reference external" href="http://simplecv.org/learn/examples.html">example code</a> and <a class="reference external" href="http://simplecv.org/learn/tutorials.html">tutorials</a> in the <a class="reference external" href="http://simplecv.org/learn/">Learn section</a> of this site.</p>
-
-<p class="single">To access the documentation, click on the package name below or in the header bar above.  This will show you all of the classes and methods defined for that package, and then you just click on the item that you're interested in.</p>
-
-<ul class="simple">
-	<li><a href="SimpleCV.html">SimpleCV Package</a></li> 
-	<li><a href="SimpleCV.Features.html">Features Package</a></li> 
-	<li><a href="SimpleCV.MachineLearning.html">MachineLearning Package</a></li> 
-	<li><a href="SimpleCV.Segmentation.html">Segmentation Package</a></li>
+    <div id="Content" role="Main" itemprop="mainContentOfPage">
+      <div id="LeftColumnWide">
+        <div id="PageBody">
+            <div id="" class="document">
+                <div class="documentwrapper">
+                  <div class="bodywrapper">
+            <div id="doc_body"></div>
+                    <div class="body">
+                      
+  <div class="section" id="welcome-to-simplecv-s-documentation">
+<h1>Welcome to SimpleCV&#8217;s documentation!<a class="headerlink" href="#welcome-to-simplecv-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>This is the online documentation for all of the SimpleCV functions. If you are looking for help on how to install SimpleCV, there is an installation guide which can help (<a class="reference external" href="http://simplecv.org/download">http://simplecv.org/download</a>). If you are just starting to program with SimpleCV, you can find example code and tutorials in the Learn section of this site (<a class="reference external" href="http://tutorial.simplecv.org">http://tutorial.simplecv.org</a>).
+To access the documentation, click on the package name below or in the header bar above. This will show you all of the classes and methods defined for that package, and then you just click on the item that you&#8217;re interested in.</p>
+<p>Help within the Shell:</p>
+<div class="highlight-python"><pre># You can always get documentation from within the SimpleCV Shell as well by doing
+&gt;&gt;&gt; img = Image('simplecv')
+&gt;&gt;&gt; help(img)
+&gt;&gt;&gt; # you can do the same with
+&gt;&gt;&gt; img?
+# documentation will output here, press 'q' to quit documentation mode</pre>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="SimpleCV.html">SimpleCV Package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="SimpleCV.html#id1"><tt class="docutils literal"><span class="pre">SimpleCV</span></tt> Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleCV.html#module-SimpleCV.Camera"><tt class="docutils literal"><span class="pre">Camera</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleCV.html#module-SimpleCV.Color"><tt class="docutils literal"><span class="pre">Color</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleCV.html#module-SimpleCV.ColorModel"><tt class="docutils literal"><span class="pre">ColorModel</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleCV.html#module-SimpleCV.Display"><tt class="docutils literal"><span class="pre">Display</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleCV.html#module-SimpleCV.DrawingLayer"><tt class="docutils literal"><span class="pre">DrawingLayer</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleCV.html#module-SimpleCV.EXIF"><tt class="docutils literal"><span class="pre">EXIF</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleCV.html#module-SimpleCV.Font"><tt class="docutils literal"><span class="pre">Font</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleCV.html#module-SimpleCV.ImageClass"><tt class="docutils literal"><span class="pre">ImageClass</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleCV.html#module-SimpleCV.Stream"><tt class="docutils literal"><span class="pre">Stream</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleCV.html#module-SimpleCV.base"><tt class="docutils literal"><span class="pre">base</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleCV.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="SimpleCV.Features.html">Features Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Features.html#id1"><tt class="docutils literal"><span class="pre">Features</span></tt> Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Features.html#module-SimpleCV.Features.BOFFeatureExtractor"><tt class="docutils literal"><span class="pre">BOFFeatureExtractor</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Features.html#module-SimpleCV.Features.Blob"><tt class="docutils literal"><span class="pre">Blob</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Features.html#module-SimpleCV.Features.BlobMaker"><tt class="docutils literal"><span class="pre">BlobMaker</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Features.html#module-SimpleCV.Features.Detection"><tt class="docutils literal"><span class="pre">Detection</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Features.html#module-SimpleCV.Features.EdgeHistogramFeatureExtractor"><tt class="docutils literal"><span class="pre">EdgeHistogramFeatureExtractor</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Features.html#module-SimpleCV.Features.FeatureExtractorBase"><tt class="docutils literal"><span class="pre">FeatureExtractorBase</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Features.html#module-SimpleCV.Features.Features"><tt class="docutils literal"><span class="pre">Features</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Features.html#module-SimpleCV.Features.HaarCascade"><tt class="docutils literal"><span class="pre">HaarCascade</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Features.html#module-SimpleCV.Features.HaarLikeFeature"><tt class="docutils literal"><span class="pre">HaarLikeFeature</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Features.html#module-SimpleCV.Features.HaarLikeFeatureExtractor"><tt class="docutils literal"><span class="pre">HaarLikeFeatureExtractor</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Features.html#module-SimpleCV.Features.HueHistogramFeatureExtractor"><tt class="docutils literal"><span class="pre">HueHistogramFeatureExtractor</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Features.html#module-SimpleCV.Features.MorphologyFeatureExtractor"><tt class="docutils literal"><span class="pre">MorphologyFeatureExtractor</span></tt> Module</a></li>
 </ul>
-
-<hr class="docutils" />
-<div class="section" id="system-requirements">
-<h2>System Requirements:<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h2>
-<p class="single">The SimpleCV framework has compiled installers for Windows, Mac, and Ubuntu Linux, but it can also be used on any system that Python and OpenCV can be built on. When you install SimpleCV using one of the compiled installers, any missing dependencies will also be downloaded and installed. These dependencies include:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://www.python.org/">Python 2.7</a></li>
-<li>Python Setup Tools</li>
-<li>Easy_install</li>
-<li><a class="reference external" href="http://numpy.scipy.org/">NumPy</a></li>
-<li><a class="reference external" href="http://www.scipy.org/">SciPy</a></li>
-<li><a class="reference external" href="http://www.opencv.org/">OpenCV</a></li>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="SimpleCV.MachineLearning.html">MachineLearning Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.MachineLearning.html#id1"><tt class="docutils literal"><span class="pre">MachineLearning</span></tt> Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.MachineLearning.html#module-SimpleCV.MachineLearning.KNNClassifier"><tt class="docutils literal"><span class="pre">KNNClassifier</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.MachineLearning.html#module-SimpleCV.MachineLearning.NaiveBayesClassifier"><tt class="docutils literal"><span class="pre">NaiveBayesClassifier</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.MachineLearning.html#module-SimpleCV.MachineLearning.SVMClassifier"><tt class="docutils literal"><span class="pre">SVMClassifier</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.MachineLearning.html#module-SimpleCV.MachineLearning.TreeClassifier"><tt class="docutils literal"><span class="pre">TreeClassifier</span></tt> Module</a></li>
 </ul>
-</div>
-<hr class="docutils" />
-<div class="section" id="license">
-<h2>License:<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
-<p>SimpleCV is licensed under the BSD license. This means that you are free to modify, copy, and redistribute the software, as long as the copyright, conditions and disclaimer are present.</p>
-</div>
-<hr class="docutils" />
-<div class="section" id="additional-resources">
-<h2>Additional Resources:<a class="headerlink" href="#additional-resources" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><a class="reference external" href="https://github.com/ingenuitas/SimpleCV#installation">Installation Guide</a></li>
-<li><a class="reference external" href="http://simplecv.org/learn/examples.html">Example Code</a></li>
-<li><a class="reference external" href="http://simplecv.org/learn/tutorials.html">Tutorials</a></li>
-<li><a class="reference external" href="https://github.com/ingenuitas/SimpleCV/wiki/_pages">The SimpleCV Wiki</a></li>
-<li><a class="reference external" href="http://sightmachine.com">The SightMachine Blog</a></li>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="SimpleCV.Segmentation.html">Segmentation Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Segmentation.html#id1"><tt class="docutils literal"><span class="pre">Segmentation</span></tt> Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Segmentation.html#module-SimpleCV.Segmentation.ColorSegmentation"><tt class="docutils literal"><span class="pre">ColorSegmentation</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Segmentation.html#module-SimpleCV.Segmentation.DiffSegmentation"><tt class="docutils literal"><span class="pre">DiffSegmentation</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Segmentation.html#module-SimpleCV.Segmentation.RunningSegmentation"><tt class="docutils literal"><span class="pre">RunningSegmentation</span></tt> Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleCV.Segmentation.html#module-SimpleCV.Segmentation.SegmentationBase"><tt class="docutils literal"><span class="pre">SegmentationBase</span></tt> Module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
+<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+</ul>
+</div>
 
 
+                    </div>
+                  </div>
                 </div>
-              </div>
             </div>
         </div>
       </div>
     </div>
     <!-- END Content -->
 
-    <!-- BEGIN Footer -->
-    <div id="FooterWrapper">
-        <div id="Footer">
-            <ul id="FooterLeft">
-                <li>&copy; <a href="http://www.sightmachine.com">Sight Machine</a> 2012</li>
-            </ul>
-        </div>
-    </div>
-    <!-- END Footer -->
-    
-    <!-- BEGIN Scripts -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-    <script src="js/libs/jquery-ui-1.8.21.custom.min.js"></script>  
-    <script src="js/plugins.js"></script>
-    <script src="js/masonry.min.js"></script>
-    <script src="js/underscore-min.js"></script>
-    <script src="js/backbone-min.js"></script>   
-    <script src="js/script.js"></script>
-    <script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-23517471-3']);
-	  _gaq.push(['_setDomainName', 'simplecv.org']);
-	  _gaq.push(['_trackPageview']);
+            </div>
+          </div>
+      </div>
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
+      <hr />
+
+
+      </div>
+    </div>
+  </div>
+  <!-- end main body container -->
+
+
+<!-- begin footer -->
+    <div id="footer">
+      <div class="container">
+          <div class="content">
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="https://plus.google.com/115199279159361214026/posts" target="_blank">Google+</a>
+                </li>
+                <li>
+                  <a href="http://www.facebook.com/pages/SimpleCV/150136128401869" target="_blank">Facebook</a>
+                </li>
+                <li>
+                  <a href="http://twitter.com/Simple_CV" target="_blank">Twitter</a>
+                </li>
+                <li>
+                  <a href="https://github.com/ingenuitas/simplecv" target="_blank">Github</a>
+                </li>
+                <li>
+                  <a href="http://help.simplecv.org/" target="_blank">Help</a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright">
+              Copyright <a href="http://sightmachine.com">Sight Machine</a>, Inc, SimpleCV is a trademark of Sight Machine, Inc.
+            </div>
+            <div class="footer-logo">
+              <a href="http://sightmachine.com"><img src="http://simplecv.org/sites/all/themes/kalypso/images/smlogo.png"/></a>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <!-- end footer -->
+
+    <!-- BEGIN Scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="_static/js/libs/jquery-ui-1.8.21.custom.min.js"></script>
+    <script src="_static/js/plugins.js"></script>
+    <script src="_static/js/masonry.min.js"></script>
+    <script src="_static/js/underscore-min.js"></script>
+    <script src="_static/js/backbone-min.js"></script>
+    <script src="_static/js/script.js"></script>
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23517471-3']);
+    _gaq.push(['_setDomainName', 'simplecv.org']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
     </script>
     <!-- END Scripts -->
     <!--testy--->
