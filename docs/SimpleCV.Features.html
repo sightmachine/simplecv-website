@@ -5,81 +5,149 @@
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <title>SimpleCV: Features Package &mdash; SimpleCV 1.2 documentation</title>
+  <title>SimpleCV: Features Package &mdash; SimpleCV 1.3 documentation</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="description" content="SimpleCV is an open source framework for building computer vision applications.">
   <meta name="viewport" content="width=device-width">
   <meta name="robots" content="index, follow">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="js/libs/modernizr-2.5.0.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="http://simplecv.org/sites/all/themes/kalypso/css/style.css" />
+  <script src="http://simplecv.org/sites/all/themes/simplecv/js/libs/modernizr-2.5.0.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="http://simplecv.org/sites/all/themes/kalypso/images/favicon.ico" type="image/vnd.microsoft.icon" />
+  <link rel="alternate" type="application/rss+xml" title="SimpleCV RSS" href="http://simplecv.org/rss.xml" />
+  <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" />
+  <link href="http://simplecv.org/sites/all/themes/kalypso/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="http://simplecv.org/sites/all/themes/kalypso/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="http://simplecv.org/sites/all/themes/kalypso/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="http://simplecv.org/sites/all/themes/kalypso/css/colors/light-blue.css" rel="stylesheet" type="text/css" media="screen" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <style type='text/css'>body {font-family:Arial, Helvetica, sans-serif !important;}</style> <style type='text/css'>h1 {font-size:36px;} h2 {font-size:30px;} h3 {font-size:24px;} h4 {font-size:18px;} h5 {font-size:14px;} h6 {font-size:12px;}</style> <title>SimpleCV</title>
+  <style type="text/css" media="all">@import url("http://simplecv.org/modules/system/system.base.css?mld338");
+  @import url("http://simplecv.org/modules/system/system.menus.css?mld338");
+  @import url("http://simplecv.org/modules/system/system.messages.css?mld338");
+  @import url("http://simplecv.org/modules/system/system.theme.css?mld338");</style>
+  <style type="text/css" media="all">@import url("http://simplecv.org/modules/comment/comment.css?mld338");
+  @import url("http://simplecv.org/modules/field/theme/field.css?mld338");
+  @import url("http://simplecv.org/modules/node/node.css?mld338");
+  @import url("http://simplecv.org/modules/search/search.css?mld338");
+  @import url("http://simplecv.org/modules/user/user.css?mld338");
+  @import url("http://simplecv.org/sites/all/modules/views/css/views.css?mld338");</style>
+  <style type="text/css" media="all">@import url("http://simplecv.org/sites/all/modules/ctools/css/ctools.css?mld338");</style>
+  <style type="text/css" media="all">@import url("http://simplecv.org/sites/all/themes/kalypso//css/sliders/elastic-image.css?mld338");
+  @import url("http://simplecv.org/sites/all/themes/kalypso//css/sliders/nivo.css?mld338");
+  @import url("http://simplecv.org/sites/all/themes/kalypso/css/ie.css?mld338");</style>
+  <script type="text/javascript" src="http://simplecv.org/misc/jquery.js?v=1.4.4"></script>
+  <script type="text/javascript" src="http://simplecv.org/misc/jquery.once.js?v=1.2"></script>
+  <script type="text/javascript" src="http://simplecv.org/misc/drupal.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/jquery.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/bootstrap/js/bootstrap.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/superfish.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/hoverIntent.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/jquery.eislideshow.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/jquery.nivo.slider.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/jquery.quote_rotator.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/jquery.tweet.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/mobile-map.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/mobile-menu.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/dynamik.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/jquery.ui.totop.js?mld338"></script>
+  <script type="text/javascript" src="http://simplecv.org/sites/all/themes/kalypso/js/easing.js?mld338"></script>
+  <style>
+  #subnav {
+  width: 100%;
+  background: #444;
+  border-radius: 3px;
+  padding: 5px 8px;
+  font-size: 13px;
+  color: #ddd;
+  box-sizing: border-box;
+  border: 1px solid #333;
+}
+
+#subnav ul li a, #subnav a {
+  color: white;
+}
+
+#subnav ul li {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+
+#subnav ul {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}</style>
+  <script type="text/javascript">
+  <!--//--><![CDATA[//><!--
+  jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"kalypso","theme_token":"7xm3dmkijFgQtC_Yd3H_BSYItYf7FpuQnhlXkEoRaac","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/themes\/kalypso\/js\/jquery.js":1,"sites\/all\/themes\/kalypso\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/themes\/kalypso\/js\/superfish.js":1,"sites\/all\/themes\/kalypso\/js\/hoverIntent.js":1,"sites\/all\/themes\/kalypso\/js\/jquery.eislideshow.js":1,"sites\/all\/themes\/kalypso\/js\/jquery.nivo.slider.js":1,"sites\/all\/themes\/kalypso\/js\/jquery.quote_rotator.js":1,"sites\/all\/themes\/kalypso\/js\/jquery.tweet.js":1,"sites\/all\/themes\/kalypso\/js\/mobile-map.js":1,"sites\/all\/themes\/kalypso\/js\/mobile-menu.js":1,"sites\/all\/themes\/kalypso\/js\/dynamik.js":1,"sites\/all\/themes\/kalypso\/js\/jquery.ui.totop.js":1,"sites\/all\/themes\/kalypso\/js\/easing.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/kalypso\/\/css\/sliders\/elastic-image.css":1,"sites\/all\/themes\/kalypso\/\/css\/sliders\/nivo.css":1,"sites\/all\/themes\/kalypso\/css\/ie.css":1}}});
+  //--><!]]>
+  </script>
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 </head>
-<body itemscope itemtype="http://schema.org/WebPage">
-    <!-- BEGIN Header -->
-    <div id="HeaderWrapper">
-        <div id="Header">
-            <div id="HeaderTop">
-                <div id="Logo">
-                    <a href="/"><img src="images/logo.gif" width="243" height="63" alt="SimpleCV"></a>
-                </div>
-                <ul id="Social">
-                    <li>
-                        <a href="https://github.com/ingenuitas/simplecv"><img src="images/github_grey.gif" height="28" width="28" alt="GitHub"></a>
-                    </li>
-                    <li>
-                        <a href="http://twitter.com/#!/Simple_CV"><img src="images/twitter_blue.gif" height="28" width="28" alt="Twitter"></a>
-                    </li>
-                    <li>
-                        <a href="http://www.facebook.com/pages/SimpleCV/150136128401869"><img src="images/facebook_blue.gif" height="28" width="28" alt="Facebook"></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/115199279159361214026/posts"><img src="images/google_red.gif" height="28" width="28" alt="Google+"></a>
-                    </li>
-                </ul>
-            </div>
-            <ul id="Menu1" role="navigation" itemprop="breadcrumb">
-                <li class="homeButton">
-                    <a href="/"></a>
-                </li>
-                <li>
-                    <a href="/learn/">LEARN</a>
-                </li>
-                <li>
-                    <a class="current" href="/docs/">DOCUMENTATION</a>
-                </li>
-                <li>
-                    <a href="/contribute/">CONTRIBUTE</a>
-                </li>
-                <li>
-                    <a href="/news/">NEWS &amp; EVENTS</a>
-                </li>
-                <li>
-                    <a href="/download/">DOWNLOAD</a>
-                </li>
-            </ul>
-        </div>
+<body itemscope itemtype="http://schema.org/WebPage" class="html front not-logged-in one-sidebar sidebar-first page-node">
+  <!-- BEGIN Header -->
+<div class="container">
+  <div class="row">
+    <div class="span2">
+      <div id="vert_nav">
+          <header>
+              <div id="main_title">
+                <a href="http://simplecv.org/"><img src="http://simplecv.org/sites/all/themes/kalypso/images/SM_logo_color.png" /></a>
+              </div>
+              <!-- begin menu -->
+                <div id="menu" class="row">
+                    <div id="main-menu" class="navigation">
+                        <div id="menu_wrap">
+                              <div id="main-menu-links">
+                                <ul class="menu">
+                                    <li class="first leaf"><a href="http://simplecv.org/download" title="">Install</a></li>
+                                    <li class="leaf"><a href="http://simplecv.org/learn" title="">Learn</a></li>
+                                    <li class="leaf"><a href="http://simplecv.org/contribute" title="">Contribute</a></li>
+                                    <li class="leaf"><a href="http://simplecv.org/docs" title="">API Docs</a></li>
+                                    <li class="leaf"><a href="http://help.simplecv.org/questions/" title="">Help Forum</a></li>
+                                    <li class="leaf"><a href="http://simplecv.org/news" title="">Blog</a></li>
+                                    <li class="last leaf"><a href="http://simplecv.org/book">The Book</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                <!-- end menu -->
+
+        </header>
+      </div>
     </div>
-    <!-- END Header -->
+    <!-- end main span2 -->
+
+      <!-- main span10 -->
+      <div class="span10">
+
+                <div class="row">
+        </div>
+
+      <div class="row">
+          <div id="panels">
+            <div class="main-content">
 
     <!-- BEGIN Content -->
-    <div id="Content" role="Main" itemprop="mainContentOfPage">	
-      <div id="stuff">
-	    <div id="subnav">
-			<a href="/docs/">Home</a> | 
-			Packages: 
-			<ul>
-				<li><a href="SimpleCV.html">SimpleCV</a></li> /
-				<li><a href="SimpleCV.Features.html">Features</a></li> /
-				<li><a href="SimpleCV.MachineLearning.html">MachineLearning</a></li> /
-				<li><a href="SimpleCV.Segmentation.html">Segmentation</a></li>
-			</ul>
-	    </div>
-        <div id="" class="document">
-            <div class="documentwrapper">
-              <div class="bodywrapper">
-				<div id="doc_body"></div>
-                <div class="body" style="display: none">
-                  
+    <div id="Content" role="Main" itemprop="mainContentOfPage">
+      <div id="LeftColumnWide">
+        <div id="PageBody">
+            <div id="" class="document">
+                <div class="documentwrapper">
+                  <div class="bodywrapper">
+            <div id="doc_body"></div>
+                    <div class="body">
+                      
   <div class="section" id="features-package">
 <h1>Features Package<a class="headerlink" href="#features-package" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
@@ -123,7 +191,8 @@ with images in them. Each directory should be broken down by image class.</p>
 <li>imgdirs: This list of directories.</li>
 <li>patchsz: the dimensions of each codebook patch</li>
 <li>numcodes: the number of different patches in the codebook.</li>
-<li>imglayout: the shape of the resulting image in terms of patches</li>
+<li>imglayout: the shape of the resulting image in terms of patches - this must
+match the size of numcodes. I.e. numcodes == img_layout[0]*img_layout[1]</li>
 <li>padding:the pixel padding of each patch in the resulting image.</li>
 <li>imgs_per_dir: this method can use a specified number of images per directory</li>
 <li>verbose: print output</li>
@@ -275,8 +344,8 @@ pixels inside the contour.</p>
 <dt id="SimpleCV.Features.Blob.Blob.blobImage">
 <tt class="descname">blobImage</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.blobImage" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
-<p>This method automatically copies all of the image data around the blob and puts it in a new 
-image. The resulting image has the size of the blob, with the blob data copied in place. 
+<p>This method automatically copies all of the image data around the blob and puts it in a new
+image. The resulting image has the size of the blob, with the blob data copied in place.
 Where the blob is not present the background is black.</p>
 <p><strong>RETURNS</strong></p>
 <p>Returns just the image of the blob (cropped to fit).</p>
@@ -360,7 +429,7 @@ provide a width, an outline of the exterior and interior contours is drawn.</p>
 <li><em>layer</em> - A source layer, if layer is not None, the blob is rendered to the layer versus the source image.</li>
 </ul>
 <p><strong>RETURNS</strong></p>
-<p>This method either works on the original source image, or on the drawing layer provided. 
+<p>This method either works on the original source image, or on the drawing layer provided.
 The method does not modify object itself.</p>
 <p><strong>EXAMPLE</strong></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
@@ -389,7 +458,7 @@ The method does not modify object itself.</p>
 <li><em>layer</em> - If layer is not None, the blob is rendered to the layer versus the source image.</li>
 </ul>
 <p><strong>RETURNS</strong></p>
-<p>This method either works on the original source image, or on the drawing layer provided. 
+<p>This method either works on the original source image, or on the drawing layer provided.
 The method does not modify object itself.</p>
 <p><strong>EXAMPLE</strong></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
@@ -414,12 +483,12 @@ specified layer given by layer.</p>
 <li><em>layer</em> - if layer is not None, the blob is rendered to the layer versus the source image.</li>
 </ul>
 <p><strong>RETURNS</strong></p>
-<p>This method either works on the original source image, or on the drawing layer provided. 
+<p>This method either works on the original source image, or on the drawing layer provided.
 The method does not modify object itself.</p>
 <p><strong>EXAMPLE</strong></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">drawHoles</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">Color</span><span class="o">.</span><span class="n">GREEN</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">drawHull</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">Color</span><span class="o">.</span><span class="n">GREEN</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">img</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -437,7 +506,7 @@ want to examine just the pixels inside the contour.</p>
 <li><em>offset</em> -  The offset from the top left corner where we want to place the mask.</li>
 </ul>
 <p><strong>RETURNS</strong></p>
-<p>This method either works on the original source image, or on the drawing layer provided. 
+<p>This method either works on the original source image, or on the drawing layer provided.
 The method does not modify object itself.</p>
 <p><strong>EXAMPLE</strong></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
@@ -476,19 +545,19 @@ rotated rectangle that can enclose the blob.</p>
 
 <dl class="method">
 <dt id="SimpleCV.Features.Blob.Blob.drawOutline">
-<tt class="descname">drawOutline</tt><big>(</big><em>color=(0</em>, <em>128</em>, <em>0)</em>, <em>alpha=128</em>, <em>width=1</em>, <em>layer=None</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.drawOutline" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">drawOutline</tt><big>(</big><em>color=(0</em>, <em>128</em>, <em>0)</em>, <em>alpha=255</em>, <em>width=1</em>, <em>layer=None</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.drawOutline" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
 <p>Draw the blob contour the provided layer &#8211; if no layer is provided, draw
 to the source image.</p>
 <p><strong>PARAMETERS</strong></p>
 <ul class="simple">
 <li><em>color</em> - The color to render the blob.</li>
-<li><em>alpha</em> - The alpha value of the rendered blob.</li>
+<li><em>alpha</em> - The alpha value of the rendered poly.</li>
 <li><em>width</em> - The width of the drawn blob in pixels, -1 then the polygon is filled.</li>
 <li><em>layer</em> - if layer is not None, the blob is rendered to the layer versus the source image.</li>
 </ul>
 <p><strong>RETURNS</strong></p>
-<p>This method either works on the original source image, or on the drawing layer provided. 
+<p>This method either works on the original source image, or on the drawing layer provided.
 The method does not modify object itself.</p>
 <p><strong>EXAMPLE</strong></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
@@ -523,6 +592,70 @@ The method does not modify object itself.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="SimpleCV.Features.Blob.Blob.getEdgeImage">
+<tt class="descname">getEdgeImage</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.getEdgeImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the edge image for the outer contour (no inner holes)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Blob.Blob.getFullEdgeImage">
+<tt class="descname">getFullEdgeImage</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.getFullEdgeImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the edge image within the full size image.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Blob.Blob.getFullHullEdgeImage">
+<tt class="descname">getFullHullEdgeImage</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.getFullHullEdgeImage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Blob.Blob.getFullHullMask">
+<tt class="descname">getFullHullMask</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.getFullHullMask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the full sized image hull mask</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Blob.Blob.getFullHullMaskedImage">
+<tt class="descname">getFullHullMaskedImage</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.getFullHullMaskedImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the full size image with the masked to the blob</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Blob.Blob.getFullMask">
+<tt class="descname">getFullMask</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.getFullMask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the full sized image mask</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Blob.Blob.getFullMaskedImage">
+<tt class="descname">getFullMaskedImage</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.getFullMaskedImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the full size image with the masked to the blob</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Blob.Blob.getHullEdgeImage">
+<tt class="descname">getHullEdgeImage</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.getHullEdgeImage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Blob.Blob.getMatchMetric">
+<tt class="descname">getMatchMetric</tt><big>(</big><em>otherBlob</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.getMatchMetric" title="Permalink to this definition">¶</a></dt>
+<dd><p>This match metric is now deprecated.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Blob.Blob.getSCDescriptors">
+<tt class="descname">getSCDescriptors</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.getSCDescriptors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Blob.Blob.getShapeContext">
+<tt class="descname">getShapeContext</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.getShapeContext" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the shape context descriptors as a featureset. Corrently
+this is not used for recognition but we will perhaps use it soon.</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="SimpleCV.Features.Blob.Blob.hull">
 <tt class="descname">hull</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.hull" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
@@ -543,7 +676,7 @@ The method does not modify object itself.</p>
 <dd><p><strong>SUMMARY</strong></p>
 <p>The convex hull of a blob is the shape that would result if you snapped a rubber band around
 the blob. So if you had the letter &#8220;C&#8221; as your blob the convex hull would be the letter &#8220;O.&#8221;
-This method returns an image where the source image around the convex hull of the blob is copied 
+This method returns an image where the source image around the convex hull of the blob is copied
 ontop a black background.</p>
 <p><strong>RETURNS</strong>
 Returns a SimpleCV Image of the convex hull, cropped to fit.</p>
@@ -560,7 +693,7 @@ Returns a SimpleCV Image of the convex hull, cropped to fit.</p>
 <dd><p><strong>SUMMARY</strong></p>
 <p>The convex hull of a blob is the shape that would result if you snapped a rubber band around
 the blob. So if you had the letter &#8220;C&#8221; as your blob the convex hull would be the letter &#8220;O.&#8221;
-This method returns an image where the area of the convex hull is white and the rest of the image 
+This method returns an image where the area of the convex hull is white and the rest of the image
 is black. This image is cropped to the size of the blob.</p>
 <p><strong>RETURNS</strong></p>
 <p>Returns a binary SimpleCV image of the convex hull mask, cropped to fit the blob.</p>
@@ -608,7 +741,7 @@ it is rectangular.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">if</span><span class="p">(</span><span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">isRecangle</span><span class="p">()</span> <span class="p">):</span>
-<span class="gp">&gt;&gt;&gt; </span>    <span class="k">print</span> <span class="s">&quot;it is hip to be square.&quot;</span> 
+<span class="gp">&gt;&gt;&gt; </span>    <span class="k">print</span> <span class="s">&quot;it is hip to be square.&quot;</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -630,7 +763,7 @@ bounding rectangle&#8217;s aspect ratio is to 1.0.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">if</span><span class="p">(</span><span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">isSquare</span><span class="p">()</span> <span class="p">):</span>
-<span class="gp">&gt;&gt;&gt; </span>    <span class="k">print</span> <span class="s">&quot;it is hip to be square.&quot;</span> 
+<span class="gp">&gt;&gt;&gt; </span>    <span class="k">print</span> <span class="s">&quot;it is hip to be square.&quot;</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -793,7 +926,7 @@ a comparison factor &#8211; lower numbers are a closer match.</p>
 <dl class="method">
 <dt id="SimpleCV.Features.Blob.Blob.minRect">
 <tt class="descname">minRect</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.minRect" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the corners for the smallest rotated rectangle to enclose the blob. 
+<dd><p>Returns the corners for the smallest rotated rectangle to enclose the blob.
 The points are returned as a list of  (x,y) tupples.</p>
 </dd></dl>
 
@@ -906,7 +1039,7 @@ find the longest axis, and rotate the blob such that the axis is either vertical
 <li><em>axis</em> - if axis is zero we rotate the blobs to fit along the vertical axis, otherwise we use the horizontal axis.</li>
 </ul>
 <p><strong>RETURNS</strong></p>
-<p>This method works in place, i.e. it rotates the blob&#8217;s internal data structures. This method is experimetnal. 
+<p>This method works in place, i.e. it rotates the blob&#8217;s internal data structures. This method is experimetnal.
 Use at your own risk.</p>
 <p><strong>EXAMPLE</strong></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
@@ -922,7 +1055,7 @@ Use at your own risk.</p>
 <dt id="SimpleCV.Features.Blob.Blob.rotate">
 <tt class="descname">rotate</tt><big>(</big><em>angle</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.rotate" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
-<p>Rotate the blob given an  angle in degrees. If you use this method 
+<p>Rotate the blob given an  angle in degrees. If you use this method
 most of the blob elements will
 be rotated in place , however, this will &#8220;break&#8221; drawing back to the original image.
 To draw the blob create a new layer and draw to that layer. Positive rotations
@@ -946,6 +1079,12 @@ are counter clockwise.</p>
 <dt id="SimpleCV.Features.Blob.Blob.seq">
 <tt class="descname">seq</tt><em class="property"> = ''</em><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.seq" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Blob.Blob.showCorrespondence">
+<tt class="descname">showCorrespondence</tt><big>(</big><em>otherBlob</em>, <em>side='left'</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Blob.Blob.showCorrespondence" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is total beta - use at your own risk.</p>
+</dd></dl>
 
 </dd></dl>
 
@@ -981,7 +1120,7 @@ to get the blob images, and a color source image.
 binarymg- The binary image with the blobs.
 colorImg - The color image.
 minSize  - The minimum size of the blobs in pixels.
-maxSize  - The maximum blob size in pixels. 
+maxSize  - The maximum blob size in pixels.
 * <em>appx_level</em> - The blob approximation level - an integer for the maximum distance between the true edge and the approximation edge - lower numbers yield better approximation.</p>
 </dd></dl>
 
@@ -1012,6 +1151,13 @@ maxsize - Int</dd>
 </div>
 <div class="section" id="module-SimpleCV.Features.Detection">
 <span id="detection-module"></span><h2><tt class="xref py py-mod docutils literal"><span class="pre">Detection</span></tt> Module<a class="headerlink" href="#module-SimpleCV.Features.Detection" title="Permalink to this headline">¶</a></h2>
+<p>SimpleCV Detection Library</p>
+<p>This library includes classes for finding things in images</p>
+<p>FYI -
+All angles shalt be described in degrees with zero pointing east in the
+plane of the image with all positive rotations going counter-clockwise.
+Therefore a rotation from the x-axis to to the y-axis is positive and follows
+the right hand rule.</p>
 <dl class="class">
 <dt id="SimpleCV.Features.Detection.Barcode">
 <em class="property">class </em><tt class="descclassname">SimpleCV.Features.Detection.</tt><tt class="descname">Barcode</tt><big>(</big><em>i</em>, <em>zbsymbol</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.Barcode" title="Permalink to this definition">¶</a></dt>
@@ -1050,7 +1196,7 @@ maxsize - Int</dd>
 <tt class="descname">draw</tt><big>(</big><em>color=(255</em>, <em>0</em>, <em>0)</em>, <em>width=1</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.Barcode.draw" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
 <p>Draws the bounding area of the barcode, given by points.  Note that for
-QR codes, these points are the reference boxes, and so may &#8220;stray&#8221; into 
+QR codes, these points are the reference boxes, and so may &#8220;stray&#8221; into
 the actual code.</p>
 <p><strong>PARAMETERS</strong></p>
 <ul class="simple">
@@ -1626,7 +1772,7 @@ It is used to record a template of one image as it appears in another image</p>
 <dl class="method">
 <dt id="SimpleCV.Features.Detection.KeypointMatch.crop">
 <tt class="descname">crop</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.KeypointMatch.crop" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns a cropped image of the feature match. This cropped version is the 
+<dd><p>Returns a cropped image of the feature match. This cropped version is the
 axes aligned box masked to just include the image data of the minimum bounding
 rectangle.</p>
 </dd></dl>
@@ -1634,7 +1780,7 @@ rectangle.</p>
 <dl class="method">
 <dt id="SimpleCV.Features.Detection.KeypointMatch.draw">
 <tt class="descname">draw</tt><big>(</big><em>color=(0</em>, <em>128</em>, <em>0)</em>, <em>width=1</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.KeypointMatch.draw" title="Permalink to this definition">¶</a></dt>
-<dd><p>The default drawing operation is to draw the min bounding 
+<dd><p>The default drawing operation is to draw the min bounding
 rectangle in an image.</p>
 <p><strong>SUMMARY</strong></p>
 <p>Draw a small circle around the corner.  Color tuple is single parameter, default is Red.</p>
@@ -1651,7 +1797,7 @@ contour using the specified width.</li>
 <dl class="method">
 <dt id="SimpleCV.Features.Detection.KeypointMatch.drawRect">
 <tt class="descname">drawRect</tt><big>(</big><em>color=(0</em>, <em>128</em>, <em>0)</em>, <em>width=1</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.KeypointMatch.drawRect" title="Permalink to this definition">¶</a></dt>
-<dd><p>This method draws the axes alligned square box of the template 
+<dd><p>This method draws the axes alligned square box of the template
 match. This box holds the minimum bounding rectangle that describes
 the object. If the minimum bounding rectangle is axes aligned
 then the two bounding rectangles will match.</p>
@@ -1715,11 +1861,11 @@ of (x,y) tuples.</p>
 <dd><p>Bases: <a class="reference internal" href="#SimpleCV.Features.Features.Feature" title="SimpleCV.Features.Features.Feature"><tt class="xref py py-class docutils literal"><span class="pre">SimpleCV.Features.Features.Feature</span></tt></a></p>
 <p><strong>SUMMARY</strong></p>
 <p>The Line class is returned by the findLines function, but can also be initialized with any two points.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">l</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="n">Image</span><span class="p">,</span> <span class="n">point1</span><span class="p">,</span> <span class="n">point2</span><span class="p">)</span> 
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">l</span> <span class="o">=</span> <span class="n">Line</span><span class="p">(</span><span class="n">Image</span><span class="p">,</span> <span class="p">(</span><span class="n">point1</span><span class="p">,</span> <span class="n">point2</span><span class="p">))</span>
 </pre></div>
 </div>
 <p>Where point1 and point2 are (x,y) coordinate tuples.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">l</span><span class="o">.</span><span class="n">points</span> 
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">l</span><span class="o">.</span><span class="n">points</span>
 </pre></div>
 </div>
 <p>Returns a tuple of the two points</p>
@@ -1745,7 +1891,7 @@ Returns angle (theta) in radians, with 0 = horizontal, -pi/2 = vertical positive
 <dt id="SimpleCV.Features.Detection.Line.crop">
 <tt class="descname">crop</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.Line.crop" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
-<p>This function crops the source image to the location of the feature and returns 
+<p>This function crops the source image to the location of the feature and returns
 a new SimpleCV image.</p>
 <p><strong>RETURNS</strong></p>
 <p>A SimpleCV image that is cropped to the feature position and size.</p>
@@ -1756,6 +1902,16 @@ a new SimpleCV image.</p>
 </pre></div>
 </div>
 </dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.Line.cross">
+<tt class="descname">cross</tt><big>(</big><em>other</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.Line.cross" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.Line.dot">
+<tt class="descname">dot</tt><big>(</big><em>other</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.Line.dot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="SimpleCV.Features.Detection.Line.draw">
@@ -1773,6 +1929,77 @@ a new SimpleCV image.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="SimpleCV.Features.Detection.Line.extendToImageEdges">
+<tt class="descname">extendToImageEdges</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.Line.extendToImageEdges" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.Line.findIntersection">
+<tt class="descname">findIntersection</tt><big>(</big><em>line</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.Line.findIntersection" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Returns the interesction point of two lines.</p>
+<p><strong>RETURNS</strong></p>
+<p>A point tuple.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">l</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findLines</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">findIntersection</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>TODO: THIS NEEDS TO RETURN A TUPLE OF FLOATS</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.Line.getVector">
+<tt class="descname">getVector</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.Line.getVector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.Line.imgIntersections">
+<tt class="descname">imgIntersections</tt><big>(</big><em>img</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.Line.imgIntersections" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Returns a set of pixels where the line intersects with the binary image.</p>
+<p><strong>RETURNS</strong></p>
+<p>list of points.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">l</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findLines</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imgIntersections</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">binarize</span><span class="p">())</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.Line.isParallel">
+<tt class="descname">isParallel</tt><big>(</big><em>line</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.Line.isParallel" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Checks whether two lines are parallel or not.</p>
+<p><strong>RETURNS</strong></p>
+<p>Bool. True or False</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">l</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findLines</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isParallel</span><span class="p">(</span><span class="n">l</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.Line.isPerpendicular">
+<tt class="descname">isPerpendicular</tt><big>(</big><em>line</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.Line.isPerpendicular" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Checks whether two lines are perpendicular or not.</p>
+<p><strong>RETURNS</strong></p>
+<p>Bool. True or False</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">l</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findLines</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isPerpendicular</span><span class="p">(</span><span class="n">l</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
 <dt id="SimpleCV.Features.Detection.Line.length">
 <tt class="descname">length</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.Line.length" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
@@ -1784,7 +2011,7 @@ a new SimpleCV image.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lines</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findLines</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
 <span class="gp">&gt;&gt;&gt; </span>   <span class="k">if</span> <span class="n">l</span><span class="o">.</span><span class="n">length</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
-<span class="gp">&gt;&gt;&gt; </span>      <span class="k">print</span> <span class="s">&quot;OH MY! - WHAT A BIG LINE YOU HAVE!&quot;</span> 
+<span class="gp">&gt;&gt;&gt; </span>      <span class="k">print</span> <span class="s">&quot;OH MY! - WHAT A BIG LINE YOU HAVE!&quot;</span>
 <span class="gp">&gt;&gt;&gt; </span>      <span class="k">print</span> <span class="s">&quot;---I bet you say that to all the lines.&quot;</span>
 </pre></div>
 </div>
@@ -1890,7 +2117,7 @@ the longest vector.</li>
 <dt id="SimpleCV.Features.Detection.Motion.normalizeTo">
 <tt class="descname">normalizeTo</tt><big>(</big><em>max_mag</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.Motion.normalizeTo" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
-<p>This helper method normalizes the vector give an input magnitude. 
+<p>This helper method normalizes the vector give an input magnitude.
 This is helpful for keeping the flow vector inside the sample window.</p>
 </dd></dl>
 
@@ -1935,6 +2162,478 @@ This is helpful for keeping the flow vector inside the sample window.</p>
 </dd></dl>
 
 <dl class="class">
+<dt id="SimpleCV.Features.Detection.ROI">
+<em class="property">class </em><tt class="descclassname">SimpleCV.Features.Detection.</tt><tt class="descname">ROI</tt><big>(</big><em>x</em>, <em>y=None</em>, <em>w=None</em>, <em>h=None</em>, <em>image=None</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#SimpleCV.Features.Features.Feature" title="SimpleCV.Features.Features.Feature"><tt class="xref py py-class docutils literal"><span class="pre">SimpleCV.Features.Features.Feature</span></tt></a></p>
+<p>This class creates a region of interest that inherit from one
+or more features or no features at all.</p>
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.CoordTransformPts">
+<tt class="descname">CoordTransformPts</tt><big>(</big><em>pts</em>, <em>intype='ROI'</em>, <em>output='SRC'</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.CoordTransformPts" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Transform a set of (x,y) values from one reference frame to another.</p>
+<p>Options are:</p>
+<p>SRC - the coordinates of the source image.
+ROI - the coordinates of the ROI
+ROI_UNIT - unit coordinates in the frame of reference of the ROI
+SRC_UNIT - unit coordinates in the frame of reference of source image.</p>
+<p><strong>PARAMETERS</strong></p>
+<ul class="simple">
+<li><em>pts</em> - A list of (x,y) values or a single (x,y) value.</li>
+<li><em>intype</em> - A string indicating the input format of the data.</li>
+<li><em>output</em> - A string indicating the output format of the data.</li>
+</ul>
+<p><strong>RETURNS</strong></p>
+<p>A list of the transformed values.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&#39;lenna&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span> <span class="o">=</span> <span class="n">ROI</span><span class="p">(</span><span class="n">blobs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pts</span> <span class="o">=</span> <span class="n">roi</span><span class="o">.</span><span class="n">crop</span><span class="p">()</span><span class="o">.....</span> <span class="o">/</span><span class="n">find</span> <span class="n">some</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">crop</span> <span class="n">region</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pts</span> <span class="o">=</span> <span class="n">roi</span><span class="o">.</span><span class="n">CoordTransformPts</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c">#yt are no in the space of the original image.</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.CoordTransformX">
+<tt class="descname">CoordTransformX</tt><big>(</big><em>x</em>, <em>intype='ROI'</em>, <em>output='SRC'</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.CoordTransformX" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Transform a single or a set of x values from one reference frame to another.</p>
+<p>Options are:</p>
+<p>SRC - the coordinates of the source image.
+ROI - the coordinates of the ROI
+ROI_UNIT - unit coordinates in the frame of reference of the ROI
+SRC_UNIT - unit coordinates in the frame of reference of source image.</p>
+<p><strong>PARAMETERS</strong></p>
+<ul class="simple">
+<li><em>x</em> - A list of x values or a single x value.</li>
+<li><em>intype</em> - A string indicating the input format of the data.</li>
+<li><em>output</em> - A string indicating the output format of the data.</li>
+</ul>
+<p><strong>RETURNS</strong></p>
+<p>A list of the transformed values.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&#39;lenna&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span> <span class="o">=</span> <span class="n">ROI</span><span class="p">(</span><span class="n">blobs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">roi</span><span class="o">.</span><span class="n">crop</span><span class="p">()</span><span class="o">.....</span> <span class="o">/</span><span class="n">find</span> <span class="n">some</span> <span class="n">x</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">crop</span> <span class="n">region</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">xt</span> <span class="o">=</span> <span class="n">roi</span><span class="o">.</span><span class="n">CoordTransformX</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c">#xt are no in the space of the original image.</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.CoordTransformY">
+<tt class="descname">CoordTransformY</tt><big>(</big><em>y</em>, <em>intype='ROI'</em>, <em>output='SRC'</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.CoordTransformY" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Transform a single or a set of y values from one reference frame to another.</p>
+<p>Options are:</p>
+<p>SRC - the coordinates of the source image.
+ROI - the coordinates of the ROI
+ROI_UNIT - unit coordinates in the frame of reference of the ROI
+SRC_UNIT - unit coordinates in the frame of reference of source image.</p>
+<p><strong>PARAMETERS</strong></p>
+<ul class="simple">
+<li><em>y</em> - A list of y values or a single y value.</li>
+<li><em>intype</em> - A string indicating the input format of the data.</li>
+<li><em>output</em> - A string indicating the output format of the data.</li>
+</ul>
+<p><strong>RETURNS</strong></p>
+<p>A list of the transformed values.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&#39;lenna&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span> <span class="o">=</span> <span class="n">ROI</span><span class="p">(</span><span class="n">blobs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">roi</span><span class="o">.</span><span class="n">crop</span><span class="p">()</span><span class="o">.....</span> <span class="o">/</span><span class="n">find</span> <span class="n">some</span> <span class="n">y</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">crop</span> <span class="n">region</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">yt</span> <span class="o">=</span> <span class="n">roi</span><span class="o">.</span><span class="n">CoordTransformY</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c">#yt are no in the space of the original image.</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.crop">
+<tt class="descname">crop</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.crop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.draw">
+<tt class="descname">draw</tt><big>(</big><em>color=(0</em>, <em>128</em>, <em>0)</em>, <em>width=3</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>This method will draw the feature on the source image.</p>
+<p><strong>PARAMETERS</strong></p>
+<ul class="simple">
+<li><em>color</em> - The color as an RGB tuple to render the image.</li>
+</ul>
+<p><strong>RETURNS</strong></p>
+<p>Nothing.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;RedDog2.jpg&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">img</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="SimpleCV.Features.Detection.ROI.h">
+<tt class="descname">h</tt><em class="property"> = 0</em><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.h" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="SimpleCV.Features.Detection.ROI.image">
+<tt class="descname">image</tt><em class="property"> = None</em><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.image" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.meanColor">
+<tt class="descname">meanColor</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.meanColor" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Return the average color within the feature as a tuple.</p>
+<p><strong>RETURNS</strong></p>
+<p>An RGB color tuple.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;OWS.jpg&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">blobs</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>   <span class="k">if</span> <span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="n">meanColor</span><span class="p">()</span> <span class="o">==</span> <span class="n">color</span><span class="o">.</span><span class="n">WHITE</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>      <span class="k">print</span> <span class="s">&quot;Found a white thing&quot;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.merge">
+<tt class="descname">merge</tt><big>(</big><em>regions</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.merge" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Combine another region, or regions with this ROI. Everything must be
+in the source image coordinates. Regions can be a ROIs, [ROI], features,
+FeatureSets, or anything that can be cajoled into a region.</p>
+<p><strong>PARAMETERS</strong></p>
+<ul class="simple">
+<li><em>regions</em> - A region or list of regions. Regions are just about anything that has position.</li>
+</ul>
+<p><strong>RETURNS</strong></p>
+<p>Nothing, but modifies this region.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span> <span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="n">roi</span> <span class="o">=</span> <span class="n">ROI</span><span class="p">(</span><span class="n">blob</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="k">print</span> <span class="n">roi</span><span class="o">.</span><span class="n">toXYWH</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="n">roi</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">blob</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="k">print</span> <span class="n">roi</span><span class="o">.</span><span class="n">toXYWH</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.overlaps">
+<tt class="descname">overlaps</tt><big>(</big><em>otherROI</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.overlaps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="SimpleCV.Features.Detection.ROI.points">
+<tt class="descname">points</tt><em class="property"> = []</em><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.points" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.rebase">
+<tt class="descname">rebase</tt><big>(</big><em>x</em>, <em>y=None</em>, <em>w=None</em>, <em>h=None</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.rebase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Completely alter roi using whatever source coordinates you wish.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.resize">
+<tt class="descname">resize</tt><big>(</big><em>w</em>, <em>h=None</em>, <em>percentage=True</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.resize" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Contract/Expand the roi. By default use a percentage, otherwise use pixels.
+This is all done relative to the center of the roi</p>
+<p><strong>PARAMETERS</strong></p>
+<ul>
+<li><dl class="first docutils">
+<dt><em>w</em> - the percent to grow shrink the region is the only parameter, otherwise</dt>
+<dd><p class="first last">it is the new ROI width</p>
+</dd>
+</dl>
+</li>
+<li><p class="first"><em>h</em> - The new roi height in terms of pixels or a percentage.</p>
+</li>
+<li><dl class="first docutils">
+<dt><em>percentage</em> - If true use percentages (e.g. 2 doubles the size), otherwise</dt>
+<dd><p class="first last">use pixel values.</p>
+</dd>
+</dl>
+</li>
+<li><p class="first"><em>h</em> - a height.</p>
+</li>
+</ul>
+<p><strong>RETURNS</strong></p>
+<p>Nothing.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span> <span class="o">=</span> <span class="n">ROI</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">img</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.show">
+<tt class="descname">show</tt><big>(</big><em>color=(0</em>, <em>128</em>, <em>0)</em>, <em>width=2</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.show" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>This function will automatically draw the features on the image and show it.</p>
+<p><strong>RETURNS</strong></p>
+<p>Nothing.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;logo&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">feat</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">feat</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">()</span> <span class="c">#window pops up.</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.splitX">
+<tt class="descname">splitX</tt><big>(</big><em>x</em>, <em>unitVals=False</em>, <em>srcVals=False</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.splitX" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong>
+Split the ROI at an x value.</p>
+<p>x can be a list of sequentianl tuples of x split points  e.g [0.3,0.6]
+where we assume the top and bottom are also on the list.
+Use units to split as a percentage (e.g. 30% down).
+The srcVals means use coordinates of the original image.</p>
+<p><strong>PARAMETERS</strong></p>
+<ul class="simple">
+<li><em>x</em>-The split point. Can be a single point or a list of points. the type is determined by the flags.</li>
+<li><em>unitVals</em> - Use unit vals for the split point. E.g. 0.5 means split at 50% of the ROI.</li>
+<li><em>srcVals</em> - Use x values relative to the source image rather than relative to the ROI.</li>
+</ul>
+<p><strong>RETURNS</strong></p>
+<p>Returns a feature set of ROIs split from the source ROI.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span> <span class="o">=</span> <span class="n">ROI</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">img</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">splits</span> <span class="o">=</span> <span class="n">roi</span><span class="o">.</span><span class="n">splitX</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="c"># create two ROIs</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.splitY">
+<tt class="descname">splitY</tt><big>(</big><em>y</em>, <em>unitVals=False</em>, <em>srcVals=False</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.splitY" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong>
+Split the ROI at an x value.</p>
+<p>y can be a list of sequentianl tuples of y split points  e.g [0.3,0.6]
+where we assume the top and bottom are also on the list.
+Use units to split as a percentage (e.g. 30% down).
+The srcVals means use coordinates of the original image.</p>
+<p><strong>PARAMETERS</strong></p>
+<ul class="simple">
+<li><em>y</em>-The split point. Can be a single point or a list of points. the type is determined by the flags.</li>
+<li><em>unitVals</em> - Use unit vals for the split point. E.g. 0.5 means split at 50% of the ROI.</li>
+<li><em>srcVals</em> - Use x values relative to the source image rather than relative to the ROI.</li>
+</ul>
+<p><strong>RETURNS</strong></p>
+<p>Returns a feature set of ROIs split from the source ROI.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span> <span class="o">=</span> <span class="n">ROI</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">img</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">splits</span> <span class="o">=</span> <span class="n">roi</span><span class="o">.</span><span class="n">splitY</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="c"># create two ROIs</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="SimpleCV.Features.Detection.ROI.subFeatures">
+<tt class="descname">subFeatures</tt><em class="property"> = []</em><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.subFeatures" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.toPoints">
+<tt class="descname">toPoints</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.toPoints" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Get the ROI as a list of four points that make up the bounding rectangle.</p>
+<p><strong>RETURNS</strong></p>
+<p>A list of the form [(x,y),(x,y),(x,y),(x,y)]</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span> <span class="o">=</span> <span class="n">ROI</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">img</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">roi</span><span class="o">.</span><span class="n">toPoints</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.toTLAndBR">
+<tt class="descname">toTLAndBR</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.toTLAndBR" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Get the ROI as a list of tuples of the ROI&#8217;s top left
+corner and bottom right corner.</p>
+<p><strong>RETURNS</strong></p>
+<p>A list of the form [(x,y),(x,y)]</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span> <span class="o">=</span> <span class="n">ROI</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">img</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">roi</span><span class="o">.</span><span class="n">toTLAndBR</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.toUnitPoints">
+<tt class="descname">toUnitPoints</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.toUnitPoints" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Get the ROI as a list of four points that make up the bounding rectangle.
+Each point is represented in unit coordinates with respect to the
+souce image.</p>
+<p><strong>RETURNS</strong></p>
+<p>A list of the form [(x,y),(x,y),(x,y),(x,y)]</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span> <span class="o">=</span> <span class="n">ROI</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">img</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">roi</span><span class="o">.</span><span class="n">toUnitPoints</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.toUnitTLAndBR">
+<tt class="descname">toUnitTLAndBR</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.toUnitTLAndBR" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Get the ROI as a list of tuples of the ROI&#8217;s top left
+corner and bottom right corner. These coordinates are in unit
+length values with respect to the source image.</p>
+<p><strong>RETURNS</strong></p>
+<p>A list of the form [(x,y),(x,y)]</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span> <span class="o">=</span> <span class="n">ROI</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">img</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">roi</span><span class="o">.</span><span class="n">toUnitTLAndBR</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.toUnitXYWH">
+<tt class="descname">toUnitXYWH</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.toUnitXYWH" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Get the ROI as a list, the values are top left x, to left y,
+width and height. These values are scaled to unit values with
+respect to the source image..</p>
+<p><strong>RETURNS</strong></p>
+<p>A list of the form [x,y,w,h]</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span> <span class="o">=</span> <span class="n">ROI</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">img</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">roi</span><span class="o">.</span><span class="n">toUnitXYWH</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.toXYWH">
+<tt class="descname">toXYWH</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.toXYWH" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Get the ROI as a list of the top left corner&#8217;s x and y position
+and the roi&#8217;s width and height in pixels.</p>
+<p><strong>RETURNS</strong></p>
+<p>A list of the form [x,y,w,h]</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span> <span class="o">=</span> <span class="n">ROI</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">img</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">roi</span><span class="o">.</span><span class="n">toXYWH</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ROI.translate">
+<tt class="descname">translate</tt><big>(</big><em>x=0</em>, <em>y=0</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.translate" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Move the roi.</p>
+<p><strong>PARAMETERS</strong></p>
+<ul class="simple">
+<li><em>x</em> - Move the ROI horizontally.</li>
+<li><em>y</em> - Move the ROI vertically</li>
+</ul>
+<p><strong>RETURNS</strong></p>
+<p>Nothing.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span> <span class="o">=</span> <span class="n">ROI</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="n">img</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">roi</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="SimpleCV.Features.Detection.ROI.w">
+<tt class="descname">w</tt><em class="property"> = 0</em><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.w" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="SimpleCV.Features.Detection.ROI.x">
+<tt class="descname">x</tt><em class="property"> = 0</em><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="SimpleCV.Features.Detection.ROI.xtl">
+<tt class="descname">xtl</tt><em class="property"> = 0</em><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.xtl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="SimpleCV.Features.Detection.ROI.y">
+<tt class="descname">y</tt><em class="property"> = 0</em><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="SimpleCV.Features.Detection.ROI.ytl">
+<tt class="descname">ytl</tt><em class="property"> = 0</em><a class="headerlink" href="#SimpleCV.Features.Detection.ROI.ytl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="SimpleCV.Features.Detection.ShapeContextDescriptor">
+<em class="property">class </em><tt class="descclassname">SimpleCV.Features.Detection.</tt><tt class="descname">ShapeContextDescriptor</tt><big>(</big><em>image</em>, <em>point</em>, <em>descriptor</em>, <em>blob</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ShapeContextDescriptor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#SimpleCV.Features.Features.Feature" title="SimpleCV.Features.Features.Feature"><tt class="xref py py-class docutils literal"><span class="pre">SimpleCV.Features.Features.Feature</span></tt></a></p>
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.ShapeContextDescriptor.draw">
+<tt class="descname">draw</tt><big>(</big><em>color=(0</em>, <em>128</em>, <em>0)</em>, <em>width=1</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.ShapeContextDescriptor.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>The default drawing operation is to draw the min bounding
+rectangle in an image.</p>
+<p><strong>SUMMARY</strong></p>
+<p>Draw a small circle around the corner.  Color tuple is single parameter, default is Red.</p>
+<p><strong>PARAMETERS</strong></p>
+<ul class="simple">
+<li><em>color</em> - An RGB color triplet.</li>
+<li><em>width</em> - if width is less than zero we draw the feature filled in, otherwise we draw the
+contour using the specified width.</li>
+</ul>
+<p><strong>RETURNS</strong></p>
+<p>Nothing - this is an inplace operation that modifies the source images drawing layer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="SimpleCV.Features.Detection.ShapeContextDescriptor.image">
+<tt class="descname">image</tt><em class="property"> = ''</em><a class="headerlink" href="#SimpleCV.Features.Detection.ShapeContextDescriptor.image" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="SimpleCV.Features.Detection.ShapeContextDescriptor.points">
+<tt class="descname">points</tt><em class="property"> = []</em><a class="headerlink" href="#SimpleCV.Features.Detection.ShapeContextDescriptor.points" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="SimpleCV.Features.Detection.ShapeContextDescriptor.x">
+<tt class="descname">x</tt><em class="property"> = 0.0</em><a class="headerlink" href="#SimpleCV.Features.Detection.ShapeContextDescriptor.x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="SimpleCV.Features.Detection.ShapeContextDescriptor.y">
+<tt class="descname">y</tt><em class="property"> = 0.0</em><a class="headerlink" href="#SimpleCV.Features.Detection.ShapeContextDescriptor.y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
 <dt id="SimpleCV.Features.Detection.TemplateMatch">
 <em class="property">class </em><tt class="descclassname">SimpleCV.Features.Detection.</tt><tt class="descname">TemplateMatch</tt><big>(</big><em>image</em>, <em>template</em>, <em>location</em>, <em>quality</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.TemplateMatch" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#SimpleCV.Features.Features.Feature" title="SimpleCV.Features.Features.Feature"><tt class="xref py py-class docutils literal"><span class="pre">SimpleCV.Features.Features.Feature</span></tt></a></p>
@@ -1946,6 +2645,11 @@ The template matching cannot handle scale or rotation.</p>
 <tt class="descname">consume</tt><big>(</big><em>other</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.TemplateMatch.consume" title="Permalink to this definition">¶</a></dt>
 <dd><p>Given another template feature, make this feature the size of the two features combined.</p>
 </dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Detection.TemplateMatch.crop">
+<tt class="descname">crop</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Detection.TemplateMatch.crop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="SimpleCV.Features.Detection.TemplateMatch.draw">
@@ -2153,7 +2857,7 @@ bounding circle, a list of tuples in a closed polygon, or any other featutres.</
 <span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">blobs</span><span class="p">:</span>
 <span class="gp">&gt;&gt;&gt; </span>   <span class="k">if</span> <span class="n">b</span><span class="o">.</span><span class="n">area</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">200</span><span class="p">:</span>
-<span class="gp">&gt;&gt;&gt; </span>      <span class="k">print</span> <span class="n">b</span><span class="o">.</span><span class="n">area</span><span class="p">()</span>       
+<span class="gp">&gt;&gt;&gt; </span>      <span class="k">print</span> <span class="n">b</span><span class="o">.</span><span class="n">area</span><span class="p">()</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -2213,7 +2917,7 @@ the blob as an (x,y) tuple.</p>
 <p><strong>EXAMPLE</strong></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;OWS.jpg&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">bottomLeftCorner</span><span class="p">()</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">bottomLeftCorner</span><span class="p">()</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -2229,7 +2933,7 @@ the blob as an (x,y) tuple.</p>
 <p><strong>EXAMPLE</strong></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;OWS.jpg&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">bottomRightCorner</span><span class="p">()</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">bottomRightCorner</span><span class="p">()</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -2238,18 +2942,32 @@ the blob as an (x,y) tuple.</p>
 <dt id="SimpleCV.Features.Features.Feature.boundingBox">
 <tt class="descname">boundingBox</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.Feature.boundingBox" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
-<p>This function calculates the corners of the feature and returns them as 
-a list of (x,y) tuples.</p>
+<p>This function returns a rectangle which bounds the blob.</p>
 <p><strong>RETURNS</strong></p>
-<p>A list of (x,y) corner tuples. The order is top left, bottom left, bottom right, top right. 
-<strong>EXAMPLE</strong></p>
+<p>A list of [x, y, w, h] where (x, y) are the top left point of the rectangle
+and w, h are its width and height respectively.</p>
+<p><strong>EXAMPLE</strong></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;OWS.jpg&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">boundingBox</span><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>TO DO</strong></p>
-<p>Make the order of points go from the top left glockwise.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Features.Feature.boundingCircle">
+<tt class="descname">boundingCircle</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.Feature.boundingCircle" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>This function calculates the minimum bounding circle of the blob in the image
+as an (x,y,r) tuple</p>
+<p><strong>RETURNS</strong></p>
+<p>An (x,y,r) tuple where (x,y) is the center of the circle and r is the radius</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;RatMask.png&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">boundingCircle</span><span class="p">()</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="method">
@@ -2327,7 +3045,7 @@ bounding circle, a list of tuples in a closed polygon, or any other featutres.</
 <dt id="SimpleCV.Features.Features.Feature.crop">
 <tt class="descname">crop</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.Feature.crop" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
-<p>This function crops the source image to the location of the feature and returns 
+<p>This function crops the source image to the location of the feature and returns
 a new SimpleCV image.</p>
 <p><strong>RETURNS</strong></p>
 <p>A SimpleCV image that is cropped to the feature position and size.</p>
@@ -2455,7 +3173,7 @@ bounding circle, a list of tuples in a closed polygon, or any other featutres.</
 <dt id="SimpleCV.Features.Features.Feature.extents">
 <tt class="descname">extents</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.Feature.extents" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
-<p>This function returns the maximum and minimum x and y values for the feature and 
+<p>This function returns the maximum and minimum x and y values for the feature and
 returns them as a tuple.</p>
 <p><strong>RETURNS</strong></p>
 <p>A tuple of the extents of the feature. The order is (MaxX,MaxY,MinX,MinY).</p>
@@ -2587,7 +3305,7 @@ bounding circle, a list of tuples in a closed polygon, or any other featutres.</
 <span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">blobs</span><span class="p">:</span>
 <span class="gp">&gt;&gt;&gt; </span>   <span class="k">if</span> <span class="n">b</span><span class="o">.</span><span class="n">length</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">200</span><span class="p">:</span>
-<span class="gp">&gt;&gt;&gt; </span>      <span class="k">print</span> <span class="s">&quot;OH MY! - WHAT A BIG FEATURE YOU HAVE!&quot;</span> 
+<span class="gp">&gt;&gt;&gt; </span>      <span class="k">print</span> <span class="s">&quot;OH MY! - WHAT A BIG FEATURE YOU HAVE!&quot;</span>
 <span class="gp">&gt;&gt;&gt; </span>      <span class="k">print</span> <span class="s">&quot;---I bet you say that to all the features.&quot;</span>
 </pre></div>
 </div>
@@ -2690,11 +3408,11 @@ the feature.</p>
 <dt id="SimpleCV.Features.Features.Feature.notOnImageEdge">
 <tt class="descname">notOnImageEdge</tt><big>(</big><em>tolerance=1</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.Feature.notOnImageEdge" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
-<p>This method returns True if the feature is greate than <cite>tolerance</cite> 
+<p>This method returns True if the feature is greate than <cite>tolerance</cite>
 pixels away from the nearest edge.</p>
 <p><strong>PARAMETERS</strong></p>
 <ul class="simple">
-<li><em>tolerance</em> - the distance in pixels at which a feature qualifies 
+<li><em>tolerance</em> - the distance in pixels at which a feature qualifies
 as not being on the image edge.</li>
 </ul>
 <p><strong>RETURNS</strong></p>
@@ -2712,11 +3430,11 @@ as not being on the image edge.</li>
 <dt id="SimpleCV.Features.Features.Feature.onImageEdge">
 <tt class="descname">onImageEdge</tt><big>(</big><em>tolerance=1</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.Feature.onImageEdge" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
-<p>This method returns True if the feature is less than <cite>tolerance</cite> 
+<p>This method returns True if the feature is less than <cite>tolerance</cite>
 pixels away from the nearest edge.</p>
 <p><strong>PARAMETERS</strong></p>
 <ul class="simple">
-<li><em>tolerance</em> - the distance in pixels at which a feature qualifies 
+<li><em>tolerance</em> - the distance in pixels at which a feature qualifies
 as being on the image edge.</li>
 </ul>
 <p><strong>RETURNS</strong></p>
@@ -2768,6 +3486,29 @@ of points, or any part of a blob.</p>
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="SimpleCV.Features.Features.Feature.reassign">
+<tt class="descname">reassign</tt><big>(</big><em>img</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.Feature.reassign" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Reassign the image of this feature and return an updated copy of the feature.</p>
+<p><strong>PARAMETERS</strong></p>
+<ul class="simple">
+<li><em>img</em> - the new image to which to assign the feature.</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">THIS DOES NOT PERFORM A SIZE CHECK. IF YOUR NEW IMAGE IS NOT THE EXACT SAME SIZE YOU WILL CERTAINLY CAUSE ERRORS.</p>
+</div>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">img2</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">invert</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">l</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findLines</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">l2</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">reassignImage</span><span class="p">(</span><span class="n">img2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">l2</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
 <dt id="SimpleCV.Features.Features.Feature.right">
 <tt class="descname">right</tt><big>(</big><em>object</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.Feature.right" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
@@ -2805,7 +3546,7 @@ bounding circle, a list of tuples in a closed polygon, or any other featutres.</
 <p><strong>EXAMPLE</strong></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;logo&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">feat</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">feat</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">()</span> <span class="c">#window pops up. </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">feat</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">()</span> <span class="c">#window pops up.</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -2821,7 +3562,7 @@ the blob as an (x,y) tuple.</p>
 <p><strong>EXAMPLE</strong></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;OWS.jpg&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">topLeftCorner</span><span class="p">()</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">topLeftCorner</span><span class="p">()</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -2837,7 +3578,7 @@ the blob as an (x,y) tuple.</p>
 <p><strong>EXAMPLE</strong></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;OWS.jpg&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">topRightCorner</span><span class="p">()</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">blobs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">topRightCorner</span><span class="p">()</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -3008,7 +3749,7 @@ bounding circle, a list of tuples in a closed polygon, or any other featutres.</
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;./sampleimages/EdgeTest1.png&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">bl</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">bottomLeftCorners</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">bl</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">bl</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -3024,7 +3765,7 @@ bounding circle, a list of tuples in a closed polygon, or any other featutres.</
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;./sampleimages/EdgeTest1.png&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">br</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">bottomRightCorners</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">br</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">br</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -3033,6 +3774,31 @@ bounding circle, a list of tuples in a closed polygon, or any other featutres.</
 <dt id="SimpleCV.Features.Features.FeatureSet.center">
 <tt class="descname">center</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.FeatureSet.center" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Features.FeatureSet.cluster">
+<tt class="descname">cluster</tt><big>(</big><em>method='kmeans'</em>, <em>properties=None</em>, <em>k=3</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.FeatureSet.cluster" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>This function clusters the blobs in the featureSet based on the properties. Properties can be &#8220;color&#8221;, &#8220;shape&#8221; or &#8220;position&#8221; of blobs.
+Clustering is done using K-Means or Hierarchical clustering(Ward) algorithm.</p>
+<p><strong>PARAMETERS</strong></p>
+<ul class="simple">
+<li><em>properties</em> - It should be a list with any combination of &#8220;color&#8221;, &#8220;shape&#8221;, &#8220;position&#8221;. properties = [&#8220;color&#8221;,&#8221;position&#8221;]. properties = [&#8220;position&#8221;,&#8221;shape&#8221;]. properties = [&#8220;shape&#8221;]</li>
+<li><em>method</em> - if method is &#8220;kmeans&#8221;, it will cluster using K-Means algorithm, if the method is &#8220;hierarchical&#8221;, no need to spicify the number of clusters</li>
+<li><em>k</em> - The number of clusters(kmeans).</li>
+</ul>
+<p><strong>RETURNS</strong></p>
+<p>A list of featureset, each being a cluster itself.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">clusters</span> <span class="o">=</span> <span class="n">blobs</span><span class="o">.</span><span class="n">cluster</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s">&quot;kmeans&quot;</span><span class="p">,</span><span class="n">properties</span><span class="o">=</span><span class="p">[</span><span class="s">&quot;color&quot;</span><span class="p">],</span><span class="n">k</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">clusters</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">i</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">Color</span><span class="o">.</span><span class="n">getRandom</span><span class="p">(),</span><span class="n">width</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">img</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
 
 <dl class="method">
 <dt id="SimpleCV.Features.Features.FeatureSet.colorDistance">
@@ -3059,7 +3825,7 @@ a given color tuple (default black, so colorDistance() returns intensity)</p>
 <dt id="SimpleCV.Features.Features.FeatureSet.coordinates">
 <tt class="descname">coordinates</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.FeatureSet.coordinates" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
-<p>Returns a 2d numpy array of the x,y coordinates of each feature.  This 
+<p>Returns a 2d numpy array of the x,y coordinates of each feature.  This
 is particularly useful if you want to use Scipy&#8217;s Spatial Distance module</p>
 <p><strong>RETURNS</strong></p>
 <p>A numpy array of all the positions in the featureset.</p>
@@ -3070,6 +3836,12 @@ is particularly useful if you want to use Scipy&#8217;s Spatial Distance module<
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">xs</span>
 </pre></div>
 </div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Features.FeatureSet.count">
+<tt class="descname">count</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.FeatureSet.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function returns the length / count of the all the items in the FeatureSet</p>
 </dd></dl>
 
 <dl class="method">
@@ -3106,7 +3878,7 @@ Default is the center of the image.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">feats</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">feats</span><span class="o">.</span><span class="n">distanceFrom</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c">#show the 0th blobs distance to the center. </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c">#show the 0th blobs distance to the center.</span>
 </pre></div>
 </div>
 <p><strong>TO DO</strong></p>
@@ -3162,7 +3934,7 @@ will let you use the attribute functions to easily screen Features out
 of return FeatureSets.</p>
 <p><strong>PARAMETERS</strong></p>
 <ul class="simple">
-<li><em>filterarray</em> - A numpy array, matching  the size of the feature set, 
+<li><em>filterarray</em> - A numpy array, matching  the size of the feature set,
 made of Boolean values, we return the true values and reject the False value.</li>
 </ul>
 <p><strong>RETURNS</strong></p>
@@ -3170,7 +3942,7 @@ made of Boolean values, we return the true values and reject the False value.</l
 <p><strong>EXAMPLE</strong></p>
 <p>Return all lines &lt; 200px</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">my_lines</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">my_lines</span><span class="o">.</span><span class="n">length</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="p">)</span> <span class="c"># returns all lines &lt; 200px</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">my_blobs</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">my_blobs</span><span class="o">.</span><span class="n">area</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mf">0.9</span> <span class="o">*</span> <span class="n">my_blobs</span><span class="o">.</span><span class="n">length</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="c"># returns blobs that are nearly square    </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">my_blobs</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">my_blobs</span><span class="o">.</span><span class="n">area</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mf">0.9</span> <span class="o">*</span> <span class="n">my_blobs</span><span class="o">.</span><span class="n">length</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="c"># returns blobs that are nearly square</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">my_lines</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">my_lines</span><span class="o">.</span><span class="n">angle</span><span class="p">())</span> <span class="o">&lt;</span> <span class="n">numpy</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">4</span><span class="p">)</span> <span class="c">#any lines within 45 degrees of horizontal</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">my_corners</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">my_corners</span><span class="o">.</span><span class="n">x</span><span class="p">()</span> <span class="o">-</span> <span class="n">my_corners</span><span class="o">.</span><span class="n">y</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="c">#only return corners in the upper diagonal of the image</span>
 </pre></div>
@@ -3267,7 +4039,7 @@ bounding circle, a list of tuples in a closed polygon, or any other featutres.</
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;Lenna&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">l</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findLines</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lengt</span> <span class="o">=</span> <span class="n">l</span><span class="o">.</span><span class="n">length</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">lengt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c"># length of the 0th element. </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lengt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c"># length of the 0th element.</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -3291,11 +4063,11 @@ bounding circle, a list of tuples in a closed polygon, or any other featutres.</
 <dt id="SimpleCV.Features.Features.FeatureSet.notOnImageEdge">
 <tt class="descname">notOnImageEdge</tt><big>(</big><em>tolerance=1</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.FeatureSet.notOnImageEdge" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
-<p>The method returns a feature set of features that are not on or &#8220;near&#8221; the edge of 
+<p>The method returns a feature set of features that are not on or &#8220;near&#8221; the edge of
 the image. This is really helpful for removing features that are edge effects.</p>
 <p><strong>PARAMETERS</strong></p>
 <ul class="simple">
-<li><em>tolerance</em> - the distance in pixels from the edge at which a feature 
+<li><em>tolerance</em> - the distance in pixels from the edge at which a feature
 qualifies as being &#8220;on&#8221; the edge of the image.</li>
 </ul>
 <p><strong>RETURNS</strong></p>
@@ -3314,11 +4086,11 @@ qualifies as being &#8220;on&#8221; the edge of the image.</li>
 <dt id="SimpleCV.Features.Features.FeatureSet.onImageEdge">
 <tt class="descname">onImageEdge</tt><big>(</big><em>tolerance=1</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.FeatureSet.onImageEdge" title="Permalink to this definition">¶</a></dt>
 <dd><p><strong>SUMMARY</strong></p>
-<p>The method returns a feature set of features that are on or &#8220;near&#8221; the edge of 
+<p>The method returns a feature set of features that are on or &#8220;near&#8221; the edge of
 the image. This is really helpful for removing features that are edge effects.</p>
 <p><strong>PARAMETERS</strong></p>
 <ul class="simple">
-<li><em>tolerance</em> - the distance in pixels from the edge at which a feature 
+<li><em>tolerance</em> - the distance in pixels from the edge at which a feature
 qualifies as being &#8220;on&#8221; the edge of the image.</li>
 </ul>
 <p><strong>RETURNS</strong></p>
@@ -3391,6 +4163,29 @@ bounding circle, a list of tuples in a closed polygon, or any other featutres.</
 </div>
 <p><strong>NOTE</strong></p>
 <p>This currently performs a bounding box test, not a full polygon test for speed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Features.FeatureSet.reassignImage">
+<tt class="descname">reassignImage</tt><big>(</big><em>newImg</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.FeatureSet.reassignImage" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Return a new featureset where the features are assigned to a new image.</p>
+<p><strong>PARAMETERS</strong></p>
+<ul class="simple">
+<li><em>img</em> - the new image to which to assign the feature.</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">THIS DOES NOT PERFORM A SIZE CHECK. IF YOUR NEW IMAGE IS NOT THE EXACT SAME SIZE YOU WILL CERTAINLY CAUSE ERRORS.</p>
+</div>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">img2</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">invert</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">l</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findLines</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">l2</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">reassignImage</span><span class="p">(</span><span class="n">img2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">l2</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="method">
@@ -3500,7 +4295,7 @@ Default is from the center of the image.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">feats</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">feats</span><span class="o">.</span><span class="n">sortDistance</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>  <span class="c">#show the 0th blobs distance to the center. </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>  <span class="c">#show the 0th blobs distance to the center.</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -3515,7 +4310,41 @@ Default is from the center of the image.</p>
 <p><strong>EXAMPLE</strong></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;Lenna&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">l</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findLines</span><span class="p">()</span><span class="o">.</span><span class="n">sortLength</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">lengt</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c"># length of the 0th element. </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lengt</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c"># length of the 0th element.</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Features.FeatureSet.sortX">
+<tt class="descname">sortX</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.FeatureSet.sortX" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Returns a new FeatureSet, with the smallest x coordinates features first.</p>
+<p><strong>RETURNS</strong></p>
+<p>A featureset sorted based on area.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">feats</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">feats</span> <span class="o">=</span> <span class="n">feats</span><span class="o">.</span><span class="n">sortX</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">feats</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c"># biggest blob</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">feats</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c"># smallest blob</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="SimpleCV.Features.Features.FeatureSet.sortY">
+<tt class="descname">sortY</tt><big>(</big><big>)</big><a class="headerlink" href="#SimpleCV.Features.Features.FeatureSet.sortY" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>SUMMARY</strong></p>
+<p>Returns a new FeatureSet, with the smallest y coordinates features first.</p>
+<p><strong>RETURNS</strong></p>
+<p>A featureset sorted based on area.</p>
+<p><strong>EXAMPLE</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;lenna&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">feats</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">feats</span> <span class="o">=</span> <span class="n">feats</span><span class="o">.</span><span class="n">sortY</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">feats</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c"># biggest blob</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">feats</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c"># smallest blob</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -3531,7 +4360,7 @@ Default is from the center of the image.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;./sampleimages/EdgeTest1.png&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">tl</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">bottomLeftCorners</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">tl</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">tl</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -3547,7 +4376,7 @@ Default is from the center of the image.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s">&quot;./sampleimages/EdgeTest1.png&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">blobs</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">findBlobs</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">tr</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">topRightCorners</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">tr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">tr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -3608,7 +4437,7 @@ Default is from the center of the image.</p>
 <dt id="SimpleCV.Features.HaarCascade.HaarCascade">
 <em class="property">class </em><tt class="descclassname">SimpleCV.Features.HaarCascade.</tt><tt class="descname">HaarCascade</tt><big>(</big><em>fname</em>, <em>name=None</em><big>)</big><a class="headerlink" href="#SimpleCV.Features.HaarCascade.HaarCascade" title="Permalink to this definition">¶</a></dt>
 <dd><p>This class wraps HaarCascade files for the findHaarFeatures file.
-To use the class provide it with the path to a Haar cascade XML file and 
+To use the class provide it with the path to a Haar cascade XML file and
 optionally a name.</p>
 <dl class="method">
 <dt id="SimpleCV.Features.HaarCascade.HaarCascade.getCascade">
@@ -3853,44 +4682,83 @@ binaryimg = threshold(img)</p>
 </div>
 
 
+                    </div>
+                  </div>
                 </div>
-              </div>
             </div>
         </div>
       </div>
     </div>
     <!-- END Content -->
 
-    <!-- BEGIN Footer -->
-    <div id="FooterWrapper">
-        <div id="Footer">
-            <ul id="FooterLeft">
-                <li>&copy; <a href="http://www.sightmachine.com">Sight Machine</a> 2012</li>
-            </ul>
-        </div>
-    </div>
-    <!-- END Footer -->
-    
-    <!-- BEGIN Scripts -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-    <script src="js/libs/jquery-ui-1.8.21.custom.min.js"></script>  
-    <script src="js/plugins.js"></script>
-    <script src="js/masonry.min.js"></script>
-    <script src="js/underscore-min.js"></script>
-    <script src="js/backbone-min.js"></script>   
-    <script src="js/script.js"></script>
-    <script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-23517471-3']);
-	  _gaq.push(['_setDomainName', 'simplecv.org']);
-	  _gaq.push(['_trackPageview']);
+            </div>
+          </div>
+      </div>
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
+      <hr />
+
+
+      </div>
+    </div>
+  </div>
+  <!-- end main body container -->
+
+
+<!-- begin footer -->
+    <div id="footer">
+      <div class="container">
+          <div class="content">
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="https://plus.google.com/115199279159361214026/posts" target="_blank">Google+</a>
+                </li>
+                <li>
+                  <a href="http://www.facebook.com/pages/SimpleCV/150136128401869" target="_blank">Facebook</a>
+                </li>
+                <li>
+                  <a href="http://twitter.com/Simple_CV" target="_blank">Twitter</a>
+                </li>
+                <li>
+                  <a href="https://github.com/ingenuitas/simplecv" target="_blank">Github</a>
+                </li>
+                <li>
+                  <a href="http://help.simplecv.org/" target="_blank">Help</a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright">
+              Copyright <a href="http://sightmachine.com">Sight Machine</a>, Inc, SimpleCV is a trademark of Sight Machine, Inc.
+            </div>
+            <div class="footer-logo">
+              <a href="http://sightmachine.com"><img src="http://simplecv.org/sites/all/themes/kalypso/images/smlogo.png"/></a>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <!-- end footer -->
+
+    <!-- BEGIN Scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="_static/js/libs/jquery-ui-1.8.21.custom.min.js"></script>
+    <script src="_static/js/plugins.js"></script>
+    <script src="_static/js/masonry.min.js"></script>
+    <script src="_static/js/underscore-min.js"></script>
+    <script src="_static/js/backbone-min.js"></script>
+    <script src="_static/js/script.js"></script>
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23517471-3']);
+    _gaq.push(['_setDomainName', 'simplecv.org']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
     </script>
     <!-- END Scripts -->
     <!--testy--->
