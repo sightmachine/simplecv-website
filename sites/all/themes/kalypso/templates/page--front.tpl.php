@@ -28,8 +28,8 @@
                 <div class="one_third">
                   <div class="content right">
                     <h3>The Book</h3>
-                    <a href="http://shop.oreilly.com/product/0636920024057.do"><img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/thebook.png" /></a>
-                    <p>Need more help? Check out our book, <a href="http://shop.oreilly.com/product/0636920024057.do">"Practical Computer Vision with SimpleCV."</a></p>
+                    <a href="/book"><img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/thebook.png" /></a>
+                    <p>Need more help? Check out our book, <a href="/book">"Practical Computer Vision with SimpleCV."</a></p>
                   </div>
                 </div>
               </div>
@@ -40,21 +40,25 @@
                 <h3>Getting Started</h3>
                 <div class="two_thirds">
                   <div class="content left">
-<pre><code>from SimpleCV import Image, Display, Color, Camera
-cam = Camera(<span style="color: green;">0</span>)                     <span style="color: #aaa;"># Get the first camera</span>
-disp = Display((<span style="color: green;">640</span>,<span style="color: green;">480</span>))           <span style="color: #aaa;"># Create a 640x480 display</span>
-while( disp.isNotDone() ):          <span style="color: #aaa;"># While we don't exit the display</span>
-    img = cam.getImage().binarize() <span style="color: #aaa;"># Get an image and make it black and white</span>
-    <span style="color: #aaa;"># Draw the text "Hello World" at (40,40) in red.</span>
-    img.drawText(<span style="color: red;">"Hello World!"</span>,<span style="color: green;">40</span>,<span style="color: green;">40</span>,
-                 fontsize=<span style="color: green;">60</span>,color=Color.RED ) 
-    img.save(disp)                  <span style="color: #aaa;"># Save it to the screen</span></code></pre>
+<pre><code>from SimpleCV import Camera
+<span style="color: #999;"># Initialize the camera</span>
+cam = Camera()
+<span style="color: #999;"># Loop to continuously get images</span>
+while <span style="color: maroon;">True</span>:
+    <span style="color: #999;"># Get Image from camera</span>
+    img = cam.getImage()
+    <span style="color: #999;"># Make image black and white</span>
+    img = img.binarize()
+    <span style="color: #999;"># Draw the text "Hello World" on image</span>
+    img.drawText(<span style="color: red; ">"Hello World!"</span>)
+    <span style="color: #999;"># Show the image</span>
+    img.show()</code></pre>
 
                   </div>
                 </div>
                 <div class="one_third">
                   <div class="content right">
-                    <p>This example shows a "Hello World" program that uses SimpleCV. In this example we first connect to a USB web camera. We then capture images from the web cam, apply a binary threshold that turns our image black and white, and then draw some text in red. The program then print the results to a display</p>
+                    <p>This example shows a "Hello World" program that uses SimpleCV. In this example we first connect to a USB web camera. We then capture images from the web cam, apply a binary threshold that turns our image black and white, and then draws some text. The program then prints the results to a display.</p>
                   </div>
                 </div>
               </div>
@@ -67,23 +71,39 @@ while( disp.isNotDone() ):          <span style="color: #aaa;"># While we don't 
                   <div class="content left">
                     <img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/juniperbinary.png" />
                     <p>This image shows the SimpleCV threshold function. The threshold method sets each pixel in an image to black or white depending on its brightness.
-                    <a href="https://gist.github.com/kscottz/5372815" title="Binary Example" target="_blank">Example</a></p>
+                    <a href="https://gist.github.com/sight-machine/5406587" title="Binary Example" target="_blank">Example</a></p>
                   </div>
                 </div>
                 <div class="one_third">
                   <div class="content middle">
                     <img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/juniperedges.png" />
                     <p>In this image we applied the SimpleCV edges method. This method sets edge pixels in the image to white.
-                    <a href="https://gist.github.com/kscottz/5372843" title="Edges Example" target="_blank">Example</a></p>
+                    <a href="https://gist.github.com/sight-machine/5406598" title="Edges Example" target="_blank">Example</a></p>
                   </div>
                 </div>
                 <div class="one_third right">
                   <div class="content right">
                     <img src="<?php print file_create_url(drupal_get_path('theme', 'kalypso')); ?>/images/juniperfeats.png" />
                     <p>Keypoints are visually unique areas of an image that are used for a variety of 3D reconstruction and image matching tasks. Finding keypoints in SimpleCV is super easy, just call the Image.findKeypoints method. 
-                    <a href="https://gist.github.com/kscottz/5372863" title="Features Example" target="_blank">Example</a></p>
+                    <a href="https://gist.github.com/sight-machine/5406600" title="Features Example" target="_blank">Example</a></p>
 
                   </div>
+                </div>
+              </div>
+
+              <hr/>
+
+              <div class="section">
+                <div class="content left">
+                  <p>These are just a small number of things you can do with SimpleCV.  If you would like to learn more please refer to our <a href="http://tutorial.simplecv.org">tutorial</a>.  There are also many examples included in the SimpleCV directory under the examples folder which can also be downloaded from <a href="https://github.com/sightmachine/SimpleCV/tree/develop/SimpleCV/examples">here</a>.</p>
+                </div>
+              </div>
+
+              <hr/>
+
+              <div class="section">
+                <div class="content left">
+                  <p>SimpleCV-JS is the port of SimpleCV to Javascript. Although early in it’s development it is still usable in it’s existing form and can be found at: <a href="http://demo.simplecv.org">http://demo.simplecv.org</a>, the code can be found: <a href="http://github.com/sightmachine/simplecv-js">http://github.com/sightmachine/simplecv-js</a></p>
                 </div>
               </div>
 

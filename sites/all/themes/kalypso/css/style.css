@@ -1,7 +1,7 @@
 /* Body and Content */
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   color: #555;
   background-color:  #E6E6E6;
   -webkit-font-smoothing: antialiased;
@@ -51,6 +51,10 @@ h3 {
 
 .row .span10 {
   margin-top: 42px;
+}
+
+span.top {
+  float: right;
 }
 
 .section.juniper div.one_third {
@@ -179,13 +183,6 @@ h3 {
 .standout_text {
   padding: 0px 5px; 
   color: #fff; 	
-}
-
-
-#page_heading {
-  padding: 0px;
-  margin: 25px 25px 0px;
-  text-align: left;
 }
 
 #page_heading {
@@ -506,7 +503,7 @@ article hr {
 #footer {
   color: #797979; font-size: 12px; 
   padding: 30px 0px;
-  z-index: 999999;
+  z-index: 0;
   position: relative;
 }
 
@@ -1374,7 +1371,7 @@ span.accordion-head-image {
 
 #vert_nav {
   position: fixed; 
-  z-index: 2000; 
+  z-index: 99999; 
   margin-left: -20px;
 }
 
@@ -1405,7 +1402,9 @@ html.overlay-open #vert_nav  {
 	list-style: none; 
 }
 
-
+#main-menu-links .last.leaf a {
+  background: #DDD;
+}
 
 #main-menu li a:hover, #main-menu .menu ul li a:hover  {
 	background: transparent;
@@ -1710,4 +1709,3 @@ ul.menu {
 .banner.invisible {
   display: none;
 }
-

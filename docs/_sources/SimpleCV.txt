@@ -80,3 +80,21 @@ SimpleCV Package
     :members:
     :undoc-members:
     :show-inheritance:
+
+:mod:`base` Module
+------------------
+
+.. automodule:: SimpleCV.base
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+
+    SimpleCV.Features
+    SimpleCV.MachineLearning
+    SimpleCV.Segmentation
+
