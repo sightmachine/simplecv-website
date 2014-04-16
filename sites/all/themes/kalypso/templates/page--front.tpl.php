@@ -99,14 +99,6 @@ while <span style="color: maroon;">True</span>:
                 </div>
               </div>
 
-              <hr/>
-
-              <div class="section">
-                <div class="content left">
-                  <p>SimpleCV-JS is the port of SimpleCV to Javascript. Although early in it’s development it is still usable in it’s existing form and can be found at: <a href="http://demo.simplecv.org">http://demo.simplecv.org</a>, the code can be found: <a href="http://github.com/sightmachine/simplecv-js">http://github.com/sightmachine/simplecv-js</a></p>
-                </div>
-              </div>
-
             </div>
           </div>
       </div>
