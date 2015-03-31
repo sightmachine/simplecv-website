@@ -1,6 +1,0 @@
-name = SimpleCV Custom
-description = Provides custom functionality for SimpleCV.org
-core = 7.x
-package = Custom
-
-configure = admin/config/simplecv

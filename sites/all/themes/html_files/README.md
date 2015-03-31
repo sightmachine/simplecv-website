@@ -1,4 +1,0 @@
-website
-=======
-
-new simplecv website
