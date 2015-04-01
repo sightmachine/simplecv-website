@@ -1,0 +1,88 @@
+---
+layout: page
+title: "Google Summer of Code 2013"
+---
+
+**NOTE:**
+
+**We really appreciated all of the interest in SimpleCV and due to the volume of responses we need to time-box GSoC related tasks. We will beging holding GSoC IRC office hours starting the week of April 22. We ask that students use this as their primary means of communication with mentors. We kindly ask that you do not do any of the following:**
+
+- Email mentors directly about SimpleCV related questions.
+- Submit forum questions regarding GSoC.
+- Submit github issues related to GSoC.
+
+In our experience the office hours save us time because we don't have to re-answer questions multiple times and it provides a fairer experience to all students.
+
+**IRC OFFICE HOURS**
+
+**irc.freenode.net #SimpleCV**
+
+- Monday/Wednesday/Friday 10am-11am EST
+- Tuesday/Thursday 4:30-5:30pm EST
+
+**SimpleCV and Google Summer of Code**
+
+SimpleCV is happy to announce its participation in the 2013 Google Summer of Code. We are looking for up to six talented interns who want to become experts in computer vision and python and work with a top-notch team of professional open-source developers.
+
+
+**Who are we looking for?**
+
+We are looking for talented undergraduate and graduate students who want to help us change the landscape of computer vision by creating user-friendly interfaces for computer vision task. Applicants need not have a computer vision background but they must be interested in using open source software to make the world a better place. A good candidate student should have interest in any or all of the following computer science sub-disciplines: computer graphics, computer vision, artificial intelligence, machine learning, robotics, and signal processing. Students should also be scientifically minded - computer vision is a data driven field where results must be analyzed and quantified.
+
+
+**What skills will you need?**
+
+For our beginner and intermediate projects we expect each student to have some programming experience, and while we prefer that it would be in Python and C++, we do not require it. Python is really easy to learn and we will teach you everything you need to know, all we expect is that you have basic programming experience (i.e. at least one year of college programming courses) and are motivated to work hard to solve problems. An understanding of computer graphics, computer vision, linear algebra, signal processing, and machine learning techniques will be helpful tools, but hey are by no means required.
+Our advanced projects  require that the student be familiar with C++ and Python and have some passing familiarity with linear algebra, signal processing, 3D geometry, and potentially computer graphics. For these projects we are looking for undergraduate seniors and graduate students.
+
+
+**What will your summer be like?**
+
+After an initial discussion with the student we will devise a project plan that meets the students learning objectives, and works to improve the functionality of SimpleCV. Since we aim to support all of the common operating systems students will be allowed to develop code on any platform and use whatever development environments suits them best. While not required, we strongly encourage students to spend the summer at our Ann Arbor, Michigan office.  Our goal, for each of our students, is to be able to create an end-to-end example that will have real-world applications and show their code in action by the end of the summer. This can be accomplished by working on a single large project in the case of the advanced students, or as set of complementary features for students just learning vision technologies.
+
+
+**What will a normal day be like?**
+
+You will be required to attend daily stand-up meetings via google hangout (~15 minutes @ 1pm EST)  and weekly planning meetings, plus ad-hoc one on one meetings.  At our weekly planning meetings you will plan your week and generate tickets for both your coding tasks and research tasks. During our daily stand-up meetings we will review your progress and discuss and problems you may have. You will also be able to contact us at any time via email, gchat, and voice. In addition to coding tasks each student will be expected to generate tests, documentation, and examples for each module they complete. Students should also expect to take an active role in our user community. This means answering forum and list-serv questions and publishing their progress online in the form of weekly blog posts.
+
+
+**Who will I be working with?**
+
+You will be working with the primary SimpleCV developers Katherine Scott, Anthony Oliver, and Jim Deakins.
+
+
+**What sort of projects can I do?**
+
+This is a rough guide to what we hope this year's batch of students will accomplish over the summer. This is what we see as the projects current core needs.
+
+
+**Introductory Students**
+
+- Revisit the rendering system - Currently we use PyGame to do all of the on image rendering in SimpleCV this year we would like to put a level of indirection between the rendering parameters and the final rendered image. This will allow us to render on the image using one of many libraries. We plan to support a native rendering system (i.e. PyGame) and a more web-friendly rendering environment like Processing.js.
+- Community Building - We would like one student to act as a community liason for SimpleCV. This student will spend the summer writing tutorials and examples for SimpleCV. The student will also clean up our documentation and provide examples of how SimpleCV can be used in the real world.
+- [SimpleCV.js](http://demo.simplecv.org/) - We would like to provide a companion product to SimpleCV that can be ran inside the browser using JavaScript/CoffeeScript. We have a skeleton library in place but we would like to build out the features for an early alpha release later this year. This student will beg, borrow, steal, and re-write most of the functions in the python version of SimpleCV to have analogs in coffee script.
+- System and Ops Guru - Before we release SimpleCV 2.0 we have a lot of systems issues we would like to address. The systems and ops guru student will help us to break SimpleCV into more manageable sub-modules, clean up the unit testing library, and perfect the build and install process on all of the major operating systems.
+
+
+**Advanced Students**
+
+- Speed Junkie / Algorithm Optimization - There are a lot of good things in SimpleCV that are great, but they could stand to run a lot faster. This student will move for loops to list comprehensions, move non-critical code to lazy parameters, parallelize all things that can be parallel, and in general time everything to look for performance bottlenecks.
+- Core Development - SimpleCV still has a lot of room to grow and we need someone who can go and write us some new features. Our core dev student will help us take care of our backlog of feature requests and help us implement some new features. This summer we want to focus on making better tools for matching two dimensional shapes and contours and look to provide some basic texture analysis.
+
+
+**How do I apply?**
+
+You should apply through the main GSoC webpage. Please limit your application to **a single page** that is more or less a resume with a one paragraph project description. Your project description should be your own plan of action to address one of the project ideas we listed above. From this one page application we should be able to discern who you are, what you are doing (i.e. where you go to school, what you study), and any cool things you have done with SimpleCV. We place a lot more emphasis on demonstrating your abilities than where you go to school or what grades you have earned.
+Last year we had eighty four applicants for four slots. This means we have to be more selective than the most selective of universities. Don’t fret! We don’t care where you are from or your current experience level, we will take students who can show that they are up to the task of working on the project. In real terms this means that you should do one or more of the following before submitting an application:
+
+- Fix a bug or add a feature - we have found that this is the **NUMBER ONE** indicator of GSoC success. If you can set up the dev environment, read  a ticket, fix a bug, and send us a pull request we can teach you everything else. [See our contribution guide here](https://github.com/ingenuitas/SimpleCV).
+- [Assist the community](http://help.simplecv.org/questions/) - being a good engineer is not just about writing good code, it is also about helping others learn how to use the library. Our best students not only learn new skills but they also teach others.
+- Make a cool SimpleCV demo - we embrace creative problem solving. Show us that you have figured out how SimpleCV works and you are now using it solve practical problems. Make a cool demo, write a blog post about it, and send it to us.
+
+
+**I want to apply but I need some help.**
+
+We totally understand. If you have GSoC related questions please use our SimpleCV GSoC office hours. We will post directions and times for this soon. The office hours will be on the #SimpleCV channel on freenode. Please note that we can get busy with the real world and consequently we can’t always make it.
+
+
+If you have SimpleCV related questions by all means please use our forum to ask them. The forum is not a place for general GSoC questions!

@@ -1,0 +1,53 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="row">
+  <div id="page_heading">
+    <h2 class="page_heading_text">News</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div id ="main_content_wrap" class="span10">
+    <div id="main_content">
+
+      <div class="region region-content">
+        <div id="block-system-main" class="block block-system">
+
+          <div class="content">
+
+            <div class="article_content">
+
+              {% for post in site.posts %}
+
+              <hr />
+
+              <article id="node-21" class="node node-news node-promoted node-teaser clearfix" about="{{ post.url }}" typeof="sioc:Item foaf:Document">
+
+                <h3 class="post_title"  property="dc:title" datatype=""><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <ul class="meta">
+                  <li>{{ post.date | date: "%b %-d, %Y" }}</li>
+                </ul>
+
+                <div class="article_content">
+                  <div class="field-item even" property="content:encoded"><p>{{ post.content | strip_html | truncatewords:75 }}<br></p></div>
+                </div>
+
+                <div class="read_more">
+                  <a href="{{ post.url }}">read more &raquo;</a>
+                </div>
+
+              </article>
+
+              {% endfor %}
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

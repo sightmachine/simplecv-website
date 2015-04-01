@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="row">
+	<div id="page_heading">
+		<h2 class="page_heading_text">{{ page.title }}</h2>
+	</div>
+</div>
+
+<hr />
+
+<div class="row">
+	<div id ="main_content_wrap" class="span10">
+		<div id="main_content">
+
+			<div class="region region-content">
+				<div id="block-system-main" class="block block-system">
+
+					<div class="content">
+
+						<div class="article_content">
+
+							<article class="post-content">
+							<ul class="meta">
+							  <li>{{ page.date | date: "%b %-d, %Y" }}</li>
+							</ul>
+
+								{{ content }}
+							</article>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
