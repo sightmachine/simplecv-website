@@ -1,0 +1,401 @@
+---
+layout: default
+title: FAQ
+---
+
+<div class="row">
+  <div id="page_heading">
+   <h2 class="page_heading_text">Frequently Asked Questions</h2>
+   <div id="breadcrumbs"><h3><a href="http://www.simplecv.org/">Home</a>← Frequently Asked Questions</h3></div>
+ </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div id="main_content_wrap" class="span10">
+    <div id="main_content">
+
+     <div class="tabs">
+     </div>
+
+     <div class="region region-content">
+      <div id="block-system-main" class="block block-system">
+
+
+        <div class="content">
+
+
+
+          <div class="article_content">
+    <div class="field-item even" property="content:encoded"><script type="text/javascript">// <![CDATA[
+      function goto_answer(dropdown) {
+        var myIndex  = dropdown.selectedIndex
+        var selectedValue = dropdown.options[myIndex].value
+        var baseURL  = '#' + selectedValue;
+        top.location.href = baseURL;
+      }
+  // ]]>
+</script>
+<p><a name="top"></a></p>
+<form action="faq.html">
+  <p>
+    Select a question:
+    <select style="width: 100%;" name="questions" onchange="goto_answer(this.form.questions);">
+      <option value="found_bug">I found a bug! What do I do now?</option>
+      <option value="fixed_bug">I fixed a bug! What do I do now?</option>
+      <option value="is_bug">Is this a bug or am I doing something wrong?</option>
+      <option value="external_bug">I found a bug, but it is mainly a SciPy/Numpy/Pygame/OpenCV issue. What should I do?</option>
+      <option value="seen_library">Hey guys - have you seen this totally sweet library?</option>
+      <option value="slow">This thing works but it is like totally slow. What do we do?</option>
+      <option value="install_issue">I have/had an installation issue, how do we fix it?</option>
+      <option value="requests">I want a feature/change/extension/pony. How do I request it?</option>
+      <option value="submission">I have a feature/change/extension/pony I want to submit. How do I give back?</option>
+      <option value="can_I_help">I have some spare time. How can I help out?</option>
+      <option value="students">I am a student, and I'd like to help. What can I do?</option>
+      <option value="learning">I want to learn more. How can I help out?</option>
+      <option value="share">I wrote this totally cool thing in SimpleCV. Do you guys want to feature it?</option>
+      <option value="share_video">I have a video of my SimpleCV project. Would you want to feature it?</option>
+      <option value="codeshare">I wrote this code for work/school/fun, but it is in (some language). Can you use it?</option>
+      <option value="foss_collaboration">I work on another FOSS project, and we want to collaborate. Are you interested?</option>
+      <option value="research_collaboration">I work at an academic research lab and I'd like to collaborate. Are you interested?</option>
+      <option value="education_materials">I'm an educator, and want some course materials using SimpleCV. Can you lend me a hand?</option>
+      <option value="help_solving">Can I hire you to help me solve this problem?</option>
+      <option value="manufacturer">I am a manufacturer. How do I use SimpleCV on my assembly line?</option>
+      <option value="app_package">I wrote this application specific package. Where does it go?</option>
+      <option value="datasets">I have some photos or a dataset you can use. Do you want it?</option>
+      <option value="teaching">I want to teach a SimpleCV class, or use it at a hack-a-thon. What do I do?</option>
+      <option value="book">Where do I get your book?</option>
+      <option value="pull">How do I put together a good pull request on GitHub?</option>
+      <option value="quick_solutions">How do I get my problem solved quickly?</option>
+      <option value="ticket">How do I create a good GitHub ticket?</option>
+    </select>
+  </p>
+</form>
+
+<hr>
+
+<a name="found_bug"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I found a bug! What do I do now?</h3>
+<p>While we strive for the ultimate goal of bug-free software, bugs do happen unfortunately. If you run into a bug, here are some steps to help resolve the problem.</p>
+<p>First, if you are using an older version of SimpleCV, please <a href="http://www.simplecv.org/download/">upgrade</a> to the latest version of SimpleCV. The bug you ran into might be something that was already reported and fixed in a later release.</p>
+<p>If you are using the latest version of SimpleCV, and you are still having issues, the next step is to <a href="https://github.com/sightmachine/SimpleCV/issues/new">file a bug ticket on GitHub</a>. To fix your bug, we will first need to replicate it, so please make sure you include as much information as possible in your bug ticket. If you could please include the offending code and/or any images, that would be very helpful. Also, if you let us know what platform and hardware (camera) you are using, that will also be very helpful for us when we try to replication the problem.</p>
+<p>Once you have submitted a ticket, we will try to replicate the problem and find a solution as quickly as we can. Be forewarned that it might take us a little while to replicate the problem, since that can sometimes be tricky. With that in mind, if you have debugging skills and want a speedy solition, the fastest answer might be to look under the hood yourself and tinker with it a bit.</p>
+
+<hr>
+
+<a name="fixed_bug"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I fixed a bug! What do I do now?</h3>
+<p>First: you rule! Pat yourself on the back for supporting an Open Source project. To patch your bug, we need you to put together <a href="faq.html#pull">a good pull request</a>. Once you have your pull request put together, fire it off. If it is put together correctly we should be able to merge it into the main repository really quickly.</p>
+
+<hr>
+
+<a name="is_bug"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>Is this a bug or am I doing something wrong?</h3>
+<p>This is a great question! Not everything is a bug. The best place to find out if you are doing something wrong is to look at our <a href="http://www.simplecv.org/docs/">documentation</a> and <a href="http://examples.simplecv.org/">example code</a>. If you are still having problems the next best resource is our <a href="http://help.simplecv.org/questions/">support forum</a>. We check the help forum just about every day.</p>
+<p>If you are working with a method that has a couple of parameters, try tweaking the parameters a little bit. Sometimes degenerate image cases can cause methods to blow up. Also make sure all of the inputs to your method are correct. The SimpleCV shell is a good tool for this. If you are still having problems you should <a href="https://github.com/sightmachine/SimpleCV/issues/new">submit a bug ticket on GitHub</a>.</p>
+
+
+<hr>
+
+<a name="external_bug"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I found a bug, but it is mainly a SciPy/Numpy/Pygame/OpenCV issue. What should I do? </h3>
+<p>SimpleCV is a melting pot of different libraries, and sometimes one of the libraries it depends on has some problems. We try to fix these problems in two ways. First, we try to get to the root of the problem by working with the library authors to help squish their bugs. If there's an issue with fixing it at the source, and it's a signifiant enough issue, then we try to create a patch that at least prevents the bug from happening in SimpleCV.</p>
+<p>Here is what you can do to help:</p>
+<p>1. First, make sure what you have is a bug. We're all users, and we've all made user errors. They happen. The support staff and software developers of the world will shower praise upon you, though, if before you say something is a bug, you check to make sure it's not a user error issue.</p>
+<p>2. If you think it really is a bug, then submit a bug notice to the offending library. Here are links for where you can submit bugs:</p>
+<ul>
+  <li>NumPy: <a href="http://projects.scipy.org/numpy">http://projects.scipy.org/numpy</a></li>
+  <li>SciPy: <a href="http://projects.scipy.org/scipy">http://projects.scipy.org/scipy</a></li>
+  <li>OpenCV: <a href="http://code.opencv.org/projects/opencv/issues">http://code.opencv.org/projects/opencv/issues</a></li>
+  <li>PyGame: <a href="http://www.pygame.org">http://www.pygame.org</a></li>
+</ul>
+<p>&nbsp;</p>
+<p>3. Then also <a href="https://github.com/sightmachine/SimpleCV/issues/new">submit a ticket</a> to us. <strong>Please include a link to the ticket you filed with the other library</strong>, so we can more easily coordinate with them about the issue.</p>
+<p>Depending on how bad the bug is, we may try to create a temporary patch in it for SimpleCV.</p>
+
+
+<hr>
+
+<a name="seen_library"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>Hey guys - have you seen this totally sweet library? </h3>
+<p>We might already know of it, but send it to us anyway. If it is open source and can help SimpleCV, we'd love to hear about it. You can also <a href="https://github.com/sightmachine/SimpleCV/issues/new">file a new ticket on GitHub</a> saying something like, “look into supporting library X.” We’ll gladly look into it.</p>
+
+
+<hr>
+
+<a name="slow"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>This thing works but it is like totally slow. What do we do?</h3>
+<p>SimpleCV isn’t always the fastest library, although we are always trying to increase the performance. If you are having run-time speed problems, we'll try to help you out. A lot of speed issues can be solved by adding some 1337 sp33d hax (which usually involves making your image smaller). The <a href="http://help.simplecv.org/questions/">help forum</a> is a great place to ask questions about speeding up an operation. If you've tried these types of things, and are still having problems, we suggest you <a href="https://github.com/sightmachine/SimpleCV/issues/new">file a ticket on GitHub</a>.</p>
+
+
+<hr>
+
+<a name="install_issue"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I have/had an installation issue, how do we fix it?</h3>
+<p>We're sorry you ran into a problem! A good first step is to look and see if your installation issue has been solved on the <a href="http://help.simplecv.org/questions">help forum</a>. If this doesn’t help, and you are trying to install from the superpack, the first thing we suggest is that you try and install SimpleCV from source. The directions for installing from source can be <a href="https://github.com/sightmachine/SimpleCV#installation">found here</a>. If you are still having problems, try asking a question on the <a href="http://help.simplecv.org/questions">help forum</a>. Generally, installation issues will be solved faster using the <a href="http://help.simplecv.org/questions">help forum</a> versus submitting a GitHub ticket.</p>
+
+<hr>
+
+<a name="requests"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I want a feature/change/extension/pony. How do I request it?</h3>
+<p>The short answer is to <a href="https://github.com/sightmachine/SimpleCV/issues/new">file a feature request on GitHub</a>. In general, your feature request should include example applications, images, and code which can help us solve a problem. If you have a data set that we can use to tackle the problem, even better. A good feature request tells us what you want to do, why you want to do, how the code should look, and how we will know when it is working correctly.</p>
+
+
+<hr>
+
+<a name="submission"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I have a feature/change/extension/pony I want to submit. How do I give back?</h3>
+<p>Great! Thanks for helping out! To submit code you should wrap your new feature up into a <a href="https://help.github.com/articles/using-pull-requests">pull request</a> and send it to us. In general, we prefer pull requests that are well formed and ready to go. For help with this, please see our answer on <a href="faq.html#pull">how to create a good pull request</a>.</p>
+
+
+<hr>
+
+<a name="can_I_help"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I have some spare time. How can I help out?</h3>
+<p>The first step to helping out is contacting us. The best way to get in touch is by using the <a href="http://help.simplecv.org/questions/">help forum</a>, or you can try <a href="http://twitter.com/simple_cv">twitter</a>. We can discuss what tickets are outstanding, and find you a few that should be fun to solve. Once you solve the ticket, put together a <a href="faq.html#pull">good pull request</a> and we can merge it back in to the main repository.</p>
+
+
+<hr>
+
+<a name="students"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I am a student, and I'd like to help. What can I do?</h3>
+<p>Not to sound like your mom, but during the school year it is best that you focus on your studies. If you want to use SimpleCV for school, though, we would be more than happy to help you out. Just get in touch with us by using the <a href="http://help.simplecv.org/questions/">help forum</a>. If you want to ignore our advice, then you still want to <a href="http://help.simplecv.org/questions/">get in touch with us</a> so we can talk about what issues you might want to work on. If you would like to sponsor a SimpleCV class at your school, we would also be interested in helping you out. First step? You guessed it. Get in touch with us using the <a href="http://help.simplecv.org/questions/">help forum</a>.</p>
+<p>During the summers, SimpleCV also participates in <a href="http://www.simplecv.org/gsoc">Google Summer of Code</a>, and every year we take a few summer interns. Details come out every March. For more information, please see our <a href="http://soc.simplecv.org/apply.html">Summer of Code page</a>.</p>
+
+
+<hr>
+
+<a name="learning"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I want to learn more. How can I help out?</h3>
+<p>If you want to learn how to use SimpleCV, and help us out at the same time, we suggest that you start out by writing a short example program. Nothing too fancy, perhaps a couple of hundred lines of code solving a practical problem you have. This example program can use one of our <a href="https://github.com/sightmachine/SimpleCV/tree/master/SimpleCV/examples">existing examples</a> as a template, and go from there. A good place to find ideas for a program is to look at the features that we have added to the repository.</p>
+
+
+<hr>
+
+<a name="share"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I wrote this totally cool thing in SimpleCV. Do you guys want to feature it?</h3>
+<p>YES! We are working on a featured projects page. Please tweet at us (@Simple_CV) and we’ll be in touch. </p>
+
+
+<hr>
+
+<a name="share_video"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I have a video of my SimpleCV project. Would you want to feature it?</h3>
+<p>Again: YES! You can tweet at us (@Simple_CV) or let us know in the <a href="http://help.simplecv.org/questions/">help forum</a>.</p>
+
+
+<hr>
+
+<a name="codeshare"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I wrote this code for work/school/fun, but it is in (some language). Can you use it?</h3>
+<p>The short answer is maybe. Let us know about it in the <a href="http://help.simplecv.org/questions/">help forum</a>, and we’ll set up a time to chat.</p>
+
+
+<hr>
+
+<a name="foss_collaboration"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I work on another FOSS project, and we want to collaborate. Are you interested? </h3>
+<p>We totally love collaboration. We are particularly interested if your project needs help creating python bindings that will play well with SimpleCV. Please let us know in the <a href="http://help.simplecv.org/questions/">help forum</a>, or tweet at us (@Simple_CV), and we’ll be in touch.</p>
+
+<hr>
+
+<a name="research_collaboration"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I work at an academic research lab and I would like to collaborate. Are you interested?</h3>
+<p>Awesome! We are always looking for collaborators. If you want to just use SimpleCV, go to town, but please drop us a note in the <a href="http://help.simplecv.org/questions/">help forum</a>. If you need some assistance with your research, we can help you out. For example, we can arrange to do a short tutorial for your research group, or set up a meeting where we can organize a way for you to contribute to the library.</p>
+
+
+<hr>
+
+<a name="education_materials"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I'm an educator, and want some course materials using SimpleCV. Can you lend me a hand? </h3>
+<p>Absolutely! We are working very hard to create education course work for SimpleCV and Python. Please drop us a note in the <a href="http://help.simplecv.org/questions/">help forum</a>, and we’ll go from there. We should be able to provide you with slides, problems, example code and demos, and bulk discounts to our book.</p>
+
+
+<hr>
+
+<a name="help_solving"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>Can I hire you to help me solve this problem? </h3>
+<p>Our parent company, <a href="http://www.sightmachine.com/">Sight Machine</a>, might be able to help you out. If you use their <a href="http://www.sightmachine.com/#contact">contact form</a>, they'll get in touch with you to see if they can help.</p>
+
+
+<hr>
+
+<a name="manufacturer"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I am a manufacturer. How do I use SimpleCV on my assembly line? </h3>
+<p><a href="http://www.sightmachine.com/">Sight Machine</a> is very interested in helping to solve manufacturing problems. You can get in touch by using the <a href="http://www.sightmachine.com/#contact">Sight Machine contact form</a>. They'll get in touch with you to discuss your problem, and outline ways that SimpleCV might help.</p>
+
+<hr>
+
+<a name="app_package"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I wrote this application specific package. Where does it go?</h3>
+<p>You should submit a <a href="https://help.github.com/articles/using-pull-requests">pull request</a> to GitHub, and we’ll see what we can do. We’re working on creating a plug-in interface for solving domain specific problems. We would love to have a few projects to help pilot this effort. If you're interested, please let us know in the <a href="http://help.simplecv.org/questions/">help forum</a>.</p>
+
+
+<hr>
+
+<a name="datasets"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I have some photos or a dataset you can use. Do you want it? </h3>
+<p>Most likely we can work with you for a place to stash and share your stuff. Please contact us about it by posting in the <a href="http://help.simplecv.org/questions/">help forum</a>.</p>
+
+
+
+<hr>
+
+<a name="teaching"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I want to teach a SimpleCV class, or use it at a hack-a-thon. What do I do?</h3>
+<p>Great! Please let us know about it in the <a href="http://help.simplecv.org/questions/">help forum</a>. We can get you our training materials, bulk discounts for the book, and potentially send you some keen SimpleCV schwag.</p>
+
+
+
+<hr>
+
+<a name="book"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>Where do I get your book? </h3>
+<p>The title of our new book is <strong><a href="http://shop.oreilly.com/product/0636920024057.do">Practical Computer Vision with SimpleCV</a></strong>. You can buy it online from either <a href="http://shop.oreilly.com/product/0636920024057.do">O'Reilly</a> or from <a href="http://www.amazon.com/Practical-Computer-Vision-SimpleCV-Technology/dp/1449320368/ref=sr_1_1?ie=UTF8&qid=1340199974&sr=8-1&keywords=Practical+Computer+Vision+with+SimpleCV">Amazon</a>.</p>
+
+
+
+<hr>
+
+<a name="book_error"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>I found this error in the book. Do you want to fix it? </h3>
+<p>An error? In our book? Impossible! Seriously, though, if you've found an error, we <strong>definitely</strong> want to hear about it so we can fix it. Just let us know about it in the <a href="http://help.simplecv.org/questions/">help forum</a> - and thank you for taking the time to help us this way. We're also interested, by the way, in any general feedback you might have about the book. We'd love to hear what you think!</p>
+
+
+<hr>
+
+<a name="book_suggestions"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>What books should I read to learn more about computer vision? </h3>
+<p>There are a lot of good books out there. Here are some of the latest books on the subject:</p>
+<ul>
+  <li><a href="http://shop.oreilly.com/product/0636920022923.do">Programming Computer Vision with Python</a> by Jan Erik Solem</li>
+  <li><a href="http://www.amazon.com/Computer-Vision-Algorithms-Applications-Science/dp/1848829345/">Computer Vision: Algorithms and Applications</a> by Richard Szeliski</li>
+  <li><a href="http://www.amazon.com/Computer-Vision-Models-Learning-Inference/dp/1107011795/ref=sr_1_1?s=books&ie=UTF8&qid=1334662414&sr=1-1">Computer Vision: Models, Learning, and Inference</a> by Simon J.D. Prince</li>
+</ul>
+<p>Here are some other good books:</p>
+<ul>
+  <li><a href="http://www.amazon.com/OpenCV-Computer-Application-Programming-Cookbook/dp/1849513244">OpenCV 2 Computer Vision Application Programming Cookbook</a> by Robert Laganière</li>
+  <li><a href="http://shop.oreilly.com/product/9780596516130.do">Learning OpenCV: Computer Vision with the OpenCV Library</a> by Gary Bradski and Adrian Kaehler</li>
+  <li><a href="http://www.amazon.com/Introduction-Computer-Vision-Techniques-Algorithms/dp/047001704X/ref=pd_sim_b_20">An Introduction to 3D Computer Vision Techniques and Algorithms</a> by Boguslaw Cyganek and J. Paul Siebert</li>
+  <li><a href="http://www.amazon.com/Multiple-View-Geometry-Computer-Vision/dp/0521540518/ref=sr_1_1?s=books&ie=UTF8&qid=1334258042&sr=1-1">Multiple View Geometry in Computer Vision</a> by Richard Hartley and Andrew Zisserman</li>
+</ul>
+
+
+
+<hr>
+
+<a name="getting_general_cv_help"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>Where do I get more help on computer vision problems that aren't related to SimpleCV?</h3>
+<p>We really like to use the OpenCV and Python reddits for more general questions:</p>
+<ul>
+  <li><a href="http://www.reddit.com/r/computervision/">http://www.reddit.com/r/computervision/</a></li>
+  <li><a href="http://www.reddit.com/r/Python/">http://www.reddit.com/r/Python/</a></li>
+</ul>
+<p>Other good resources include:</p>
+<ul>
+  <li><a href="http://www.aishack.in/">AI Shack</a></li>
+  <li><a href="http://www.janeriksolem.net/">Jan Erik Solem's blog</a></li>
+  <li><a href="http://iris.usc.edu/vision-notes/bibliography/contents.html">Keith Prices’ Vision Bibliography</a></li>
+  <li><a href="http://stackoverflow.com/questions/tagged/computer-vision">Stack Overflow</a></li>
+</ul>
+
+
+
+<hr>
+
+<a name="questions"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>How do I get my questions answered?</h3>
+<p>You should post your question in the <a href="http://help.simplecv.org/questions/">help forum</a> at: <a href="http://help.simplecv.org/questions/">help.simplecv.org</a></p>
+
+
+<hr>
+
+<a name="pull"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>How do I put together a good pull request?</h3>
+<p>Okay, first to understand more about GitHub and how pull requests work, please read this GitHub article on <a href="https://help.github.com/articles/using-pull-requests">using pull requests</a>.
+</p><p>Now let’s talk about what is in a good SimpleCV pull request (i.e. the code and such).</p>
+<p>The text in the pull request should summarize what the code does, and why it is needed. If it is a bug or a feature request, the text should describe exactly what you did.</p>
+<p>A good pull request has three things:</p>
+<ul>
+  <li>The code: what you have added or changed</li>
+  <li>Unit tests: your test should cover most of your feature, or replicate your bug</li>
+  <li>Documentation: please comment your code following the style in our documentation guide</li>
+  <li>BONUS: an example using the new functionality</li>
+</ul>
+<p>&nbsp;</p>
+<p>If your pull request is non-trivial, and it does not contain these three things, chances are we’ll deny it and ask you to make the changes. Please also make sure to add any images used in your unit tests to the sample images folder.</p>
+
+
+<hr>
+
+
+<a name="quick_solutions"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>How do I get my problem solved quickly? </h3>
+<p>The best way to get your problem solved is to route it to the right place and provide us with enough information to repeat the problem. Also getting you problem solved may require you to do your own leg work first (i.e. did you google it and did you search the forum).</p>
+<p>Steps to solving a code problem:</p>
+<ol>
+  <li>Check the documentation (help()) in the simplecv shell. Or try reading the docs: http://examples.simplecv.org/en/latest/index.html</li>
+  <li>Check the documentation again (i.e. open the offending file and see what it is doing).</li>
+  <li>Look at the unit test for the method. That should show it working in the wild.</li>
+  <li>Look at your image. Is anything wonky? Step through your image processing chain in the simplecv shell. Save each image in the chain for later! Try changing the method parameters. Does that help? Try another input image. Does the pipeline work for that image?</li>
+  <li>Just as a sanity check, run the test suite (see running tests). Do all of the tests pass?</li>
+  <li>Okay -- you made it this far. Google it, then search the help forum.</li>
+  <li>Okay -- still having problems. Post to the help forum, the email list, or find us on IRC.</li>
+  <li>If we say it is a bug escalate it to GitHub.</li>
+</ol>
+<p>Steps to solving an installation problem:</p>
+<ol>
+  <li>If you are working from a superpack, did the super pack fail? If so where in the process?</li>
+  <li>Did you try installing from source? Try that?</li>
+  <li>Can you get an ipython shell? Can you import SimpleCV and cv/cv2? If not check your path variables. Maybe restart is necessary.</li>
+  <li>Check the forum. Has someone had the same issue?</li>
+  <li>Okay, you may have a bug, please submit a question to the forum or the email list.</li>
+</ol>
+
+<hr>
+
+<a name="ticket"></a>
+<span class="top"><a href="{{ "/faq/#top" | prepend: site.baseurl }}"><i class="fa fa-arrow-up" alt="Back to Top"></i></a></span>
+<h3>How do I create a good GitHub ticket?</h3>
+<p>tl:dr - Tell us the specific problem (i.e. error, OS, version, line number, code, image, etc). - Tell us what you want. - Show us how it should work (i.e. what the code should look like). - Point us to resources (like code in some other repo). - Give us something to test on (i.e. images). A good ticket should give us a complete description of the problem you want us to solve, the feature you want us to add, or the thing you would like us to look into. Generally GitHub tickets should only be used for confirmed software bugs. This is to say that bugs should start out on the help forum and then get escalated from the help forum to a GitHub ticket. Bug tickets should include any information that may help us solve the problem. If you do not include the code and the images that generated the bug we may choose not to fix it. A good bug ticket includes a brief description of the problem, the OS, the SimpleCV version, and all of the hardware. A feature request ticket should tell us what functionality you want and WHY. The ticket should then go on to give us example code of how you think it should function (the syntax doesn’t need to be perfect). Finally it is very helpful if you include images of potential input and potential output. This helps speed up the development process by providing us a sketch for a unit test. Finally you should link any resources that may help us work on the problem. If the desired code has an analog in OpenCV/SciPy/Numpy link to the documentation. IF you have an algorithm in mind, link to pseudo code or an implementation in some other language. EXAMPLE: https://github.com/sightmachine/SimpleCV/issues/70</p></div>  </div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>

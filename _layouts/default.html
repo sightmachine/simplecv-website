@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+  {% include header.html %}
+
+  <div class="banner invisible"></div>
+  <a href="https://github.com/sightmachine/SimpleCV"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+  <div class="container">
+    <div class="row">
+      <div class="span2">
+        <div id="vert_nav">
+          <header>
+            <div id="main_title">
+              <a href="{{ site.baseurl }}/"><img src="{{ "/assets/SM_logo_color.png" | prepend: site.baseurl }}" /></a>
+            </div>
+            <!-- begin menu -->
+            <div id="menu" class="row">
+              <div id="main-menu" class="navigation">
+                <div id="menu_wrap">
+                  <div id="main-menu-links">
+                    <ul class="menu">
+                      <li class="first leaf"><a href="{{ "/download/" | prepend: site.baseurl }}">Install</a></li>
+                      <li class="leaf"><a href="http://tutorial.simplecv.org/" title="">Learn</a></li>
+                      <li class="leaf"><a href="{{ "/contribute/" | prepend: site.baseurl }}">Contribute</a></li>
+                      <li class="leaf"><a href="{{ "/docs/" | prepend: site.baseurl }}" title="">API Docs</a></li>
+                      <li class="leaf"><a href="http://help.simplecv.org/questions/" title="">Help Forum</a></li>
+                      <li class="leaf"><a href="{{ "/news/" | prepend: site.baseurl }}" title="">Blog</a></li>
+                      <li class="leaf"><a href="{{ "/book/" | prepend: site.baseurl }}">The Book</a></li>
+                    </ul></div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- end menu -->
+
+            </header>
+          </div>
+        </div>
+        <!-- end main span2 -->
+
+        <!-- main span10 -->
+        <div class="span10">
+
+          {{ content }}
+
+          <hr />
+
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+  </html>
