@@ -1,3 +1,22 @@
+# How to build with Docker
+
+You will need docker and docker-compose install:
+https://docs.docker.com/compose/install/#install-docker
+
+
+```
+clone https://github.com/sightmachine/simplecv-website.git
+cd simplecv-website
+sudo docker-compose up
+```
+
+This will run and build the static website and will take a little bit but then should be viewable from a browser at:
+http://localhost:4000
+
+The static files will also be built outside the docker container under the "_site" folder.
+
+
+
 # How to generate static files
 
 Install ruby
