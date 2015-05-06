@@ -3,4 +3,4 @@ website:
     command: jekyll serve -H 0.0.0.0
     restart: on-failure
     ports:
-        - "4000:4000"
+        - "80:4000"
