@@ -1,6 +1,6 @@
 website:
     image: sightmachine/simplecv-website
     command: jekyll serve -H 0.0.0.0
-    restart: on-failure
+    restart: always
     ports:
         - "80:4000"
